@@ -1,0 +1,2208 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+.sugerencias{
+    text-align: center;
+    color: rgb(50,50,50);
+    padding-bottom: 50px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.downA{
+    margin: 5px 0;
+    text-align: left;
+ 
+    font-size: 17px;
+
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    color: rgb(63, 63, 63);
+}
+
+#facebook{
+    color: rgb(11, 102, 187);
+}
+#instagram{
+    color: rgb(143, 36, 165);
+}
+#youtube{
+    color: rgb(179, 31, 11);
+}
+.redesS a{
+    font-size: 26px;
+    margin-right: 15px;
+}
+.redesS a:hover{
+    opacity: .9;
+    transition: .8s;
+}
+.downA::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(11,125,179);
+    transition: width .3s;
+}
+.downA:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.imageV{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.Tekito{
+    position: absolute;
+    font-weight: 500;
+    font-family: "Fredoka one", cursive;
+}
+.ejerciciosAresolver{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    overflow-x: hidden;
+    height: 60px;
+    width: 100%;
+    padding: 0 5%;
+    background-color: rgb(51, 51, 51);
+}
+nav h1{
+    font-size: 33px;
+    font-family: 'Fredoka One', cursive;
+    padding-top: 10px;
+    color: rgb(231, 231, 231);
+}
+nav h1 span{
+    color: rgb(11,125,179);
+    font-family: "Fredoka One",cursive;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(235,235,235);
+}
+.main{
+    text-align: center;
+    padding-top: 4vh;
+    height: 100vh;
+    overflow-x: hidden;
+    color: rgb(51, 51, 51);
+}
+.main h4{
+    font-size: 27px;
+    margin: 0;
+}
+.amedias{
+    opacity: .5;
+}
+.main h5{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.teked{
+    font-weight: 500;
+    background-color: rgb(51, 51, 51);
+    color: rgb(230,230,230);
+    margin-left: 5px;
+    padding: 3px 5px;
+    font-family: "Fredoka One",cursive;
+}
+.teked span{
+    font-weight: 500;
+    font-family: "Fredoka One",cursive;
+    color: rgb(11,125,179);
+}
+.eligeTuGrado h1{
+    font-size: 35px;
+}
+.ap{
+    box-shadow: 0 0 3px 1px rgb(179, 31, 11);
+}
+.bp{
+    box-shadow: 0 0 3px 1px rgb(218, 123, 15);
+}
+.buttonDiv{
+    height: 220px;
+    margin-top: 30px;
+    grid-column-gap: 5vw;
+    grid-row-gap: 13px;
+    padding: 30px 12vw 0  12vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.eligeTuGrado{
+    background-color: rgb(51, 51, 51);
+    color: rgb(230, 230, 230);
+    border: none;
+    transition: .5s;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.kinder{
+    font-size: 30px;
+    font-weight: 500;
+}
+.puntosClave{
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(113, 36, 165, 0.5);
+}
+.Tekito h1{
+    font-weight: 500;
+}
+.puntosClave li{
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+    font-size: 19px;
+    font-family: serif;
+    list-style: none;
+}
+.puntosClave li::before{
+    color:rgb(11,125,179);
+    font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.proximamente{
+    width: 300px;
+    margin: 100px auto 0 auto;  
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border:2px dashed rgb(11,125,179);
+    background-color: rgb(218, 218, 218);
+    color: rgb(53, 53, 53);
+}
+.proximamente span{
+    font-family: "Fredoka One",cursive;
+    color: rgb(11,125,179);
+    font-weight: 500;
+}
+.bacpa:hover{
+    background-color: rgba(179, 31, 11, 0.507);
+}
+.backA{
+    background-color: rgb(179, 31, 11);
+}
+.backB{
+    background-color: rgb(218, 123, 15);
+}
+.backC{
+    background-color: rgb(34, 211, 11);
+}
+.backD{
+    background-color: rgb(15, 175, 175);
+}
+.backE{
+    background-color: rgb(13, 114, 161);
+}
+.backF{
+    background-color: rgb(113, 36, 165);
+}
+.a{
+    box-shadow: 0 0 2px 1px rgb(179, 31, 11);
+}
+.a:hover{
+    background-color: rgb(179, 31, 11);
+    color: rgb(250,250,250);
+}
+.b{
+    box-shadow: 0 0 2px 1px rgb(235, 129, 8);
+}
+.b:hover{
+    background-color: rgb(235, 129, 8);
+    color: rgb(250,250,250);
+}
+.c{
+    box-shadow: 0 0 2px 1px rgb(236, 202, 5);
+}
+.c:hover{
+    background-color: rgb(236, 202, 5);
+    color: rgb(250,250,250);
+}
+.d{
+    box-shadow: 0 0 2px 1px rgb(34, 211, 11);
+}
+.d:hover{
+    background-color: rgb(34, 211, 11);
+    color: rgb(250,250,250);
+}
+.e{
+    box-shadow: 0 0 2px 1px rgb(15, 175, 175);
+}
+.e:hover{
+    background-color: rgb(15, 175, 175);
+    color: rgb(250,250,250);
+}
+.f{
+    box-shadow: 0 0 2px 1px rgb(13, 114, 161);
+}
+.f:hover{
+    background-color:rgb(13, 114, 161);
+    color: rgb(250,250,250);
+}
+.g{
+    box-shadow: 0 0 2px 1px rgb(113, 36, 165);
+}
+.g:hover{
+    background-color: rgb(113, 36, 165);
+    color: rgb(250,250,250);
+}
+.extremeN1, .extremeN2, .extremeN3, .extremeN4,.extremeN5,.extremeN6,.extremeN7{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+    transition: .5s;
+    z-index: 5;
+    background-color: rgba(51, 51, 51, 0.404);
+}
+.extremeN1.vamos,.extremeN2.vamos,.extremeN3.vamos,.extremeN4.vamos,.extremeN5.vamos,.extremeN6.vamos,.extremeN7.vamos{
+    display: block;
+}
+.white-section{
+    margin-top: 15vh;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5%;
+}
+.theas1{
+    display: grid;
+    grid-gap: 3% 1%;
+    height: 40vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.theas1 a{
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    height: 100%;  
+}
+.theas1 button{
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: auto;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    color: rgb(250,250,250);
+    cursor: pointer;
+}
+.theas1 button span{
+    font-family: 'Oswald', sans-serif;
+}
+.theas1 button:hover{
+    opacity: .95;
+}
+.disab{
+    pointer-events: none;
+}
+.m{
+    background-color: rgb(179, 31, 11);
+    cursor: pointer;
+    transition: .5s;
+}
+.m:hover{
+    background-color: rgba(179, 31, 11,.95);
+}
+.espa{
+    background-color: rgba(216, 185, 12,.6);
+}
+.ingles{
+    transition: .5s;
+    cursor: pointer;
+    background-color: rgb(235, 129, 8);
+}
+.ingles:hover{
+    background-color: rgba(235, 129, 8,.95);
+}
+.ingle{
+    pointer-events: none;
+    background-color: rgba(235, 129, 8,.6);
+}
+.ciencia{
+    pointer-events: none;
+    background-color: rgba(34, 211, 11,.6);
+}
+.ciencias{
+    cursor: pointer;
+    background-color: rgb(34, 211, 11);
+    transition: .5s;
+}
+.ciencias:hover{
+    background-color: rgba(34, 211, 11,.95);
+}
+.humanidades{
+    background-color: rgb(15, 175, 175);
+}
+.white-section h5{
+    padding:30px 0;
+    margin: 0;
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+}
+.toggleClose{
+    height: 24px;
+    width: 28px;
+    margin: 13px 0 17px 0;
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 3vh;
+    right: 5%;
+    cursor: pointer;
+}
+.toggleClose div{
+    width: 100%;  
+    height: 3px;
+    border-radius: 5px;
+}
+.izquierda{
+    transform:rotate(45deg);
+    top:0%;
+    position: relative; 
+    z-index: 2;
+    background-color: rgb(250,250,250); 
+}
+.derecha{
+    transform: rotate(-45deg);
+    bottom: 3px;
+    background:rgb(250,250,250);
+    position: relative;
+}
+.error{
+    height: 100vh;
+    text-align: center;
+    padding: 20px 5%;
+    color: rgb(51, 51, 51);
+    display: none;
+}
+.error h2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.error h2 .azul{
+    font-family: "Fredoka One",cursive;
+    font-size: 36px;
+    color: rgb(11,125,179);
+}   
+.error h2 .tek{
+    font-family: "Fredoka One",cursive;
+    color: rgb(94, 94, 94);
+    font-size: 36px;
+}
+.va{
+    position: relative;
+    top: 60px;
+}
+.error i{
+    margin-top: 40px;
+    font-size: 70px;
+    color: rgb(11,125,179);
+}
+@media screen and (max-width:1100px){
+    .end{
+        display: none;
+    }
+}
+
+.welcome{
+    overflow-x: hidden;
+    text-align: center;
+    align-content: center;
+    animation-name: colorChange;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    padding-top: 22vh;
+    height: 100vh;
+    color: rgb(51, 51, 51);
+}
+@keyframes colorChange {
+    0% {
+        background: rgb(231, 231, 231);    
+    }
+    15% {
+        background: rgb(204, 32, 9);    
+    }
+    25% {
+        background: rgb(230, 127, 9);    
+    }
+    37.5% {
+        background: rgb(245, 209, 4);    
+    }
+    50% {
+    background: rgb(34, 211, 11);      
+    }
+    62.5% {
+        background:rgb(14, 126, 179);    
+    }
+    75%{
+background: rgb(130, 32, 196);
+    }
+    87.5%{
+background-color: rgb(218, 15, 218);
+    }
+    100%{
+background-color: rgb(230,230,230);
+    }
+}
+.welcome.red{
+    background-color: rgb(179, 31, 11);
+}
+
+.welcome.green{
+    background-color: rgb(34, 211, 11);
+}
+
+.welcome.yellow{
+    background-color: rgb(216, 185, 12);
+}
+.welcome.purple{
+    background-color: rgb(113, 36, 165);
+}
+.welcome.grey{
+    background-color: rgb(230,230,230);
+}
+.welcome div{
+    display: flex;
+    flex-direction: column;
+}
+.welcome h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-family: 'Acme', sans-serif;
+}
+.welcome .t{
+    font-size: 50px;  
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(51, 51, 51);
+    color: rgb(250,250,250);
+    padding: 5px 20px;
+    font-family: "Fredoka One",cursive;
+}
+.welcome span span{
+    margin-left: 2px;
+    font-family: "Fredoka One",cursive;
+    color:rgb(11,125,179);
+}
+.welcome p{
+    font-size: 18px;
+    margin: 20px auto 0 auto;
+    font-weight: 600;
+}
+.welcome.orange{
+    background-color: rgb(235, 129, 8);
+}
+.aDiv{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    width: 100%;
+}
+.welcome a{
+    margin: 30px auto 0 auto;
+    text-decoration: none;
+    color: rgb(250,250,250);
+    background-color: rgb(51, 51, 51);
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.welcome.green{
+    background-color: rgb(34, 211, 11);
+}
+.welcome a:hover{
+    background-color: rgb(11, 131, 187);
+    transform: scale(1.13);
+}
+.end{
+    background-color: rgb(19, 19, 19);
+    height: 45px;
+    text-align: center;
+    color: rgb(250,250,250);
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 11px;
+}
+.colorChange{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    z-index: 9;
+    left: 10px;
+    flex-direction: column;
+}
+.colorChange button{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: .7;
+    transition: .5s;
+    position: relative;
+    z-index: 20;
+}
+.colorChange button:hover{
+    opacity: 1;
+}
+.grey{
+    background: rgb(230,230,230);
+}
+.red{
+    background-color: rgb(179, 31, 11);
+}
+.orange{
+    background-color: rgb(235, 129, 8);
+}
+.yellow{
+    background-color: rgb(216, 185, 12);
+}
+.green{
+    background-color: rgb(34, 211, 11);
+}
+.purple{
+    background-color: rgb(113, 36, 165);
+}
+.z-indexado{
+    position: relative;
+    z-index: 3;
+}
+.ejerciciosAresolver{
+    text-align: center;
+    top: 0;
+    padding-top: 20px;
+    position: relative;
+    color: rgb(51, 51, 51);
+    height: calc(100vh - 60px);
+}
+.ejerciciosAresolver h2{
+    font-family: "Fredoka one", cursive;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+.ejerciciosAresolver h4{
+    margin: 0;
+    font-family: "Fredoka one", cursive;
+    font-weight: 500;
+}
+.temas{
+    height: 65vh;
+    margin-top: 2vh;
+    display: grid;
+    width:100%;
+    grid-template-columns: 65vw 35vw;
+}
+.fraseBuenarda{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.centralImage{
+    text-align: center;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(50,50,50);
+    margin-bottom: 10px;
+    margin-left: 25%;
+    height: 200px;
+}
+.fraseBuenarda i{
+    color:rgb(70,70,70);
+    font-size: 55px;
+   
+}
+#theNewResp{
+    position: fixed;
+    right: 4vw;
+    top: 14px;
+    color: rgb(230, 230, 230);
+    font-size: 29px;
+    display: none;
+}
+.vamosAaprender{
+    padding: 20px 0;
+    border-radius: 5px;
+    width:25vw;
+    border: 2px dashed rgb(11,125,179);
+    background-color: rgb(223, 223, 223);
+    color: rgb(50,50,50);
+}
+.vamosAaprender h3{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+.vamosAaprender span{
+    font-family: "Fredoka one", serif;
+    font-weight: 500;
+    color:rgb(11,125,179);
+}
+.losVTemas{
+    padding:5vh 5% 2vh 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100%;
+}
+.losVTemas a{
+    opacity: .9;
+}
+.losVTemas a:hover{
+    opacity: 1;
+}
+.temas a{
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+.temas button:hover{
+    color: rgb(230,230,230);
+}
+.temas button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color: rgb(230, 230, 230);
+border-radius: 10px;
+font-family: "Fredoka one", cursive;
+font-size: 30px;
+}
+.returnHome{
+    font-size: 23px;
+    position: absolute;
+    top: 12px;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: rgb(11,125,179);
+    right: 30px;
+    transition: .5s;
+    color:rgb(230,230,230);
+}
+.returnHome:hover{
+    background-color: rgb(9, 134, 192);
+}
+.blogText{
+    margin-top: 20px;
+    text-align: left;
+    padding-right: 12%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.theScience{
+    background-color: rgb(250,250,250);
+    padding-left: 200px;
+    padding-right: 4vw;
+    text-align: center;
+    padding-top: 75px;
+    min-height: 100vh;
+    padding-bottom: 15px;
+}
+.theScience h2{
+    font-size: 28px;
+    font-family: "Fredoka one", sans-serif;
+    font-weight: 500;
+}
+.image5Div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    grid-gap: 1%;
+}
+.image5Div img{
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(50,50,50);
+}
+.subScience{
+    font-family: sans-serif;
+    margin-top: 6px;
+}
+.by{
+    color: rgb(80,80,80);
+    font-weight: bold;
+}
+.nameOf{
+    font-weight: bold;
+}
+.dateOf{
+    color: rgb(11,125,179);
+    font-weight: bold;
+}
+.aDelScience{
+    color: rgb(17, 115, 160);
+}
+.aDelScience:hover{
+    text-decoration: underline;
+}
+.blogH{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.liEjemplos li{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    font-family: serif;
+}
+.liPuntos li{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    font-family: serif;
+}
+.liDelLi li{
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    font-family: serif;
+}
+.liEjemplos li::before, .liPuntos li::before{
+        color:rgb(11,125,179);
+        font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.liDelLi li::before{
+    color:rgb(113, 36, 165);
+        font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.image2Div{
+    display: grid;
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+.image3Div{
+    display: grid;
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5%;
+}
+.image2Div img, .image3Div img{
+    box-shadow: 0 0 2px rgb(50, 50, 50);
+    border-radius: 5px;
+}
+.moradoTitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(50,50,50);
+}
+.blogS{
+    font-size: 20px;
+    margin: 15px 0 5px 0 ;
+}
+.blogV{
+    font-size: 20px;
+    margin: 15px 0 5px 0 ;
+    color: rgb(35,35,35);
+}
+.ejemplosDe{
+    margin: 15px 0;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.barraDemenú{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 180px;
+    z-index: 3;
+    color: rgb(51, 51, 51);
+    padding: 70px 3px 30px 10px;
+    height: 100vh;
+    background: rgb(242, 242, 242);
+    border-right: 2px solid rgba(113, 36, 165,.5);
+}
+.barraDemenú h3{
+    font-size: 27px;
+    font-family: "Fredoka one", cursive;
+    color:rgb(11,125,179);
+    margin: 0;
+    font-weight: 500;
+    padding: 0;
+}
+#blusito{
+    height: 480px;
+}
+.barraDemenú h5{
+    padding: 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 3px;
+    margin: 0 0 5px 0;
+    font-family: "Fredoka one", cursive;
+}
+.subVamos{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.subVamos a{
+    font-family: "Poppins", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    font-size: 14px;
+    transition: .5s;
+}
+.subVamos a:hover{
+    color: rgb(11,125,179);
+    text-decoration: underline;
+}
+.subVamos a.active{
+    color: rgb(11,125,179);
+}
+.otherCourses{
+    padding: 140px 5px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@media screen and (max-height:580px){
+    .otherCourses{
+        padding-top: 1vh;
+    }
+}
+.otherCourses h4{
+    font-family: "Fredoka one", cursive;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.otherCourses a{
+    width: 100%;
+    margin-bottom: 5px;
+    color: rgb(231, 231, 231);
+    padding: 5px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    border-radius: 20px;
+    opacity: .8;
+    transition: .5s;
+}
+.otherCourses a:hover{
+    opacity: 1;
+}
+.rojitou{
+    background-color: rgb(179, 31, 11);
+}
+.amarillitou{
+    background-color: rgb(216, 185, 12);
+}
+.naranjitou{
+    background-color: rgb(235, 129, 8);
+}
+.verdesitou{
+    background-color: rgb(34, 211, 11);
+}
+.moraditou{
+    background-color: rgb(113, 36, 165);
+}
+#navigata{
+    position: fixed;
+    z-index: 2;
+}
+
+.elMeroMero{
+    position: static;
+    padding-top: 60px;
+    padding-right: 5vw;
+    min-height: 100vh;
+    width: 100vw;
+    padding-left: 200px;
+}
+#navigata{
+    z-index:10;
+}
+.add{
+    position: fixed;
+    z-index: 2;
+    width: 150px;
+    height: 100vh;
+    padding-top: 9vh;
+    top: 0;
+    right: 0;
+    background-color: rgb(44, 96, 141);
+}
+.hide{
+    display: none;
+}
+.elMeroMero .blockN1{
+    text-align: center;
+    padding: 20px 4%;
+    color: rgb(51, 51, 51);
+}
+.elMeroMero .blockN1 .bloque, .elMeroMero .blockN1 .bloqueC{
+    margin: 20px 0 0 0 ;
+    border:2px solid rgb(11,125,179);
+    height: 480px;
+    border-radius: 3px;
+    padding: 5px 0 0 5px;
+}
+.elMeroMero .blockN1 .bloqueIngles{
+    margin: 20px 0 0 0;
+    height: 480px;
+    display: grid;
+    grid-gap: 5px;
+    border:2px solid rgb(11,125,179);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: left;
+    padding: 5px;
+}
+.elMeroMero .blockN1 .bloqueInglesG, .elMeroMero .blockN1 .bloqueInglesGr{
+    margin: 20px 0 0 0;
+    height: 480px;
+    display: grid;
+    grid-gap: 5px;
+    border:2px solid rgb(11,125,179);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    padding: 5px;
+}
+.elMeroMero .blockN1 .bloqueIngles article{
+    border: 1px solid rgba(118, 119, 119, 0.315);
+    padding: 3px;
+    border-radius: 3px;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: auto;
+    width: 100%;
+}
+.elMeroMero .blockN1 .bloqueInglesG article{
+    border: 1px solid rgba(118, 119, 119, 0.315);
+    padding: 3px 5%;
+    border-radius: 3px;
+    padding: 7px 0 0 0 ;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.elMeroMero .blockN1 .bloqueInglesGr article{
+    border: 1px solid rgba(118, 119, 119, 0.315);
+    padding: 3px 5%;
+    border-radius: 3px;
+    padding: 10px 0 0 0 ;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    font-size: 17px;
+    padding-top: 17px;
+    margin-left: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.cool-link{
+    display: inline-block;
+    color: rgb(230, 230, 230);
+}
+.cool-link:hover{
+    color: rgb(230, 230, 230);
+}
+.cool-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(11,125,179);
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.initialNew{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(230, 230, 230);
+    background-color: rgb(29, 29, 29);
+    animation-name: colorChange;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.articleInitial{
+    position: relative;
+    bottom: 10vh;
+}
+.start-btn{
+    background-color: rgb(50, 50, 50);
+    color: rgb(250,250,250);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Fredoka one", cursive;
+}
+.go-btn{
+    color: rgb(50, 50, 50);
+    background-color: rgba(250,250,250,.6);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+    font-family: "Fredoka one", cursive;
+}
+.go-btn:hover{
+    color: rgb(50, 50, 50);
+    background-color: rgba(250,250,250,.7);
+}
+.dospordos{
+    font-size: 20px;
+    position: absolute;
+    bottom: 10vh;
+}
+.articleInitial h3{
+    font-size: 34px;
+    font-family: "Lato", sans-serif;
+}
+.articleInitial h5{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.aprenderEn{
+    font-family: "Fredoka one", cursive;
+    font-weight: 500;
+    font-size: 33px;
+}
+.funSpan{
+
+   color: rgb(11,125,179);
+   font-size: 36px;
+   font-family: 'Lato', sans-serif;
+}
+.bloqueInglesG article span{
+    color: rgb(130, 32, 196);
+}
+.elMeroMero .blockN1 .bloqueIngles article div{
+    padding-top: 5px;
+    color: rgb(11,125,179);
+}
+.autor{
+    padding-top: 10px;
+    border-top: 2px solid rgba(113, 36, 165, 0.5);
+}
+.exOnce{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    padding: 10px 0 0 10px;
+    text-align: left;
+    grid-gap: 10px;
+}
+.exOnce div{
+    padding: 5px;
+    border-radius: 2px;
+}
+.elMeroMero h4{
+    font-weight: 500;
+    font-size: 26px;
+    font-family: "Fredoka one", cursive;
+}
+.showAnswers{
+    background-color: rgb(235, 129, 8);
+    border: none;
+    font-family: "Fredoka one", cursive;
+    padding: 7px 12px;
+    color: rgb(230,230,230);
+    border-radius: 6px;
+    transition: .5s;
+    cursor: pointer;
+}
+.showAnswers:hover{
+    background-color: rgb(218, 123, 15);
+}
+.next{
+    border: none;
+    font-family: "Fredoka one", cursive;
+    background-color: rgb(11,125,179);
+    border-radius: 5px;
+    color: rgb(230,230,230);
+    padding: 7px 14px;
+    transition: .5s;
+    margin: 5px 3px 0 3px;
+    cursor: pointer;
+}
+.next:hover{
+    background-color: rgb(13, 114, 161);
+}
+hr{
+    border: none;
+}
+.twoButton{
+    display: flex;
+    flex-direction: row;
+}
+.showingTheAnswer0,.showingTheAnswer1,.showingTheAnswer2,.showingTheAnswer3,.showingTheAnswer4,.showingTheAnswer5{
+    position: fixed;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.514);
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#cierre{
+    z-index: 999;
+}
+.showingTheAnswer0.show,.showingTheAnswer1.show,.showingTheAnswer2.show,.showingTheAnswer3.show,.showingTheAnswer4.show,.showingTheAnswer5.show{
+    display: block;
+}
+.whiteSec{
+    padding:0 2%;
+    width: 80%;
+    color: rgb(51, 51, 51);
+    margin-left: 10vw;
+    background-color: rgb(230,230,230);
+    height: 85%;
+    border-radius: 20px;
+}
+.whiteSec h2{
+    padding: 20px 0 0 0;
+    margin-bottom: 10px;
+}
+.twoButton{
+    padding-top: 10px;
+}
+.opaco{
+    opacity: .7;
+
+}
+.menosopaco{
+    opacity: 1;
+
+}
+#green{
+    height: 480px;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(11,125,179);
+}
+.disable{
+    pointer-events: none;
+}
+.expansión{
+    height: 100%;
+}
+@media screen and (max-width:1000px){
+    .add{
+        display: none;
+    }
+    .elMeroMero{
+        grid-template-columns: 1fr;
+    }
+    .blockN1{
+        padding-left: 0%;
+    }
+}
+.nola{
+    background-color: rgba(100,100,100,.7);
+    color: rgb(20,20,20);
+    pointer-events: none;
+}
+.finalFeliz{
+    background-color: rgb(21, 31, 39);
+    color: rgb(230, 230, 230);
+    text-align: center;
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 40px;
+    font-weight: bolder;
+    padding-top: 9px;
+    font-size: 20px;
+}
+.entendidoCapitán{
+    margin-top: 4vh;
+    border: none;
+    font-family: "Fredoka one", cursive;
+    border-radius: 5px;
+    background-color: rgb(11,125,179);
+    color: rgb(230, 230, 230);
+    padding: 6px 12px;
+    font-size: 18px;
+    transition: .5s;
+    cursor: pointer;
+    outline: none;
+}
+.entendidoCapitán:hover{
+    transform: scale(1.1);
+}
+.finalaso{
+    color: rgb(11, 131, 187);
+}
+.goToOther{
+    color: rgb(230, 230, 230);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.otherGo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.otherGo a{
+    margin-bottom: 8px;
+    text-align: center;
+}
+.grid33{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+    grid-gap: 5px;
+    width:100%;
+    height: 53vh;
+}
+.grid28{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: left;
+    grid-gap: 5px;
+    width:90%;
+    border-radius: 2px;
+    margin-top: 30px;
+    border: 2px solid rgb(11,125,179);
+    margin-left: 5vw;
+    height: 430px;
+    padding: 15px;
+}
+.grid28 article{
+    padding-left: 5px;
+    padding-top: 2px;
+    border-radius: 2px;
+    border: 1px solid rgba(118, 119, 119, 0.315);
+    text-align: left;
+}
+.grid33 article, .grid23 article{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(80,80,80);
+}
+.grid23{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+    grid-gap: 5px;
+    width:100%;
+    height: 53vh;
+}
+@media screen and (max-height:575px){
+    .grid33{
+        height: 70vh;
+    }
+    .whiteSec{
+        height: 100%;
+        width:100%;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        margin-left: 0vw;
+}
+.izquierda{
+    background-color: rgb(51, 51, 51);
+}
+.derecha{
+    background-color: rgb(51, 51, 51);
+}
+}
+.exDOS{
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    grid-gap: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.exDOS div{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.esfuerzo{
+    background-color: rgb(14, 110, 155);
+    color: rgb(230, 230, 230);
+    border-top-left-radius: 5px;
+    font-family: "Fredoka one", cursive;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    padding: 15px 0 0 0;
+}
+.esfuerzo span{
+    text-align: center;
+    margin: 0 auto;
+}
+.doExam{
+    background-color: rgb(113, 36, 165);
+    color: rgb(250,250,250);
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Fredoka one", cursive;
+}
+.big{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 625px;
+    margin-left: 0;
+    border-radius: 0;
+}
+.grande{
+    background-color: rgb(51, 51, 51);
+}
+.sixTwo{
+    display: grid;
+    height: 100%;
+    text-align: left;
+    grid-gap: 10px;
+    width: 100%;padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.sixTwo div{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(118, 119, 119, 0.356);
+}
+.sixTwo div span{
+    text-align: left;
+}
+.sixTwo div article{
+    text-align: center;
+}
+.underline{
+    padding-bottom: 2px;
+    text-decoration:underline;
+}
+.whiteSec h5{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.bajaEsaVaina{
+    padding: 20px 0;
+    font-size: 25px;
+}
+.bajaEsaVainaI{
+    padding: 20px 0;
+    font-size: 25px;
+    color: rgb(11,125,179);
+}
+.respond11{
+    height:50%;
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+.exOnce .frase{
+    font-size: 10px;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11,125,179);
+    color: rgb(230,230,230);
+    font-family: "Fredoka one", cursive;
+    border-top-left-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding-top: 18px;
+}
+#menuResponsive{
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 25px;
+    color: rgb(230, 230, 230);
+}
+
+.responsiveNavigation.active{
+    display: none;
+}
+.responsiveNavigation{
+    height: calc(100vh - 60px);  
+    background-color: rgb(230,230,230);
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    margin-top: 60px;
+    padding: 20px 5vw;
+}
+.responsiveNavigation h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.responsiveNavigation h5{
+    font-size: 16px;
+}
+.pepitoJuarez{
+    display: none;
+}
+.respNav{
+    display: none;
+}
+.respNav.active{
+    display: none;
+}
+.alineaos a{
+    color: rgb(230, 230, 230);
+    font-size: 23px;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 20px;
+    text-decoration: underline rgb(11,125,179);
+}
+#toggleClosing1, #toggleClosing2{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 30px;
+    height: 30px;
+    
+    color: rgb(20,20,20);
+    background-color: rgb(235,235,235);
+}
+.gridArticles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 450px;
+    grid-gap: 2%;
+}
+.gridArticles article{
+    padding: 50px 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(11,125,179);
+    color: rgb(50, 50, 50);
+}
+.soyTimido{
+    padding: 8px 16px; 
+    font-size: 18px; 
+    color: rgb(230,230,230);
+    border-radius: 10px; 
+    background-color: rgb(233, 112, 14); 
+    font-family: Lato, sans-serif;
+}
+.gridArticles article i{
+    font-size: 100px;
+    color: rgb(11,125,179);
+    padding: 30px 0;
+}
+.ingles10{
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.footOf{
+    height: 200px; 
+    width: 100vw; 
+    background-color: rgb(221, 221, 221); 
+    padding: 20px 5vw; 
+    display: grid; 
+    grid-template-columns: 180px 1fr 180px;
+}
+.eli{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .98;
+    color: rgb(230,230,230);
+}
+.eli:hover{
+    opacity: 1;
+    transition: .5s;
+}
+.eli h1::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(11,125,179);
+    transition: width .3s;
+}
+.x{
+    background-color: rgb(190, 33, 12);
+}
+.w{
+    background-color: rgb(113, 36, 165);
+}
+.buttonDiv button h1{
+    font-size: 38px;
+}
+.buttonDiv button span{
+    font-size: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width:600px){
+    .buttonDiv button span{
+    display: none;
+    }
+}
+@media screen and (max-width:1100px){
+    .main{
+        height: auto;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width:720px){
+    .respNav.active{
+        display: block;
+    }
+   #esoo{
+       padding-top: 20px;
+   }
+    .elTDeabajo{
+        width: 107px;
+    }
+    .redesS{
+        padding-top: 15px;
+    }
+    .downA::after{
+        width: 100%;
+        background-color: rgb(177, 177, 177);
+    }
+    .footOf{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        padding: 30px 7vw;
+    }
+    .gridArticles{
+        height: 1200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .cool-link::after{
+        width: 100%;
+    }
+    #menu{
+        display: none;
+    }
+    #theNewResp{
+        display: block;
+    }
+    .buttonDiv{
+        padding: 30px 4vw 0  4vw;
+    }
+    .image2Div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        height: 450px;
+    }
+    .image3Div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        height: 675px;
+    }
+    .finalFeliz{
+        display: none;
+    }
+    .ingles10{
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .ingles8{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .esfuerzo{
+        display: none;
+    }
+    .centralImage{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .responsiveNavigation.active{
+        display: block;
+        opacity: 1;
+    }
+    .barraDemenú{
+        display: none;
+    }
+    #menuResponsive{
+        display: block;
+    }
+    .ejerciciosAresolver{
+        overflow: hidden;
+    }
+    .white-section{
+        margin-top: 2vh;
+        width:95vw;
+        height: 96vh;
+        margin-left: 2.5vw;
+    }
+    .theas1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 73vh;
+    }
+    .tog div{
+        background-color: rgb(51, 51, 51);
+    }
+    .izquierda{
+        background-color: rgb(51, 51, 51);
+    }
+    .derecha{
+        background-color: rgb(51, 51, 51);
+    }
+    .fraseBuenarda{
+        display: none;
+    }
+    .temas{
+        display: block;
+        width: 100vw;
+        height: 68vh;
+    }
+    .losVTemas{
+        padding:0px 5% 2vh 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        height: 100%;
+    }
+    .whiteSec.big{
+        padding: 0;
+        height: calc(100vh + 30px);
+    }
+    .grid28{
+        height: 350px;
+        padding: 2px;
+        margin-top: 5px;
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 2.5%;
+    }
+    .image5Div{
+        height: 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .grid28 article p{
+        display: none;
+    }
+    .enWhiteSecBig{
+        display: none;
+    }
+    .elMeroMero{
+        padding:60px 2px 10px 0;
+    }
+    .elMeroMero.blockN1{
+        padding: 10px 2px;
+    }
+    .whiteSec.big h2{
+        display: none;
+    }
+    .theScience{
+        background-color: rgb(250,250,250);
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .blogText{
+        padding-right: 3vw;
+    }
+    .whiteSec{
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        border-radius: 0;
+    }
+    .bajaEsaVaina, .bajaEsaVainaI{
+        padding-top: 70px;
+    }
+    #pepian{
+        height: 550px;
+    }
+    #monaculo{
+        height: 550px;
+    }
+    .respond11{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    main{
+        display: none;
+    }
+    .pepitoJuarez{
+        display: block;
+    }
+    .entendidoCapitán{
+        margin-top: 1vh;
+    }
+}
+
+.fill{
+    color: rgb(221, 221, 221);
+    background-color: rgb(231, 129, 13);
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+@media screen and (min-height:710px){
+    .white-section h5{
+        padding:50px 0 20px 0;
+    }
+}
+.initialNew{
+    animation-name: colorChange;
+    animation-duration: 25s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0% {
+        background: rgb(29, 29, 29);    
+    }
+    15% {
+        background: rgb(148, 32, 17);    
+    }
+    25% {
+        background: rgb(168, 96, 13);    
+    }
+    37.5% {
+        background: rgb(172, 148, 16);    
+    }
+    50% {
+    background: rgb(30, 150, 14);      
+    }
+    62.5% {
+        background:rgb(138, 13, 76);    
+    }
+    80%{
+background-color: rgb(180, 22, 180);
+    }
+    100%{
+background-color: rgb(34, 34, 34);
+    }
+}
+.flexing{
+    flex: 1;
+}
+.theMenuLinks{
+    position: fixed;
+    top: 0px;
+    right: 5vw;
+}
+.initialNav{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.nextEx{
+    position: absolute;
+    top: 55vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(11,125,179);
+    color: rgb(230, 230, 230);
+    padding: 6px 12px;
+    font-size: 18px;
+    transition: 1.5s;
+    cursor: pointer;
+    outline: none;
+}
+.nextEx:hover{
+    background-color: rgb(113, 36, 165);
+}   
+.quizInitialDiv{
+    text-align: center;
+    padding: 25px 5vw;
+    margin-bottom: 20px;
+    color: rgb(40, 40, 40);
+    font-family: "Fredoka one", cursive;
+}
+.quizInitialDiv h3{
+    font-size: 34px;
+    font-weight: 500;
+}
+.quizInitialDiv h5{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.twotimesfour{
+    height: 480px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.ar, .arq{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.ar p, .arq p{
+    padding-top: 7px;
+    font-size: 19px;
+}
+.ar{
+    color: rgb(242, 242, 242);
+}
+.arq{
+    color: rgb(50, 50, 50);
+}
+.ar p{
+    color: rgb(230, 230, 230);
+}
+.arq p{
+    color: rgb(60, 60, 60);
+}
+
+.arti1{
+    background-color: rgb(219, 46, 23);
+}
+.arti2{
+    background-color: rgb(236, 177, 14);
+}
+.arti3{
+    background-color: rgb(165, 219, 14);
+}
+.arti4{
+    background-color: rgb(32, 214, 16);
+}
+.arti5{
+    background-color: rgb(25, 187, 187);
+}
+.arti6{
+    background-color: rgb(15, 142, 201);
+}
+.arti7{
+    background-color: rgb(175, 32, 204);
+}
+.emepecemosButton{
+    position: absolute; bottom: 6vh; font-size: 20px;
+}
+.enCasa{
+    text-decoration: underline  rgb(113, 36, 165); font-family:"Fredoka one", cursive; font-weight:500; font-size:33px
+}
+.aWay{
+    text-decoration: underline rgb(11,125,179); 
+    font-family:"Fredoka one", cursive; 
+    font-weight:500; 
+    font-size:33px;
+}
+.initialOfQuizzes{
+    width: 100%;
+    padding: 20px 5vw;
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+    color: rgb(40, 40, 40);
+}
+.initialOfQuizzes h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+.initialOfQuizzes h3 span{
+    color: rgb(50,50,50);
+    padding: 2px;
+    border: 2px dashed rgba(11, 102, 187, 0.575);
+}
+.initialOfQuizzes h5{
+    font-weight: 500;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.initialOfQuizzes h5 span{
+    padding: 3px;
+    border: 2px dashed rgba(143, 36, 165, 0.493);
+}
+.twotimesthree{
+    height: 480px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 12px;
+}
+.qui1{
+    border: 3px dashed rgb(212, 36, 13);
+    background-color: rgba(212, 36, 13, 0.315);
+}
+.qui2{
+    border: 3px dashed rgb(209, 180, 12);
+    background-color: rgba(209, 180, 12, .3); 
+}
+.qui3{
+    border: 3px dashed rgb(32, 214, 16);
+    background-color: rgba(32, 214, 16, .3);
+}
+.qui4{
+    border: 3px dashed rgb(11,125,179);
+    background-color: rgba(11,125,179, .3);
+}
+.qui5{
+    background-color: rgba(172, 27, 201, .3);
+    border: 3px dashed rgb(172, 27, 201);
+}
+footer{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    height: 130px;
+    padding: 25px 5vw 15px 5vw;
+    background-color: rgb(201, 201, 201);
+}
+.foot1{
+    display: flex;
+    height: 43px;
+}
+.Flexing{
+    flex: 1;
+}
+.footerSocial:hover{
+    color: rgb(50, 50, 50);
+}
+.foot1 a{
+    color: rgb(50, 50, 50);
+    margin-left: 24px;
+    font-weight: 700;
+    font-size: 33px;
+}
+footer span{
+    font-size: 30px;
+}
+.footerSocial:hover{
+    color: rgb(60,60,60);
+}
+.feedback{
+    background-color: rgb(231, 129, 13);
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    color: rgb(221, 221, 221);
+}
+.foot2{
+    padding-top: 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Fredoka one", cursive;
+}
+.foot2 a{
+    color: rgb(50, 50, 50);
+}
+.right{
+    margin-right: 20px;
+}
+.contactMain{
+    height: calc(100vh - 60px);
+    padding: 25px 5vw;
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+}
+.contactMain h2{
+    color: rgb(40, 40, 40);
+    font-size: 33px;
+    font-weight: 500;
+}
+.contactMain h5{
+    margin-top: 3px;
+    margin-bottom: 20px;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    font-weight: 500;
+}
+.tresporuno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 350px;
+}
+.tresporuno article{
+    border-radius: 5px;
+    border: 2px dashed rgb(50, 50, 50);
+    display: flex;
+    color: rgb(50, 50, 50);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tresporuno article i{
+    font-size: 70px;
+}
+.tresporuno article span{
+    font-size: 19px;
+    margin-top: 12px;
+}
+.facebook-link{
+    padding: 7px 10px;
+    margin-top: 5px;
+    background-color: rgba(66,103,178);
+}
+.facebook-link::after, .instagram-link:after{
+    background-color: rgba(220, 220, 220, 0.603);
+}
+.instagram-link{
+    padding: 7px 10px;
+    margin-top: 5px;
+    background-color: rgb(193,53,132);
+}
+@media screen and (max-width:768px){
+    .tresporuno{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 700px;
+    }
+    .contactMain{
+        height: auto;
+    }
+    .foot2{
+        padding-top: 5px;
+    }
+    footer{
+        height: 180px;
+    }
+    .goUp{
+        margin-top: 13px;
+    }
+}
+.fixed{
+    position: fixed;
+    z-index: 5;
+}
+.verEx{
+    position:fixed;
+    top:18px;
+    font-size:17px;
+    font-family:"Fredoka one", serif;
+    right:4vw;
+    z-index: 10;
+    color:rgb(240,240,240);
+  }
+  .verEx::after{
+    content: "";
+display: block;
+width: 0;
+height: 2px;
+background-color: rgb(11,125,179);
+transition: width .3s;
+  }
+  .verEx:hover::after{
+width: 100%;
+transition: width .3s;
+}
+.verEx2{
+display:none
+}
+@media screen and (max-width:720px){
+.verEx{
+right:15vw
+}
+}
