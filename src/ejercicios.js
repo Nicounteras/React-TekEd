@@ -17,11 +17,11 @@ function Ejercicios() {
         <div className="twotimesfour">
           <Link className="ar arti1">
             Primer grado
-            <p>20 quizzes</p>
+            <p>20 artículos</p>
           </Link>
           <Link className="ar arti2">
             Segundo grado
-            <p>20 quizzes</p>
+            <p>20 artículos</p>
           </Link>
           <Link className="ar arti3">
             Tercer grado
@@ -33,7 +33,7 @@ function Ejercicios() {
           </Link>
           <Link className="ar arti5" to="/ejercicios/quinto-grado">
             Quinto grado
-            <p>20 quizzes</p>
+            <p></p>
           </Link>
           <Link className="ar arti6">
             Sexto grado

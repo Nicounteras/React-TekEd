@@ -3,10 +3,9 @@ import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
 
-function algebraQuintoGrado() {
+function restasQuintoGradoRespuestas() {
   return (
    <>
-   <Nav/>
 <div className="showingTheAnswer1">
 <div class="whiteSec">
     <h3 class="bajaEsaVaina">Respuestas de los ejercicios</h3> 
@@ -17,7 +16,7 @@ function algebraQuintoGrado() {
     <h5><span>5)</span> 791342</h5>
     <h5><span>6)</span> 1133911</h5>
     <Link to="/ejercicios/quinto-grado/matematica/restas">
-    <button id="cierreCool1" class="entendidoCapitán">Entendido capitán</button>
+    <button id="cierreCool1" class="entendidoCapitán">Volver a los ejercicios</button>
     </Link>
   </div>
   <div className="toggleClose" id="cierre2">
@@ -31,5 +30,5 @@ function algebraQuintoGrado() {
   )
 } 
 
-export default algebraQuintoGrado
+export default restasQuintoGradoRespuestas
 

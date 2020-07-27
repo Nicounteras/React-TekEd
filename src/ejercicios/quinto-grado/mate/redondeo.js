@@ -58,9 +58,14 @@ function redondeoQuintoGrado() {
                 </div>
               </div>
               <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/algebra-2/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
+                <Link to="/ejercicios/quinto-grado/matematica/redondeo/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
+          
                 <hr className="flexing"/>
               </div>
+            </div>
+            <div className="changingPage">
+            <button className="next disable" id="n1">1</button>
+            <Link to="/ejercicios/quinto-grado/matematica/redondeo-2"><button className="next opaco" id="n2">2</button></Link>
             </div>
             {/* <!-- <div id="div2" class="the2ndDiv hide">
               <div class="bloque">

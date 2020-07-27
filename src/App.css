@@ -928,6 +928,7 @@ font-size: 30px;
 .otherCourses h4{
     font-family: "Fredoka one", cursive;
     margin-bottom: 5px;
+    font-weight: 500;
     margin-top: 10px;
 }
 .otherCourses a{
@@ -2031,6 +2032,9 @@ background-color: rgb(34, 34, 34);
     grid-template-rows: 1fr 1fr;
     grid-gap: 12px;
 }
+.black{
+    background-color: rgb(50, 50, 50);
+}
 .qui1{
     border: 3px dashed rgb(212, 36, 13);
     background-color: rgba(212, 36, 13, 0.315);
@@ -2206,3 +2210,12 @@ display:none
 right:15vw
 }
 }
+/* Images */
+.image{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    border-radius: 5px; 
+    box-shadow: 0 0 2px rgb(100, 100, 100);
+}
+/* Images */

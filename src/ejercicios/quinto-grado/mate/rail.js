@@ -19,7 +19,7 @@ function Rail(){
             <div class="otherCourses">
                <h4>Más cursos</h4>
                <Link class="nola">Español</Link>
-               <Link class="ingles">Inglés</Link>
+               <Link class="ingles" to="/ejercicios/quinto-grado/ingles">Inglés</Link>
                <Link to="/ejercicios/quinto-grado/ciencias" class="ciencias">Ciencias</Link>
                <Link to="/ejercicios/quinto-grado/personal-social" class="humanidades">Per. Social</Link>
             </div>

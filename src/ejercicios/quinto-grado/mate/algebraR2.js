@@ -5,7 +5,6 @@ import Nav from "./nav"
 function restasQuintoGradoRespuestas() {
   return (
    <>
-   <Nav/>
 <div className="showingTheAnswer1">
   <div className="whiteSec">
     <h3 className="bajaEsaVaina">Respuestas de los ejercicios</h3> 
@@ -29,4 +28,3 @@ function restasQuintoGradoRespuestas() {
 } 
 
 export default restasQuintoGradoRespuestas
-

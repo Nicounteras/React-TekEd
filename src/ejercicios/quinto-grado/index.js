@@ -13,19 +13,19 @@ function Quinto() {
       <div className="twotimesthree">
           <Link className="arq qui1" to="/ejercicios/quinto-grado/matematica">
               Matemática
-              <p>5 artículos</p>
+              <p>6 temas</p>
           </Link>
           <Link className="arq qui2">
               Español 
               <p>5 artículos</p>
           </Link>
-          <Link className="arq qui3">
+          <Link className="arq qui3" to="/ejercicios/quinto-grado/ciencias">
               Ciencias 
               <p>3 artículos</p>
           </Link>
-          <Link className="arq qui4">
+          <Link className="arq qui4" to="/ejercicios/quinto-grado/ingles">
               Inglés
-              <p>3 artículos</p>
+              <p>6 temas</p>
           </Link>
           <Link className="arq qui5">
               Humanidades

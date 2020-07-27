@@ -60,11 +60,7 @@ function restasQuintoGrado() {
                   </div>
                   </div>
               </div>
-              <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/restas/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
-                
-                <hr className="flexing"/>
-              </div>
+            
           
             {/* <!-- <div id="div2" class="the2ndDiv hide">
               <div class="bloque">
@@ -75,10 +71,11 @@ function restasQuintoGrado() {
                 <hr style="flex: 1;">
               </div>
             </div> --> */}
-            <div className="changingPage">
-            <button className="next disable" id="n1">1</button>
-            <Link to="/ejercicios/quinto-grado/matematica/algebra-2"><button className="next opaco" id="n2">2</button></Link>
-            </div>
+            <div className="twoButton">
+                <Link to="/ejercicios/quinto-grado/matematica/restas/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
+                <Link to="/quizzes/quinto-grado/matematica/restas" class="doExam">Dar Quiz</Link>
+                <hr className="flexing"/>
+              </div>
         </div> 
         </div>
         </div>
