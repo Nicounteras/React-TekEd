@@ -4,9 +4,20 @@
     outline: none;
     box-sizing: border-box;
 }
-
+.margin20-0{
+    margin: 20px 0 0 0;
+}
+.pad6015{
+    padding: 60px 0 15px 0; text-align:left;
+}
+.boldSpan{
+    color: rgb(50,50,50); font-weight: bold;
+}
 body{
     overflow-x: hidden;
+}
+.adapDiv{
+    font-size: 17px; position: relative; bottom: 7px;
 }
 .sugerencias{
     text-align: center;
@@ -14,6 +25,11 @@ body{
     padding-bottom: 50px;
     padding-left: 20vw;
     padding-right: 20vw;
+}
+.theScience h5{
+    font-family: "Fredoka one", cursive;
+    color: rgb(50, 50, 50);
+    font-weight: 500;
 }
 .downA{
     margin: 5px 0;
@@ -25,7 +41,15 @@ body{
     font-family: "Lato", sans-serif;
     color: rgb(63, 63, 63);
 }
-
+.adapTitle{
+    color:rgb(50, 50, 50); font-size: 22px; margin-bottom: 10px; font-family: Fredoka one, serif; font-weight: 500;
+}
+.adapP{
+    margin-top: 5px; font-family: Fredoka one, serif;font-weight: lighter; color: rgb(50,50,50); padding-bottom: 5px;
+}
+.margin10{
+    margin: 10px 0;
+}
 #facebook{
     color: rgb(11, 102, 187);
 }
@@ -642,6 +666,7 @@ background-color: rgb(230,230,230);
 .centralImage{
     text-align: center;
     width: 50%;
+    background-size: 100% 100%;
     border-radius: 5px;
     box-shadow: 0 0 2px rgb(50,50,50);
     margin-bottom: 10px;
@@ -1104,6 +1129,93 @@ font-size: 30px;
 .articleInitial{
     position: relative;
     bottom: 10vh;
+}
+
+.toggleNav{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 400;
+    background-color: rgb(60,60,60);
+    height: calc(100vh - 60px);
+    width: 100vw;
+    padding: 10px 5%;
+    color: rgb(250, 250, 250);
+    font-family: "Fredoka one", cursive;
+}
+.toggleNav h3, .toggleNav h5{
+    font-weight: 500;
+    text-align: center;
+    margin: 5px 0;
+}
+.togLinks li{
+    margin: 10px;
+}
+.other-courses{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.theRealToggleLink{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 17px;
+    font-family: "Fredoka one", cursive;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+.other-courses button{
+    margin: 5px 0;
+    display: flex;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+@media screen and (min-width: 720px){
+    .toggleNav.navOn{
+        display: none;
+    }
+}
+.padding20-0{
+    padding: 20px 0 0 0;
+}
+.toggleLink{
+    color: rgb(250, 250, 250);
+}
+.toggleLink.active{
+    color:rgb(11,125,179);
+}
+.toggleNav.navOff{
+    display: none;
+}
+.toggleMenuButton{
+    font-size: 30px;
+    position: fixed;
+    padding: 10px;
+    top: 4px;
+    display: none;
+    right: 5vw;
+    color: rgb(250, 250, 250);
+}
+@media screen and (max-width:720px){
+    .toggleMenuButton{
+        display: block;
+    }
+}
+.ex-btn{
+    background-color:rgba(11,125,179, .8);
+    color: rgb(250,250,250);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Fredoka one", cursive;
+}
+.ex-btn:hover{
+    color: rgb(250, 250, 250);
+}
+.ex-btn::after{
+    background-color: rgb(250, 250, 250);
 }
 .start-btn{
     background-color: rgb(50, 50, 50);
@@ -1916,12 +2028,55 @@ background-color: rgb(34, 34, 34);
 .nextEx:hover{
     background-color: rgb(113, 36, 165);
 }   
+.central2x2{
+    height: 300px;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 5%;
+    grid-gap: 20px;
+}
+.central2x2 button{
+    width: 100%;
+    font-family: "Fredoka one", cursive;
+    font-size: 30px;
+    color: rgb(240,240,240);
+    cursor: pointer;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    border: 5px dashed rgb(235, 235, 235);
+}
+.bigButtonRed{
+    background-color: rgb(179, 31, 11);
+}
+.bigButtonPurple{
+    background-color: rgb(146, 16, 221);
+}
+@media screen and (max-width:700px){
+    .quizInitialDiv.waiting{
+        height: auto;
+    }
+    .central2x2{
+        height: 500px;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 50px;
+    }
+}
+.central2x2 button:hover{
+    opacity: .9;
+}
 .quizInitialDiv{
     text-align: center;
     padding: 25px 5vw;
     margin-bottom: 20px;
     color: rgb(40, 40, 40);
     font-family: "Fredoka one", cursive;
+}
+.quizInitialDiv.waiting{
+    height: calc(100vh - 60px);
 }
 .quizInitialDiv h3{
     font-size: 34px;
@@ -2032,6 +2187,13 @@ background-color: rgb(34, 34, 34);
     grid-template-rows: 1fr 1fr;
     grid-gap: 12px;
 }
+@media screen and (max-width:700px){
+    .twotimesthree{
+        height: 1100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
 .black{
     background-color: rgb(50, 50, 50);
 }
@@ -2055,6 +2217,116 @@ background-color: rgb(34, 34, 34);
     background-color: rgba(172, 27, 201, .3);
     border: 3px dashed rgb(172, 27, 201);
 }
+.qui6{
+    background-color: rgba(201, 120, 27, 0.3);
+    border: 3px dashed rgb(201, 120, 27);
+}
+.card-grid {
+    display: grid;
+    height: 1010px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  @media screen and (max-width:800px){
+      .card-grid{
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;  
+          height: 1515px;
+      }
+  }
+  @media screen and (max-width:550px){
+      .card-grid{
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(12, 1fr);
+          height: calc(1515px * 2);
+      }
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Fredoka one", cursive;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: rgb(230,230,230);
+    border-radius: .25rem;
+    box-shadow: 0 0 3px 1px rgba(230, 230, 230, 0.199);
+    background-color: rgb(44, 44, 44);
+    transform-style: preserve-3d;
+    transition: 150ms;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  }
+  .pOfQuizzes{
+      font-family: "Fredoka one", cursive;
+      color: rgb(63, 63, 63);
+  }
+  .card button{
+      padding: 5px 0;
+      margin-top: 20px;
+      background-color: rgb(11,125,179);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      color: rgb(235,235,235);
+      font-size: 16px;
+      transition: .5s;
+      font-family: "Fredoka one", cursive;      
+  }
+  .card button:hover{
+      background-color: rgb(36, 81, 165);
+  }
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  .card .front{
+      text-align: left;
+  }
+  .card h5{
+      font-size: 20px;
+      font-weight: 500;
+  }
+  .card h3{
+      font-weight: 500;
+  }
+  .card .front,
+  .card .back {
+    position: absolute;
+    padding: 10px 8%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+  }
+  .card .back h3{
+      text-align: center;
+  }
+  .Explanation{
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 18px;
+
+  }
+  .card .back{
+      text-align: left;
+  }
+  .theQuestion{
+      text-align: center;
+  }
+  .flashcard-option p{
+      margin: 5px 0;
+  }
+  .card .back {
+    transform: rotateY(180deg);
+  }
 footer{
     display:grid;
     grid-template-rows: 1fr 1fr;
@@ -2205,10 +2477,26 @@ transition: width .3s;
 .verEx2{
 display:none
 }
+.margin20{
+    margin-top: 20px;
+}
+.unP{
+    font-size: 17px; padding-bottom: 15px;
+}
 @media screen and (max-width:720px){
 .verEx{
 right:15vw
 }
+}
+.alH5{
+    color:rgb(50, 50, 50); font-size: 18px; margin-top: 30px;
+}
+.alH5d{
+    color:rgb(50, 50, 50); font-size: 18px;
+}
+.underlined{
+    text-decoration: underline;
+    margin-top: 40px;
 }
 /* Images */
 .image{
@@ -2218,4 +2506,273 @@ right:15vw
     border-radius: 5px; 
     box-shadow: 0 0 2px rgb(100, 100, 100);
 }
+.vertebra{
+    background-image: url(./images/ciencias5to/columna.jpg);
+}
+.leon{
+    background-image: url(./images/ciencias5to/leon.jpg);
+}
+.ballena{
+    background-image: url(./images/ciencias5to/ballena.jpg);
+}
+.mono{
+    background-image: url(./images/ciencias5to/mono.jpg);
+}
+.llama{
+    background-image: url(./images/ciencias5to/llama.jpg);
+}
+.humano{
+    background-image: url(./images/ciencias5to/humano.jpg);
+}
+.tiburon{
+    background-image: url(./images/ciencias5to/tiburon.jpg);
+}
+.bacalao{
+    background-image: url(./images/ciencias5to/bacalao.jpg);
+}
+.payaso{
+    background-image: url(./images/ciencias5to/nemo.jpg);
+}
+.atun{
+    background-image: url(./images/ciencias5to/atun.jpg);
+}
+.sardina{
+    background-image: url(./images/ciencias5to/sardinas.jpg);
+}
+.serpiente{
+    background-image: url(./images/ciencias5to/serpiente.jpg);
+}
+.cocodrilo{
+    background-image: url(./images/ciencias5to/cocodrilo.jpg);
+}
+.camaleon{
+    background-image: url(./images/ciencias5to/camaleon.jpg);
+}
+.tortuga{
+    background-image: url(./images/ciencias5to/tortuga.jpg);
+}
+.iguana{
+    background-image: url(./images/ciencias5to/iguana.jpg);
+}
+.sapo{
+    background-image: url(./images/ciencias5to/sapo.jpg);
+}
+.salamandra{
+    background-image: url(./images/ciencias5to/salamandra.jpg);
+}
+.anfibio1{
+    background-image: url(./images/ciencias5to/anfibio.jpg);
+}
+.anfibio2{
+    background-image: url(./images/ciencias5to/anfibio2.jpg);
+}
+.anfibio3{
+    background-image: url(./images/ciencias5to/anfibio3.jpg);
+}
+.aguila{
+    background-image: url(./images/ciencias5to/eagle.jpg);
+}
+.pato{
+    background-image: url(./images/ciencias5to/pato.jpg);
+}
+.ave{
+    background-image: url(./images/ciencias5to/ave.jpg);
+}
+.flamengo{
+    background-image: url(./images/ciencias5to/flamengo.jpg);
+}
+.paloma{
+    background-image: url(./images/ciencias5to/paloma.jpg);
+}
+.mosquito{
+    background-image: url(./images/ciencias5to/mosquito.jpg);
+}
+.cangrejo{
+    background-image: url(./images/ciencias5to/cangrejo.jpg);
+}
+.cienpies{
+    background-image: url(./images/ciencias5to/cienpies.jpg);
+}
+.langostino{
+    background-image: url(./images/ciencias5to/langostino.jpg);
+}
+.hormiga{
+    background-image: url(./images/ciencias5to/hormiga.jpg);
+}
+.estrella{
+    background-image: url(./images/ciencias5to/estrella.jpg);
+}
+.erizo{
+    background-image: url(./images/ciencias5to/erizo.jpg);
+}
+.caracol{
+    background-image: url(./images/ciencias5to/caracol.jpg);
+}
+.calamar{
+    background-image: url(./images/ciencias5to/calamar.jpg);
+}
+.almeja{
+    background-image: url(./images/ciencias5to/almeja.jpg);
+}
+.molleja{
+    background-image: url(./images/ciencias5to/mollejas.jpg);
+}
+.choro{
+    background-image: url(./images/ciencias5to/choro.jpg);
+}
+.esponja1{
+    background-image: url(./images/ciencias5to/esponja3.jpg);
+}
+.esponja2{
+    background-image: url(./images/ciencias5to/esponja2.jpg);
+}
+.esponja{
+    background-image: url(./images/ciencias5to/esponja.jpg);
+}
+.medusa{
+    background-image: url(./images/ciencias5to/medusa.jpg);
+}
+.anemona{
+    background-image: url(./images/ciencias5to/anemona.jpg);
+}
+.malagua{
+    background-image: url(./images/ciencias5to/malagua.jpg);
+}
+.coral2{
+    background-image: url(./images/ciencias5to/coral2.jpg);
+}
+.coral{
+    background-image: url(./images/ciencias5to/coral.jpg);
+}
+.desierto1{
+    background-image: url(./images/ciencias5to/desierto1.jpg);
+}
+.desierto2{
+    background-image: url(./images/ciencias5to/desierto2.jpg);
+}
+.bosque1{
+    background-image: url(./images/ciencias5to/forrest1.jpg);
+}
+.bosque2{
+    background-image: url(./images/ciencias5to/forrest2.jpg);
+}
+.montaña1{
+    background-image: url(./images/ciencias5to/montaña1.jpg);
+}
+.montaña2{
+    background-image: url(./images/ciencias5to/montaña2.jpg);
+}
+.mar1{
+    background-image: url(./images/ciencias5to/mar1.jpg);
+}
+.mar2{
+    background-image: url(./images/ciencias5to/mar2.jpg);
+}
+.rio1{
+    background-image: url(./images/ciencias5to/rio1.jpg);
+}
+.rio2{
+    background-image: url(./images/ciencias5to/rio2.jpg);
+}
+.hongo{
+    background-image: url(./images//ciencias5to/decomposers.jpg);
+}
+.jirafa{
+    background-image: url(./images//ciencias5to/giraffe.jpg);
+}
+.productores{
+    background-image: url(./images/ciencias5to/productores.jpg);
+}
+.oso{
+    background-image: url(./images/ciencias5to/osoPolar.jpg);
+}
+.cactus{
+    background-image: url(./images/ciencias5to/cactus.jpg);
+}
+.leopardos{
+    background-image: url(./images/ciencias5to/leopardoNieve.jpg);
+}
+.leones{
+    background-image: url(./images/ciencias5to/leones.jpg);
+}
+.voto{
+    background-image: url(./images/personal-social5to/demo.jpg);
+}
+.machuPicchu{
+    background-image: url(./images/personal-social5to/mach.jpg);
+}
+.globoMundo{
+    background-image: url(./images/personal-social5to/map.jpg);
+}
+.sierra{
+    background-image: url(./images/personal-social5to/sierra.jpg);
+}
+.costa{
+    background-image: url(./images/personal-social5to/costa.jpg);
+}
+.selva{
+    background-image: url(./images/personal-social5to/selva.jpg);
+}
+.pyra{
+    background-image: url(./images/personal-social5to/pyra.jpg);
+}
+.piramide{
+    background-image: url(./images/personal-social5to/piramide.jpg);
+}
+.rio{
+    background-image: url(./images/personal-social5to/nile.jpg);
+}
+.map{
+    background-image: url(./images/personal-social5to/map1.jpg);
+}
+.map1{
+    background-image: url(./images/personal-social5to/map2.jpg);
+}
+.map2{
+    background-image: url(./images/personal-social5to/map3.jpg);
+}
+.costaverde{
+    background-image: url(./images/personal-social5to/mira.jpg);
+}
+.ecuador{
+    background-image: url(./images/personal-social5to/ecua.jpg);
+}
+.colombia{
+    background-image: url(./images/personal-social5to/col.jpg);
+}
+.brasil{
+    background-image: url(./images/personal-social5to/bra.jpg);
+}
+.chile{
+    background-image: url(./images/personal-social5to/chi.jpg);
+}
+.bolivia{
+    background-image: url(./images/personal-social5to/bol.jpg);
+}
 /* Images */
+.navLink.activeNavLink li::after{
+    width: 100%;
+}
+@media screen and (max-width:720px){
+    .threeButton{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        position: relative;
+        left: 45vw;
+        transform: translateX(-50%);
+    }
+    .threeButton.initialNavi{
+        margin-top: 40px;
+        width: 200px;
+        text-align: center;
+    }
+    .ex-btn, .start-btn{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .dospordos{
+        display: flex;
+        flex-direction: column;
+    }
+}

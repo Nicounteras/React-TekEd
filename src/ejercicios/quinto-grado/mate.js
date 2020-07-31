@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 import Nav from "../../nav"
 import Foot from "../../foot"
 
-function mateQuintoIndex() {
+function mateQuintoIndexEjercicios() {
   return (
     <>
-  <Nav/>
+   <Nav/>
   <div className="ejerciciosAresolver">
     <h2>Matemáticas 5to grado</h2>
-    <h4>¡Elige algún tema y empieza!</h4>
+    <h4>¡Elige algún tema y resuelve los ejercicios!</h4>
     <div className="temas">
       <div className="losVTemas">
         <Link className="a backA" to="/ejercicios/quinto-grado/matematica/algebra"><button>Álgebra</button></Link>
@@ -31,5 +31,5 @@ function mateQuintoIndex() {
   )
 } 
 
-export default mateQuintoIndex
+export default mateQuintoIndexEjercicios
 

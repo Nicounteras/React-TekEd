@@ -1,86 +1,179 @@
-import React from 'react'
+import React, { useState, useEffect, useRef, component } from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import FlashCardList from "../../FlashCardList"
 
-function restasQuintoGrado() {
+function RestasQuintoEj() {
+  const [flashcards, setFlashcards] = useState(FlashCards)
   return (
    <>
-    <a href="https://www.youtube.com/watch?v=S8ACLQs-Bz4" target="blank" class="verEx">Ver explicación</a>
-   <Nav/>
-   <Rail/>
+<Nav/>
+<Rail/>
   <div className="elMeroMero">
   <div className="blockN1">
             <h4>Ejercicios de restas</h4>
-            <span>¡Resuelve los ejercicios y compara tus respuestas!</span>
-            <div className="theFirstDiv">
-              <div className="bloque" id="green">
-              <div class="sixTwo">
-                  <div>
-                    <span>1) Resta</span>
-                    <article>
-                      <p>200455-</p>
-                    <p class="underline">78292</p>
-                    </article>
-                  </div>
-                  <div>
-                    <span>2) Resta</span>
-                    <article>
-                      <p>504873-</p>
-                    <p class="underline">27252</p>
-                    </article>
-                  </div>
-                  <div>
-                    <span>3) Resta</span>
-                    <article>
-                      <p>843520-</p>
-                    <p class="underline">54819</p>
-                    </article>
-                  </div>
-                  <div>
-                    <span>4) Resta</span>
-                    <article>
-                      <p>1008352-</p>
-                    <p class="underline">922971</p>
-                    </article>
-                  </div>
-                  <div>
-                    <span>5) Resta</span>
-                    <article>
-                      <p>883576-</p>
-                    <p class="underline">92234</p>
-                    </article>
-                  </div>
-                  <div>
-                    <span>6) Resta</span>
-                    <article>
-                      <p>2144780-</p>
-                    <p class="underline">1133911</p>
-                    </article>
-                  </div>
-                  </div>
-              </div>
-            
-          
-            {/* <!-- <div id="div2" class="the2ndDiv hide">
-              <div class="bloque">
-                
-              </div>
-              <div class="twoButton">
-                <button class="showAnswers" id="abre0">Ver respuestas</button>
-                <hr style="flex: 1;">
-              </div>
-            </div> --> */}
-            <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/restas/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
-                <Link to="/quizzes/quinto-grado/matematica/restas" class="doExam">Dar Quiz</Link>
-                <hr className="flexing"/>
-              </div>
-        </div> 
-        </div>
-        </div>
+            <p className="pOfQuizzes">¡Pon a prueba tus conocimientos!</p>
+            <FlashCardList flashcards = {flashcards}/>    
+            <div className="threeButton">
+            <Link className="cool-link go-btn" to="/aprende/quinto-grado/matematica/restas">Ver artículo</Link>
+            <a href="https://www.youtube.com/watch?v=S8ACLQs-Bz4" target="blank" className="cool-link ex-btn">Ver Vídeo</a>
+            <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/restas">Tomar quiz</Link>  
+              </div>       
+  </div>
+  </div>
    </>
   )
 } 
 
-export default restasQuintoGrado
+const FlashCards = [
+  {
+    id: 1,
+    question: "200455 - 78292",
+    answer: "122163",
+    options: [
+      "a) 122163",
+      "b) 122162",
+      "c) 132163",
+      "d) 14232"
+    ],
+    explanation: ""
+  },
+  {
+    id: 2,
+    question: "504873 - 27252",
+    answer: "231929",
+    options: [
+      "a) 231929",
+      "b) 231919",
+      "c) 231939",
+      "d) 231949"
+    ],
+    explanation: ""
+  },
+  {
+    id: 3,
+    question: "843520 - 54819",
+    answer: "788709",
+    options: [
+      "a) 788702",
+      "b) 7887010",
+      "c) 788709",
+      "d) 788710"
+    ],
+    explanation: ""
+  },
+  {
+    id: 4,
+    question: "1008352 - 922971",
+    answer: "85381",
+    options: [
+      "a) 85381",
+      "b) 85382",
+      "c) 85383",
+      "d) 85384"
+    ],
+    explanation: ""
+  },
+  {
+    id: 5,
+    question: "883576 - 92234",
+    answer: "791342",
+    options: [
+      "a) 791949",
+      "b) 791942",
+      "c) 791941",
+      "d) 791342"
+    ],
+    explanation: ""
+  },
+  {
+    id: 6,
+    question: "2144780 - 1133911",
+    answer: "1010869",
+    options: [
+      "a) 1010869",
+      "b) 1010819",
+      "c) 1010829",
+      "d) 1010849"
+    ],
+    explanation: ""
+  },
+  {
+    id: 7,
+    question: "30 / 6 = x",
+    answer: "5",
+    options: [
+      "a) 6",
+      "b) 10",
+      "c) 5",
+      "d) 10"
+    ],
+    explanation: "6 * 5 = 30"
+  },
+  {
+    id: 8,
+    question: "10 / x = 100",
+    answer: "0.1",
+    options: [
+      "a) 10",
+      "b) 0.1",
+      "c) 20",
+      "d) 100"
+    ],
+    explanation: "100 * 0.1 = 10"
+  },
+  {
+    id: 9,
+    question: "x * 10 = 1700",
+    answer: "170",
+    options: [
+      "a) 17",
+      "b) 1.7",
+      "c) 170",
+      "d) 100"
+    ],
+    explanation: "1700 / 10 = 170"
+  },
+  {
+    id: 10,
+    question: "300 / x = 75",
+    answer: "4",
+    options: [
+      "a) 4",
+      "b) 4.5",
+      "c) 3",
+      "d) 6"
+    ],
+    explanation: "4 * 75 = 300"
+  },
+  {
+    id: 11,
+    question: "5 * x = 27.5",
+    answer: "5.5",
+    options: [
+      "a) 5.5",
+      "b) 5",
+      "c) 6",
+      "d) 6.5"
+    ],
+    explanation: "5.5 * 5 = 27.5"
+  },
+  {
+    id: 12,
+    question: "99 * x = 0",
+    answer: "0",
+    options: [
+      "a) 0",
+      "b) 10",
+      "c) 99",
+      "d) 95"
+    ],
+    explanation: "Multiplicación por 0 = 0"
+  },
+]
+
+
+export default RestasQuintoEj
+
+

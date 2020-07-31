@@ -1,96 +1,179 @@
-import React from 'react'
+import React, { useState, useEffect, useRef, component } from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import FlashCardList from "../../FlashCardList"
 
-function algebraQuintoGrado() {
+function AlgebraQuintoEj() {
+  const [flashcards, setFlashcards] = useState(FlashCards)
   return (
    <>
-   <Nav/>
-   <Rail/>
-   <a href="https://www.youtube.com/watch?v=SyCS1V-5Uc4" target="blank" class="verEx">Ver explicación</a>
+<Nav/>
+<Rail/>
   <div className="elMeroMero">
   <div className="blockN1">
             <h4>Ejercicios de álgebra</h4>
-            <span>¡Resuelve los ejercicios y compara tus respuestas!</span>
-            <div className="theFirstDiv">
-              <div className="bloque" id="green">
-                <div className="exDOS">
-                  <div>
-                    <p>1) 106 = 42 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>2) 100 = 4 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>3) 500 = 320 + 2 -1 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>4) 10 = 42 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>5) 240 = 42 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>6) 120 = 41 + ? + 35</p>
-                  </div>
-                  <div>
-                    <p>7) 21 = 42 + ? + 20</p>
-                  </div>
-                  <div>
-                    <p>8) 30 = 415 + ? + 2</p>
-                  </div>
-                  <div>
-                    <p>9) 111 = 110 + ? + -1</p>
-                  </div>
-                  <div>
-                    <p>10) -2 = 42 + ? + 10</p>
-                  </div>
-                  <div>
-                    <p>11) 106 = 53 x ?</p>
-                  </div>
-                  <div>
-                    <p>12) 106 = 26.5 x ?</p>
-                  </div>
-                  <div>
-                    <p>13) 106 = 13.25 x ?</p>
-                  </div>
-                  <div>
-                    <p>14) 100 = 80 + ? + 32</p>
-                  </div>
-                  <div>
-                    <p>15) 19 = 19 x 0 + ?</p>
-                  </div>
-                  <article class="esfuerzo">
-                    <span>¡Vas bien crack!</span>
-                  </article>
-                </div>
-              </div>
-              <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/algebra/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
-                <Link to="/quizzes/quinto-grado/matematica/algebra" class="doExam">Dar Quiz</Link>
-
-                <hr className="flexing"/>
-              </div>
-          
-            {/* <!-- <div id="div2" class="the2ndDiv hide">
-              <div class="bloque">
-                
-              </div>
-              <div class="twoButton">
-                <button class="showAnswers" id="abre0">Ver respuestas</button>
-                <hr style="flex: 1;">
-              </div>
-            </div> --> */}
-            <div className="changingPage">
-            <button className="next disable" id="n1">1</button>
-            <Link to="/ejercicios/quinto-grado/matematica/algebra-2"><button className="next opaco" id="n2">2</button></Link>
-            </div>
-        </div> 
-        </div>
-        </div>
+            <p className="pOfQuizzes">¡Pon a prueba tus conocimientos!</p>
+            <FlashCardList flashcards = {flashcards}/>    
+            <div className="threeButton">
+            <Link className="cool-link go-btn" to="/aprende/quinto-grado/matematica/algebra">Ver artículo</Link>
+            <a href="https://www.youtube.com/watch?v=SyCS1V-5Uc4" target="blank" className="cool-link ex-btn">Ver Vídeo</a>
+            <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/algebra">Tomar quiz</Link>  
+              </div>      
+  </div>
+  </div>
    </>
   )
 } 
 
-export default algebraQuintoGrado
+const FlashCards = [
+  {
+    id: 1,
+    question: "X + 14 = 20",
+    answer: "6",
+    options: [
+      "a) 6",
+      "b) 19",
+      "c) 10",
+      "d) 17"
+    ],
+    explanation: "20 - 14 = 6"
+  },
+  {
+    id: 2,
+    question: "5 * x = 10",
+    answer: "2",
+    options: [
+      "a) 10",
+      "b) 40",
+      "c) 2",
+      "d) 19"
+    ],
+    explanation: "10 / 2 = 5"
+  },
+  {
+    id: 3,
+    question: "103 = 40 + x",
+    answer: "63",
+    options: [
+      "a) 70",
+      "b) 63",
+      "c) 73",
+      "d) 53"
+    ],
+    explanation: "103 - 63 = 40"
+  },
+  {
+    id: 4,
+    question: "100 = 32 + x",
+    answer: "68",
+    options: [
+      "a) 68",
+      "b) 69",
+      "c) 67",
+      "d) 70"
+    ],
+    explanation: "20 - 14 = 6"
+  },
+  {
+    id: 5,
+    question: "20 * x = 200",
+    answer: "10",
+    options: [
+      "a) 10",
+      "b) 40",
+      "c) 2",
+      "d) 19"
+    ],
+    explanation: "200 / 10 = 20"
+  },
+  {
+    id: 6,
+    question: "15 * x = 75",
+    answer: "5",
+    options: [
+      "a) 75",
+      "b) 15",
+      "c) 5",
+      "d) 6"
+    ],
+    explanation: "75 / 15 = 5"
+  },
+  {
+    id: 7,
+    question: "30 / 6 = x",
+    answer: "5",
+    options: [
+      "a) 6",
+      "b) 10",
+      "c) 5",
+      "d) 10"
+    ],
+    explanation: "6 * 5 = 30"
+  },
+  {
+    id: 8,
+    question: "10 / x = 100",
+    answer: "0.1",
+    options: [
+      "a) 10",
+      "b) 0.1",
+      "c) 20",
+      "d) 100"
+    ],
+    explanation: "100 * 0.1 = 10"
+  },
+  {
+    id: 9,
+    question: "x * 10 = 1700",
+    answer: "170",
+    options: [
+      "a) 17",
+      "b) 1.7",
+      "c) 170",
+      "d) 100"
+    ],
+    explanation: "1700 / 10 = 170"
+  },
+  {
+    id: 10,
+    question: "300 / x = 75",
+    answer: "4",
+    options: [
+      "a) 4",
+      "b) 4.5",
+      "c) 3",
+      "d) 6"
+    ],
+    explanation: "4 * 75 = 300"
+  },
+  {
+    id: 11,
+    question: "5 * x = 27.5",
+    answer: "5.5",
+    options: [
+      "a) 5.5",
+      "b) 5",
+      "c) 6",
+      "d) 6.5"
+    ],
+    explanation: "5.5 * 5 = 27.5"
+  },
+  {
+    id: 12,
+    question: "99 * x = 0",
+    answer: "0",
+    options: [
+      "a) 0",
+      "b) 10",
+      "c) 99",
+      "d) 95"
+    ],
+    explanation: "Multiplicación por 0 = 0"
+  },
+]
+
+
+export default AlgebraQuintoEj
+
+

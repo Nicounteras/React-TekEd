@@ -1,33 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./App.css"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function Nav() {
+  const [toggleNav, setToggleNav] = useState(false)
   return (
     <>
     <nav id="inicio" className="initialNav">
     <a href="/" className="Tekito"><h1>Tek<span>Ed</span></h1></a>
     <article id="menu" className="theMenuLinks">
-      <Link to="/ejercicios">
+      <NavLink to="/aprende" className="navLink" activeClassName="activeNavLink">
         <li className="cool-link">Aprende en TekEd</li>
-      </Link>
-       <Link to="/quizzes">
-       <li className="cool-link">Quizzes</li>
-       </Link>
+      </NavLink>
+       <NavLink to="/ejercicios" className="navLink" activeClassName="activeNavLink">
+       <li className="cool-link">Ejercicios</li>
+       </NavLink>
+       <NavLink to="/quizzes" className="navLink" activeClassName="activeNavLink">
+         <li className="cool-link">Quizzes</li>
+       </NavLink>
        <a href="https://docs.google.com/forms/d/e/1FAIpQLSegwzDAMFV7s8iMbmxIhdG5-YSSpD63l9YxFL-xTLrdiakZug/viewform?vc=0&c=0&w=1" target="blank" className="feedback">¡Danos tu feedback!</a>
        {/* <Link to="/store">
        <li className="cool-link">Tienda</li>
        </Link> */}
     </article>
-    <i className="fas fa-bars" id="theNewResp"></i>
-</nav>
-<div className="respNav">
-  <article className="alineaos">
-      <a href="/">Inicio</a>
-      <a href="/nosotros">Acerca de</a>
-      <a href="/como-funciona-teked">Cómo funciona</a>
-  </article>
-  </div>
+    <i className="fas fa-bars toggleMenuButton" onClick={() => setToggleNav(!toggleNav)}></i>
+    <div className={`toggleNav ${toggleNav ? 'navOn' : 'navOff'}`}>
+    <div className="threeButton initialNavi">
+     <Link class="cool-link go-btn" to="/aprende">¡Empecemos!</Link>
+     <Link className="cool-link ex-btn" to="/ejercicios">Resuelve ejercicios</Link>
+     <Link className="cool-link start-btn" to="/quizzes">
+       Toma un quiz
+     </Link>
+     </div>
+      </div>
+  </nav>
     </>
   )
 } 

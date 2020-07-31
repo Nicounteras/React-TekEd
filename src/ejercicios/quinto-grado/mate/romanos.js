@@ -1,91 +1,166 @@
-import React from 'react'
+import React, { useState, useEffect, useRef, component } from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import FlashCardList from "../../FlashCardList"
 
-function romanosQuintoGrado() {
+function RomanosQuintoEj() {
+  const [flashcards, setFlashcards] = useState(FlashCards)
   return (
    <>
-   <Nav/>
-   <Rail/>
+<Nav/>
+<Rail/>
   <div className="elMeroMero">
   <div className="blockN1">
             <h4>Números romanos</h4>
-            <span>¡Resuelve los ejercicios y compara tus respuestas!</span>
-            <div className="theFirstDiv">
-              <div className="bloque" id="green">
-              <div class="exDOS">
-                  <div>
-                    <p>1) LV</p>
-                  </div>
-                  <div>
-                    <p>2) XX</p>
-                  </div>
-                  <div>
-                    <p>3) XIX</p>
-                  </div>
-                  <div>
-                    <p>4) IV</p>
-                  </div>
-                  <div>
-                    <p>5) C</p>
-                  </div>
-                  <div>
-                    <p>6) LX</p>
-                  </div>
-                  <div>
-                    <p>7) IX</p>
-                  </div>
-                  <div>
-                    <p>8) II</p>
-                  </div>
-                  <div>
-                    <p>9) VIII</p>
-                  </div>
-                  <div>
-                    <p>10) XVI</p>
-                  </div>
-                  <div>
-                    <p>11) XV</p>
-                  </div>
-                  <div>
-                    <p>12) CL</p>
-                  </div>
-                  <div>
-                    <p>13) XC</p>
-                  </div>
-                  <div>
-                    <p>14) D</p>
-                  </div>
-                  <div>
-                    <p>15) M</p>
-                  </div>
-                  <article class="esfuerzo">
-                    <span>¡Vas bien crack!</span>
-                  </article>
-                </div>
-              </div>
-            
-          
-            {/* <!-- <div id="div2" class="the2ndDiv hide">
-              <div class="bloque">
-                
-              </div>
-              <div class="twoButton">
-                <button class="showAnswers" id="abre0">Ver respuestas</button>
-                <hr style="flex: 1;">
-              </div>
-            </div> --> */}
-            <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/numeros-romanos/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
-                <Link to="/quizzes/quinto-grado/matematica/numeros-romanos" class="doExam">Dar Quiz</Link>
-                <hr className="flexing"/>
-              </div>
-        </div> 
-        </div>
-        </div>
+            <p className="pOfQuizzes">¡Pon a prueba tus conocimientos!</p>
+            <FlashCardList flashcards = {flashcards}/>     
+            <div className="threeButton">
+            <Link className="cool-link go-btn" to="/aprende/quinto-grado/matematica/numeros-romanos">Ver artículo</Link>
+            <a href="" target="blank" className="cool-link ex-btn">Ver Vídeo</a>
+            <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/numeros-romanos">Tomar quiz</Link>  
+              </div>  
+  </div>
+  </div>
    </>
   )
 } 
 
-export default romanosQuintoGrado
+const FlashCards = [
+  {
+    id: 1,
+    question: "LV",
+    answer: "55",
+    options: [
+      "a) 150",
+      "b) 30",
+      "c) 55",
+    ],
+    explanation: "L = 50, V = 5"
+  },
+  {
+    id: 2,
+    question: "DC",
+    answer: "600",
+    options: [
+      "a) 150",
+      "b) 600",
+      "c) 1500",
+    ],
+    explanation: "D = 500, C = 100"
+  },
+  {
+    id: 3,
+    question: "LXX",
+    answer: "70",
+    options: [
+      "a) 40",
+      "b) 50",
+      "c) 70",
+    ],
+    explanation: "L = 50, X = 10"
+  },
+  {
+    id: 4,
+    question: "LIX",
+    answer: "59",
+    options: [
+      "a) 59",
+      "b) 58",
+      "c) 61",
+    ],
+    explanation: "L = 50, IX = 9"
+  },
+  {
+    id: 5,
+    question: "LVII",
+    answer: "57",
+    options: [
+      "a) 58",
+      "b) 48",
+      "c) 57",
+    ],
+    explanation: "L = 50, VII = 7"
+  },
+  {
+    id: 6,
+    question: "XL",
+    answer: "40",
+    options: [
+      "a) 40",
+      "b) 60",
+      "c) 55",
+    ],
+    explanation: "L = 50 - X = 10"
+  },
+  {
+    id: 7,
+    question: "MD",
+    answer: "1500",
+    options: [
+      "a) 150",
+      "b) 15",
+      "c) 1500",
+    ],
+    explanation: "M = 1000, D = 500"
+  },
+  {
+    id: 8,
+    question: "MCD",
+    answer: "1400",
+    options: [
+      "a) 10000",
+      "b) 1600",
+      "c) 1400",
+    ],
+    explanation: "M = 1000, CD = 400"
+  },
+  {
+    id: 9,
+    question: "XC",
+    answer: "90",
+    options: [
+      "a) 101",
+      "b) 90",
+      "c) 99",
+    ],
+    explanation: "C = 100 - X = 10"
+  },
+  {
+    id: 10,
+    question: "CCC",
+    answer: "300",
+    options: [
+      "a) 400",
+      "b) 100",
+      "c) 300",
+    ],
+    explanation: "C = 100 * 3 : 300"
+  },
+  {
+    id: 11,
+    question: "MMD",
+    answer: "2500",
+    options: [
+      "a) 2500",
+      "b) 2100",
+      "c) 300",
+    ],
+    explanation: "M = 1000, D = 500"
+  },
+  {
+    id: 12,
+    question: "CDXC",
+    answer: "490",
+    options: [
+      "a) 1000",
+      "b) 4000",
+      "c) 490",
+    ],
+    explanation: "CD = 400, XC = 90"
+  },
+]
+
+
+export default RomanosQuintoEj
+

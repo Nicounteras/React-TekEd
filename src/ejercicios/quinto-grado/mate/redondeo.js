@@ -1,87 +1,154 @@
-import React from 'react'
+import React, { useState, useEffect, useRef, component } from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import FlashCardList from "../../FlashCardList"
 
-function redondeoQuintoGrado() {
+function RedondeoQuintoEj() {
+  const [flashcards, setFlashcards] = useState(FlashCards)
   return (
    <>
-   <Nav/>
-   <Rail/>
+<Nav/>
+<Rail/>
   <div className="elMeroMero">
   <div className="blockN1">
             <h4>Ejercicios de redondeo</h4>
-            <span>¡Resuelve los ejercicios y compara tus respuestas!</span>
-            <div className="theFirstDiv">
-              
-              <div class="bloque">
-              <div class="exOnce">
-                  <div>
-                    <p>1) 6828 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>2) 3803 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>3) 3725 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>4) 7997 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>5) 5668 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>6) 2314 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>7) 9491 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>8) 2083 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>9) 2811 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>10) 1059 a la decena más cercana</p>
-                  </div>
-                  <div>
-                    <p>11) 1047 a la decena más cercana</p>
-                  </div>
-                  <div class="pepitoJuarez">
-                    <p>12. Está bueno, no?</p>
-                  </div>
-                  <main>
-                    ¡Sonríe makina!
-                  </main>
-                </div>
-              </div>
-              <div className="twoButton">
-                <Link to="/ejercicios/quinto-grado/matematica/redondeo/respuestas"><button className="showAnswers" id="abre0">Ver respuestas</button></Link>
-          
-                <hr className="flexing"/>
-              </div>
-            </div>
-            <div className="changingPage">
-            <button className="next disable" id="n1">1</button>
-            <Link to="/ejercicios/quinto-grado/matematica/redondeo-2"><button className="next opaco" id="n2">2</button></Link>
-            </div>
-            {/* <!-- <div id="div2" class="the2ndDiv hide">
-              <div class="bloque">
-                
-              </div>
-              <div class="twoButton">
-                <button class="showAnswers" id="abre0">Ver respuestas</button>
-                <hr style="flex: 1;">
-              </div>
-            </div> --> */}
-           
-        </div> 
+            <p className="pOfQuizzes">¡Pon a prueba tus conocimientos!</p>
+            <FlashCardList flashcards = {flashcards}/>     
+            <div className="threeButton">
+            <Link className="cool-link go-btn" to="/aprende/quinto-grado/matematica/redondeo">Ver artículo</Link>
+            <a href="" target="blank" className="cool-link ex-btn">Ver Vídeo</a>
+            <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/redondeo">Tomar quiz</Link>  
+              </div>  
+  </div>
   </div>
    </>
   )
 } 
 
-export default redondeoQuintoGrado
+const FlashCards = [
+  {
+    id: 1,
+    question: "6828 a la decena",
+    answer: "6830",
+    options: [
+      "a) 6830",
+      "b) 6820",
+    ],
+    explanation: ""
+  },
+  {
+    id: 2,
+    question: "3803 a la decena",
+    answer: "3800",
+    options: [
+      "a) 3800",
+      "b) 3810",
+    ],
+    explanation: ""
+  },
+  {
+    id: 3,
+    question: "3725 a la centena",
+    answer: "3700",
+    options: [
+      "a) 3700",
+      "b) 3800",
+    ],
+    explanation: ""
+  },
+  {
+    id: 4,
+    question: "7997 a la decena",
+    answer: "8000",
+    options: [
+      "a) 7990",
+      "b) 8000",
+    ],
+    explanation: ""
+  },
+  {
+    id: 5,
+    question: "5668 a la centena",
+    answer: "5700",
+    options: [
+      "a) 5600",
+      "b) 5700",
+    ],
+    explanation: ""
+  },
+  {
+    id: 6,
+    question: "2314 a la decena",
+    answer: "2310",
+    options: [
+      "a) 2320",
+      "b) 2310",
+    ],
+    explanation: ""
+  },
+  {
+    id: 7,
+    question: "9491 a la decena",
+    answer: "9490",
+    options: [
+      "a) 9490",
+      "b) 9500",
+    ],
+    explanation: ""
+  },
+  {
+    id: 8,
+    question: "2083 a la centena",
+    answer: "2000",
+    options: [
+      "a) 2000",
+      "b) 2100",
+    ],
+    explanation: ""
+  },
+  {
+    id: 9,
+    question: "2811 al millar",
+    answer: "3000",
+    options: [
+      "a) 2000",
+      "b) 3000",
+    ],
+    explanation: ""
+  },
+  {
+    id: 10,
+    question: "1059 a la decena",
+    answer: "1060",
+    options: [
+      "a) 1050",
+      "b) 1060",
+    ],
+    explanation: ""
+  },
+  {
+    id: 11,
+    question: "1047 al millar",
+    answer: "1000",
+    options: [
+      "a) 1000",
+      "b) 2000",
+    ],
+    explanation: ""
+  },
+  {
+    id: 12,
+    question: "1041 a la centena",
+    answer: "1000",
+    options: [
+      "a) 1000",
+      "b) 2000",
+    ],
+    explanation: ""
+  },
+]
+
+
+export default RedondeoQuintoEj
 
