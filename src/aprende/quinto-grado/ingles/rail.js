@@ -21,7 +21,7 @@ function Rail(){
                <Link class="m" to="/aprende/quinto-grado/matematica">Matemática</Link>
                <Link class="nola">Español</Link>
                <Link to="/aprende/quinto-grado/ciencias" class="ciencias">Ciencias</Link>
-               <Link to="/aprende/quinto-grado/personal-social" class="humanidades">Per. Social</Link>
+               <Link to="/aprende/quinto-grado/personal-social" class="humanidades">Personal Social</Link>
             </div>
         </div>
         </>

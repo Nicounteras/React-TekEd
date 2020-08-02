@@ -43,6 +43,14 @@ import RestasQuintoEj from "./ejercicios/quinto-grado/mate/restas"
 import MultiplicacionesQuintoEj from "./ejercicios/quinto-grado/mate/multiplicaciones"
 import RedondeoQuintoEj from "./ejercicios/quinto-grado/mate/redondeo"
 import RomanosQuintoEj from "./ejercicios/quinto-grado/mate/romanos"
+import inglesQuintoEj from "./ejercicios/quinto-grado/ingles"
+import GrammarQuintoEjercicios from "./ejercicios/quinto-grado/ingles/grammar"
+import PresentQuintoEjercicios from "./ejercicios/quinto-grado/ingles/present"
+import VocabularyQuintoEjercicios from "./ejercicios/quinto-grado/ingles/vocabulary"
+import PastQuintotEjercicios from "./ejercicios/quinto-grado/ingles/past"
+import TimeQuintoEjercicios from "./ejercicios/quinto-grado/ingles/time"
+import Quizzes from "./quizzes"
+
 function Routes() {
   return (
     <Router>
@@ -51,6 +59,7 @@ function Routes() {
       <Route path="/aprende" exact component={Aprende}/>
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>
+      <Route path="/quizzes" exact component={Quizzes} />
       <Route path="/store" exact component={Store}/> 
       <Route path="/nosotros" exact component={AcercaDe}/>
       <Route path="/como-funciona" exact component={ComoFunciona}/>
@@ -81,6 +90,13 @@ function Routes() {
       <Route path="/aprende/quinto-grado/ingles/vocabulary" exact component={vocabularyQuintoGrado}/>
       <Route path="/aprende/quinto-grado/ingles/past-simple" exact component={pastSimpleQuintoGrado}/>
       <Route path="/aprende/quinto-grado/ingles/time" exact component={timeQuintoGrado}/>
+      {/* Ejercicios */}
+      <Route path="/ejercicios/quinto-grado/ingles/present-simple" exact component={PresentQuintoEjercicios}/>
+      <Route path="/ejercicios/quinto-grado/ingles" exact component={inglesQuintoEj}/>
+      <Route path="/ejercicios/quinto-grado/ingles/grammar" exact component={GrammarQuintoEjercicios}/>
+      <Route path="/ejercicios/quinto-grado/ingles/past-simple" exact component={PastQuintotEjercicios}/>
+      <Route path="/ejercicios/quinto-grado/ingles/vocabulary" exact component={VocabularyQuintoEjercicios}/>
+      <Route path="/ejercicios/quinto-grado/ingles/time" exact component={TimeQuintoEjercicios}/>
       {/* Ciencias quinto grado */}
       <Route path="/aprende/quinto-grado/ciencias/animales-vertebrados" exact component={vertebradosQuinto}/>
       <Route path="/aprende/quinto-grado/ciencias/animales-invertebrados" exact component={invertebradosQuinto}/>

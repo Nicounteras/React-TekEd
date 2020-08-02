@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Nav from "../../nav"
 import Foot from "../../foot"
 
-function mateQuintoIndexEjercicios() {
+function inglesQuintoEj() {
   return (
     <>
    <Nav/>
@@ -31,5 +31,5 @@ function mateQuintoIndexEjercicios() {
   )
 } 
 
-export default mateQuintoIndexEjercicios
+export default inglesQuintoEj
 
