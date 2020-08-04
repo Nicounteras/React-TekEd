@@ -50,6 +50,13 @@ import VocabularyQuintoEjercicios from "./ejercicios/quinto-grado/ingles/vocabul
 import PastQuintotEjercicios from "./ejercicios/quinto-grado/ingles/past"
 import TimeQuintoEjercicios from "./ejercicios/quinto-grado/ingles/time"
 import Quizzes from "./quizzes"
+import AlgebraQuizQuinto from "./quizzes/quinto-grado/mate/algebra"
+import Sexto from "./aprende/sexto-grado/index"
+import mateSextoIndex from "./aprende/sexto-grado/mate"
+import humanidadesSextoIndex from "./aprende/sexto-grado/humanidades"
+import inglesSextoIndex from "./aprende/sexto-grado/ingles"
+import cienciasSextoIndex from "./aprende/sexto-grado/ciencias"
+import algebraSexto from "./aprende/sexto-grado/"
 
 function Routes() {
   return (
@@ -65,6 +72,11 @@ function Routes() {
       <Route path="/como-funciona" exact component={ComoFunciona}/>
       <Route path="/contacto" exact component={Contacto}/>
       <Route path= "/aprende/quinto-grado" exact component={Quinto}/>
+      <Route path= "/aprende/sexto-grado" exact component={Sexto}/>
+      <Route path="/aprende/sexto-grado/matematica" exact component={mateSextoIndex}/>
+      <Route path="/aprende/sexto-grado/ciencias" exact component={cienciasSextoIndex}/>
+      <Route path="/aprende/sexto-grado/ingles" exact component={inglesSextoIndex}/>
+      <Route path="/aprende/sexto-grado/humanidades" exact component={humanidadesSextoIndex}/>
       <Route path="/aprende/quinto-grado/matematica" exact component={mateQuintoIndex}/>
       <Route path="/aprende/quinto-grado/ingles" exact component={inglesQuintoIndex}/>
       <Route path="/aprende/quinto-grado/ciencias" exact component={cienciasQuintoIndex}/>
@@ -84,7 +96,9 @@ function Routes() {
       <Route path="/ejercicios/quinto-grado/matematica/restas" exact component={RestasQuintoEj}/>
       <Route path="/ejercicios/quinto-grado/matematica/redondeo" exact component={RedondeoQuintoEj}/>
       <Route path="/ejercicios/quinto-grado/matematica/numeros-romanos" exact component={RomanosQuintoEj}/>
-      {/* Inglés quinto grado */}
+     {/* Quizzes */}
+     <Route path="/quizzes/quinto-grado/matematica/algebra" exact component={AlgebraQuizQuinto}/>
+     {/* Inglés quinto grado */}
       <Route path="/aprende/quinto-grado/ingles/grammar" exact component={G1QuintoGrado}/>
       <Route path="/aprende/quinto-grado/ingles/present-simple" exact component={presentSQuintoGrado}/>
       <Route path="/aprende/quinto-grado/ingles/vocabulary" exact component={vocabularyQuintoGrado}/>
@@ -123,9 +137,9 @@ const Home = () => (
      <div className="dospordos">
      <Link class="cool-link go-btn" to="/aprende">¡Empecemos!</Link>
      <Link className="cool-link ex-btn" to="/ejercicios">Resuelve ejercicios</Link>
-     <Link className="cool-link start-btn" to="/quizzes">
+     {/* <Link className="cool-link start-btn" to="/quizzes">
        Toma un quiz
-     </Link>
+     </Link> */}
      </div>
    </div>
    <Foot/>

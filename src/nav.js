@@ -15,9 +15,9 @@ function Nav() {
        <NavLink to="/ejercicios" className="navLink" activeClassName="activeNavLink">
        <li className="cool-link">Ejercicios</li>
        </NavLink>
-       <NavLink to="/quizzes" className="navLink" activeClassName="activeNavLink">
+       {/* <NavLink to="/quizzes" className="navLink" activeClassName="activeNavLink">
          <li className="cool-link">Quizzes</li>
-       </NavLink>
+       </NavLink> */}
        <a href="https://docs.google.com/forms/d/e/1FAIpQLSegwzDAMFV7s8iMbmxIhdG5-YSSpD63l9YxFL-xTLrdiakZug/viewform?vc=0&c=0&w=1" target="blank" className="feedback">¡Danos tu feedback!</a>
        {/* <Link to="/store">
        <li className="cool-link">Tienda</li>

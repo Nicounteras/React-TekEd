@@ -2221,6 +2221,77 @@ background-color: rgb(34, 34, 34);
     background-color: rgba(201, 120, 27, 0.3);
     border: 3px dashed rgb(201, 120, 27);
 }
+.card-grid-quiz{
+    display: grid;
+    height: 4500px;
+    margin: 30px 0;
+    grid-gap: 20px;
+    grid-template-rows: repeat(12, 1fr);
+}
+.quizQuestion{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.grid-button-quiz{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 200px;
+    width: 80%;
+    grid-gap: 10px;
+}
+.correct.go{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 128, 12, 0.9);
+    border-radius: 5px;
+}
+.false.go{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 28, 48, 0.96);
+    border-radius: 5px;
+}
+.correct.go h3, .false.go h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.false.go h5{
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: rgb(11, 102, 187) underline;
+    margin-bottom: 20px;
+}
+.grid-button-quiz button{
+    border: 2px dashed rgb(230,230,230);
+    background-color: rgb(11,125,179);
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-family: "Fredoka one", cursive;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 23px;
+}
+.grid-button-quiz button:hover{
+    background-color: rgb(11, 102, 187);
+}
+.correct, .false{
+    display: none;
+}
 .card-grid {
     display: grid;
     height: 1010px;
@@ -2244,6 +2315,23 @@ background-color: rgb(34, 34, 34);
           grid-template-rows: repeat(12, 1fr);
           height: calc(1515px * 2);
       }
+  }
+  .card-quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: "Fredoka one", cursive;
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    color: rgb(230,230,230);
+    border-radius: .25rem;
+    box-shadow: 0 0 3px 1px rgba(230, 230, 230, 0.199);
+    background-color: rgb(44, 44, 44);
   }
   .card {
     display: flex;
@@ -2313,7 +2401,32 @@ background-color: rgb(34, 34, 34);
       text-align: center;
       margin-bottom: 15px;
       font-size: 18px;
+  }
+  .counter{
+      margin: 10px 0 30px 0;
+      font-family: "Fredoka one", cursive;
+      font-size: 23px;
+      position: fixed;
+      bottom: 5vh;
+      left: 50%;
 
+      transform: translateX(-50%);
+  }
+  .counter.go{
+      display: block;
+  }
+  .counter h3{
+      font-weight: 500;
+      font-size: 23px;
+  }
+  .counter span{
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgb(50,50,50);
+      color: rgb(235,235,235);
+  }
+  .correctAns{
+      font-size: 21px;
   }
   .card .back{
       text-align: left;
