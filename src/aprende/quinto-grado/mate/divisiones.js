@@ -8,7 +8,6 @@ function divisionesQuintoGrado() {
     <>
     <Nav/>
     <Rail/>
-    <a href="https://www.youtube.com/watch?v=SyCS1V-5Uc4" target="blank" class="verEx">Ver explicación</a>
    <div className="elMeroMero">
    <div className="blockN1">
              <h4>Álgebra básica</h4>

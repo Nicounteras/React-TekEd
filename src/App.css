@@ -2213,6 +2213,9 @@ background-color: rgb(34, 34, 34);
     border: 3px dashed rgb(11,125,179);
     background-color: rgba(11,125,179, .3);
 }
+.toggleNav h5{
+    font-size: 17px;
+}
 .qui5{
     background-color: rgba(172, 27, 201, .3);
     border: 3px dashed rgb(172, 27, 201);
@@ -2302,11 +2305,19 @@ background-color: rgb(34, 34, 34);
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
   }
-  @media screen and (max-width:800px){
+  .card-grid.card-cience{
+      height: 757.5px;
+      grid-template-rows: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width:850px){
       .card-grid{
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;  
           height: 1515px;
+      }
+      .card-grid.card-cience{
+          height: 1100px;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       }
   }
   @media screen and (max-width:550px){
@@ -2315,6 +2326,10 @@ background-color: rgb(34, 34, 34);
           grid-template-rows: repeat(12, 1fr);
           height: calc(1515px * 2);
       }
+      .card-grid.card-cience{
+        height: 2200px;
+        grid-template-rows: repeat(9, 1fr);
+    }
   }
   .card-quiz{
     display: flex;
@@ -2394,8 +2409,38 @@ background-color: rgb(34, 34, 34);
     justify-content: center;
     backface-visibility: hidden;
   }
+  .goToOtherArticle{
+      position: fixed;
+      padding: 5px 10px;
+      top: 13px;
+      background: rgba(235, 235, 235, 0.945);
+      right: 5vw;
+      border-radius: 5px;
+      z-index: 10;
+      color: rgb(50,50,50);
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+  }
+  @media screen and (max-width:700px){
+      .goToOtherArticle{
+          bottom: 5vh;
+          right: unset;
+          left: 10px;
+          top: unset;
+      }
+  }
+  .goToOtherArticle:hover{
+      color: rgb(50, 50, 50);
+  }
   .card .back h3{
       text-align: center;
+  }
+  .feedback.toggleFeedback{
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  .feedback.cool-link::after{
+      background-color: rgb(240,240,240);
   }
   .Explanation{
       text-align: center;

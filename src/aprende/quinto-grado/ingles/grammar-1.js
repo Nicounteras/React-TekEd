@@ -1,6 +1,6 @@
 import React from "react"
 import Rail from "./rail"
-import Nav from "../mate/nav"
+import Nav from "./nav"
 import { Link } from "react-router-dom"
 
 function G1QuintoGrado (){

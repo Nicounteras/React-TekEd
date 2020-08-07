@@ -9,16 +9,19 @@ function VocabularyQuintoEjercicios() {
   return (
    <>
 <Nav/>
+<Link to="/aprende/quinto-grado/ingles/vocabulary" className="goToOtherArticle cool-link">
+  Leer el artículo
+</Link>
 <Rail/>
   <div className="elMeroMero">  
   <div className="blockN1">
-            <h4>Grammar exercises</h4>
+            <h4>Vocabulary exercises</h4>
             <p className="pOfQuizzes">Do your best!</p>
             <FlashCardList flashcards = {flashcards}/>    
-            <div className="threeButton">
+           {/*  <div className="threeButton">
             <Link className="cool-link go-btn" to="/aprende/quinto-grado/ingles/grammar">Ver artículo</Link>
             <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/algebra">Tomar quiz</Link>  
-              </div>      
+              </div>    */}   
   </div>
   </div>
    </>
@@ -28,136 +31,124 @@ function VocabularyQuintoEjercicios() {
 const FlashCards = [
   {
     id: 1,
-    question: " I _____ french in the morning",
-    answer: "Studied",
+    question: "Rabbit",
+    answer: "Bunny",
     options: [
-      "a) Studied",
-      "b) Study",
-      "c) Am studying",
+      "a) Cat",
+      "b) Lion",
+      "c) Bunny",
     ],
-    explanation: "The sentence is in past tense"
   },
   {
     id: 2,
-    question: " I am _____ my favorite song",
-    answer: "Dancing",
+    question: "Ability",
+    answer: "Skill",
     options: [
-      "a) Danced",
-      "b) Dancing",
-      "c) Have danced",
+      "a) Skill",
+      "b) Quality",
+      "c) Talent",
     ],
-    explanation: "The sentence is in present continious"
   },
   {
     id: 3,
-    question: "Yesterday you were ____ so hard!",
-    answer: "Studying",
+    question: "Below",
+    answer: "Under",
     options: [
-      "a) Studied",
-      "b) Study",
-      "c) Studying",
+      "a) Under",
+      "b) Above",
+      "c) Next",
     ],
-    explanation: "The sentence is in present continious"
   },
   {
     id: 4,
-    question: "Yes!, we are _____ the dishes",
-    answer: "Washing",
+    question: "Big",
+    answer: "Large",
     options: [
-      "a) Washing",
-      "b) Wash",
-      "c) Washed",
+      "a) Half",
+      "b) Large",
+      "c) Key",
     ],
-    explanation: "The sentence is in present continious"
   },
   {
     id: 5,
-    question: "They _____ in a fun way",
-    answer: "Todas",
+    question: "Sick",
+    answer: "ill",
     options: [
-      "a) Learn",
-      "b) Learned",
-      "c) Are learning",
+      "a) Well",
+      "b) Happy",
+      "c) ill",
     ],
-    explanation: "All terminologies can be used"
   },
   {
     id: 6,
-    question: "Yesterday the weather ____ nice",
-    answer: "Was",
+    question: "Beginning",
+    answer: "Start",
     options: [
-      "a) Is",
-      "b) Isn't",
-      "c) Was",
+      "a) End",
+      "b) Start",
+      "c) Band",
     ],
-    explanation: "The sentence is in past tense"
   },
   {
     id: 7,
-    question: "He ____ always late!",
-    answer: "Is",
+    question: "Listen",
+    answer: "Hear",
     options: [
-      "a) Am",
-      "b) Are",
-      "c) Is",
+      "a) Laugh",
+      "b) Sing",
+      "c) Hear",
     ],
-    explanation: "Is goes for 3rd person"
   },
   {
     id: 8,
-    question: "They ____ an astonishing work (past)!",
-    answer: "Made",
+    question: "Smart",
+    answer: "Intelligent",
     options: [
-      "a) Make",
-      "b) Doing",
-      "c) Made",
+      "a) Hurt",
+      "b) Intelligent",
+      "c) Mute",
     ],
-    explanation: "The sentence is in past tense"
   },
   {
     id: 9,
-    question: "He ____ our pizza!",
-    answer: "Likes",
+    question: "Fast",
+    answer: "Quick",
     options: [
-      "a) Liking",
-      "b) Will",
-      "c) Likes",
+      "a) Quick",
+      "b) Slow",
+      "c) Run",
     ],
-    explanation: "The sentence is in present continious"
   },
   {
     id: 10,
-    question: "This _____ a song from John",
-    answer: "Is",
+    question: "Strange",
+    answer: "Odd",
     options: [
-      "a) Was",
-      "b) Were",
-      "c) Is",
+      "a) Normal",
+      "b) Odd",
+      "c) Good",
     ],
-    explanation: "Is goes for 3rd person"
   },
   {
     id: 11,
-    question: "I never _____ a thing to change",
-    answer: "Want",
+    question: "Small",
+    answer: "Tiny",
     options: [
-      "a) Doing",
-      "b) Want",
-      "c) Wanting",
+      "a) Big",
+      "b) Tiny",
+      "c) Smart",
     ],
-    explanation: "The sentence is in present simple"
-  },
+  }, 
   {
     id: 12,
-    question: "You _____ strong",
-    answer: "Are",
+    question: "Gigantic",
+    answer: "Super big",
     options: [
-      "a) Are",
-      "b) Wasn't",
-      "c) Is",
+      "a) Super big",
+      "b) Gigabite",
+      "c) Big",
     ],
-    explanation: "Are goes for 2nd person"
-  },
+  }, 
 ]
 
 

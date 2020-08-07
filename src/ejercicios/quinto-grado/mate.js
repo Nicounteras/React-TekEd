@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Nav from "../../nav"
 import Foot from "../../foot"
 
-function inglesQuintoEj() {
+function MateQuintoEj() {
   return (
     <>
    <Nav/>
@@ -31,5 +31,5 @@ function inglesQuintoEj() {
   )
 } 
 
-export default inglesQuintoEj
+export default  MateQuintoEj
 

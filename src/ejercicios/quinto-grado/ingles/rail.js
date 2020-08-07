@@ -18,8 +18,8 @@ function Rail(){
             </div>
             <div class="otherCourses">
                <h4>Más ejercicios</h4>
+               <Link class="m" to="/ejercicios/quinto-grado/matematica">Matemática</Link>
                <Link class="nola">Español</Link>
-               <Link class="ingles" to="/ejercicios/quinto-grado/ingles">Inglés</Link>
                <Link to="/ejercicios/quinto-grado/ciencias" class="ciencias">Ciencias</Link>
                <Link to="/ejercicios/quinto-grado/personal-social" class="humanidades">Personal social</Link>
             </div>

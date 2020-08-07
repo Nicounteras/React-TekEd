@@ -36,14 +36,14 @@ import contextoPeruanoQuinto from "./aprende/quinto-grado/personal-social/contex
 import cienciasQuintoIndex from "./aprende/quinto-grado/ciencias"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import QuintoEjercicios from "./ejercicios/quinto-grado/index"
-import mateQuintoIndexEjercicios from "./ejercicios/quinto-grado/mate"
+import  MateQuintoEj from "./ejercicios/quinto-grado/mate"
 import AlgebraQuintoEj from "./ejercicios/quinto-grado/mate/algebra"
 import DivisionesQuintoEj from "./ejercicios/quinto-grado/mate/divisiones"
 import RestasQuintoEj from "./ejercicios/quinto-grado/mate/restas"
 import MultiplicacionesQuintoEj from "./ejercicios/quinto-grado/mate/multiplicaciones"
 import RedondeoQuintoEj from "./ejercicios/quinto-grado/mate/redondeo"
 import RomanosQuintoEj from "./ejercicios/quinto-grado/mate/romanos"
-import inglesQuintoEj from "./ejercicios/quinto-grado/ingles"
+import inglesQuintoIndexEjercicios from "./ejercicios/quinto-grado/ingles"
 import GrammarQuintoEjercicios from "./ejercicios/quinto-grado/ingles/grammar"
 import PresentQuintoEjercicios from "./ejercicios/quinto-grado/ingles/present"
 import VocabularyQuintoEjercicios from "./ejercicios/quinto-grado/ingles/vocabulary"
@@ -56,7 +56,13 @@ import mateSextoIndex from "./aprende/sexto-grado/mate"
 import humanidadesSextoIndex from "./aprende/sexto-grado/humanidades"
 import inglesSextoIndex from "./aprende/sexto-grado/ingles"
 import cienciasSextoIndex from "./aprende/sexto-grado/ciencias"
-import algebraSexto from "./aprende/sexto-grado/"
+import EcosistemasQuintoEj from "./ejercicios/quinto-grado/ciencias/ecosistemas"
+import AdaptacionesQuintoEj from "./ejercicios/quinto-grado/ciencias/adaptaciones"
+import CadenaQuintoEj from "./ejercicios/quinto-grado/ciencias/cadena"
+import InvertebradosQuintoEj from "./ejercicios/quinto-grado/ciencias/invertebrados"
+import VertebradosQuintoEj from "./ejercicios/quinto-grado/ciencias/vertebrados"
+import cienciasQuintoIndexEjercicios from "./ejercicios/quinto-grado/ciencias" 
+import personalQuintoEj from "./ejercicios/quinto-grado/personal"
 
 function Routes() {
   return (
@@ -89,7 +95,7 @@ function Routes() {
       <Route path="/aprende/quinto-grado/matematica/divisiones" exact component={divisionesQuintoGrado}/>
       <Route path="/aprende/quinto-grado/matematica/numeros-romanos" exact component={romanosQuintoGrado}/>
       {/* Ejercicios*/}
-      <Route path="/ejercicios/quinto-grado/matematica" exact component={mateQuintoIndexEjercicios}/>
+      <Route path="/ejercicios/quinto-grado/matematica" exact component={MateQuintoEj}/>
       <Route path="/ejercicios/quinto-grado/matematica/algebra" exact component={AlgebraQuintoEj}/>
       <Route path="/ejercicios/quinto-grado/matematica/divisiones" exact component={DivisionesQuintoEj}/>
       <Route path="/ejercicios/quinto-grado/matematica/multiplicaciones" exact component={MultiplicacionesQuintoEj}/>
@@ -106,7 +112,7 @@ function Routes() {
       <Route path="/aprende/quinto-grado/ingles/time" exact component={timeQuintoGrado}/>
       {/* Ejercicios */}
       <Route path="/ejercicios/quinto-grado/ingles/present-simple" exact component={PresentQuintoEjercicios}/>
-      <Route path="/ejercicios/quinto-grado/ingles" exact component={inglesQuintoEj}/>
+      <Route path="/ejercicios/quinto-grado/ingles" exact component={inglesQuintoIndexEjercicios}/>
       <Route path="/ejercicios/quinto-grado/ingles/grammar" exact component={GrammarQuintoEjercicios}/>
       <Route path="/ejercicios/quinto-grado/ingles/past-simple" exact component={PastQuintotEjercicios}/>
       <Route path="/ejercicios/quinto-grado/ingles/vocabulary" exact component={VocabularyQuintoEjercicios}/>
@@ -117,11 +123,19 @@ function Routes() {
       <Route path="/aprende/quinto-grado/ciencias/ecosistemas" exact component={ecosistemasQuinto}/>
       <Route path="/aprende/quinto-grado/ciencias/cadena-alimenticia" exact component={cadenaAlimenticiaQuinto}/>
       <Route path="/aprende/quinto-grado/ciencias/adaptaciones" exact component={adaptacionesQuinto}/>
-      {/* Personal social */}
+     {/* Ejercicios */}
+     <Route path="/ejercicios/quinto-grado/ciencias" exact component={cienciasQuintoIndexEjercicios}/>
+     <Route path="/ejercicios/quinto-grado/ciencias/ecosistemas" exact component={EcosistemasQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/ciencias/cadena-alimenticia" exact component={CadenaQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/ciencias/animales-vertebrados" exact component={VertebradosQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/ciencias/adaptaciones" exact component={AdaptacionesQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/ciencias/animales-invertebrados" exact component={InvertebradosQuintoEj}/>
+      {/* Personal social quinto grado */}
       <Route path="/aprende/quinto-grado/personal-social/contexto-peruano" exact component={contextoPeruanoQuinto}/>  
       <Route path="/aprende/quinto-grado/personal-social/egipto" exact component={egiptoQuinto}/>    
       <Route path="/aprende/quinto-grado/personal-social/puntos-cardinales" exact component={puntosCardinalesQuinto}/>    
       <Route path="/aprende/quinto-grado/personal-social/geografia-peruana" exact component={geoPeruanaQuinto}/>      
+     <Route path="/ejercicios/quinto-grado/personal-social" exact component={personalQuintoEj}/>
       </Switch>
     </Router>
   )

@@ -9,16 +9,19 @@ function GrammarQuintoEjercicios() {
   return (
    <>
 <Nav/>
+<Link to="/aprende/quinto-grado/ingles/grammar" className="goToOtherArticle cool-link">
+  Leer el artículo
+</Link>
 <Rail/>
   <div className="elMeroMero">  
   <div className="blockN1">
             <h4>Grammar exercises</h4>
             <p className="pOfQuizzes">Do your best!</p>
             <FlashCardList flashcards = {flashcards}/>    
-            <div className="threeButton">
+            {/* <div className="threeButton">
             <Link className="cool-link go-btn" to="/aprende/quinto-grado/ingles/grammar">Ver artículo</Link>
             <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/algebra">Tomar quiz</Link>  
-              </div>      
+              </div>    */}   
   </div>
   </div>
    </>
@@ -46,7 +49,7 @@ const FlashCards = [
       "b) Dancing",
       "c) Have danced",
     ],
-    explanation: "The sentence is in present continious"
+    explanation: "The sentence is in present continuous"
   },
   {
     id: 3,
@@ -57,7 +60,7 @@ const FlashCards = [
       "b) Study",
       "c) Studying",
     ],
-    explanation: "The sentence is in present continious"
+    explanation: "The sentence is in present continuous"
   },
   {
     id: 4,
@@ -68,7 +71,7 @@ const FlashCards = [
       "b) Wash",
       "c) Washed",
     ],
-    explanation: "The sentence is in present continious"
+    explanation: "The sentence is in present continuous"
   },
   {
     id: 5,
@@ -123,7 +126,7 @@ const FlashCards = [
       "b) Will",
       "c) Likes",
     ],
-    explanation: "The sentence is in present continious"
+    explanation: "The sentence is in present continuous"
   },
   {
     id: 10,

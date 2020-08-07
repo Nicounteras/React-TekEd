@@ -8,9 +8,9 @@ function Nav() {
     <nav id="inicio" className="initialNav fixed">
     <a href="/" className="Tekito"><h1>Tek<span>Ed</span></h1></a>
     <article id="menu" className="theMenuLinks">
-      <Link to="/aprende/quinto-grado/matematica">
+      {/* <Link to="/aprende/quinto-grado/matematica">
         <li className="cool-link">Aprende del tema</li>
-      </Link>
+      </Link> */}
        {/* <Link to="/store">
        <li className="cool-link">Tienda</li>
        </Link> */}

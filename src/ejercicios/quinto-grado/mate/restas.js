@@ -9,17 +9,20 @@ function RestasQuintoEj() {
   return (
    <>
 <Nav/>
+<Link to="/aprende/quinto-grado/matematica/algebra" className="goToOtherArticle cool-link">
+  Leer el artículo
+</Link>
 <Rail/>
   <div className="elMeroMero">
   <div className="blockN1">
             <h4>Ejercicios de restas</h4>
             <p className="pOfQuizzes">¡Pon a prueba tus conocimientos!</p>
             <FlashCardList flashcards = {flashcards}/>    
-            <div className="threeButton">
+           {/*  <div className="threeButton">
             <Link className="cool-link go-btn" to="/aprende/quinto-grado/matematica/restas">Ver artículo</Link>
             <a href="https://www.youtube.com/watch?v=S8ACLQs-Bz4" target="blank" className="cool-link ex-btn">Ver Vídeo</a>
             <Link className="cool-link start-btn" to="/quizzes/quinto-grado/matematica/restas">Tomar quiz</Link>  
-              </div>       
+              </div>  */}      
   </div>
   </div>
    </>

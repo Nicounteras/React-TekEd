@@ -18,7 +18,7 @@ function Nav() {
        {/* <NavLink to="/quizzes" className="navLink" activeClassName="activeNavLink">
          <li className="cool-link">Quizzes</li>
        </NavLink> */}
-       <a href="https://docs.google.com/forms/d/e/1FAIpQLSegwzDAMFV7s8iMbmxIhdG5-YSSpD63l9YxFL-xTLrdiakZug/viewform?vc=0&c=0&w=1" target="blank" className="feedback">¡Danos tu feedback!</a>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSegwzDAMFV7s8iMbmxIhdG5-YSSpD63l9YxFL-xTLrdiakZug/viewform?vc=0&c=0&w=1" target="blank" className="feedback cool-link">¡Danos tu feedback!</a>
        {/* <Link to="/store">
        <li className="cool-link">Tienda</li>
        </Link> */}
@@ -26,11 +26,12 @@ function Nav() {
     <i className="fas fa-bars toggleMenuButton" onClick={() => setToggleNav(!toggleNav)}></i>
     <div className={`toggleNav ${toggleNav ? 'navOn' : 'navOff'}`}>
     <div className="threeButton initialNavi">
-     <Link class="cool-link go-btn" to="/aprende">¡Empecemos!</Link>
-     <Link className="cool-link ex-btn" to="/ejercicios">Resuelve ejercicios</Link>
-     <Link className="cool-link start-btn" to="/quizzes">
+     <Link class="go-btn" to="/aprende">¡Empecemos!</Link>
+     <Link className="ex-btn" to="/ejercicios">Resuelve ejercicios</Link>
+     <Link className="start-btn" to="/quizzes">
        Toma un quiz
      </Link>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSegwzDAMFV7s8iMbmxIhdG5-YSSpD63l9YxFL-xTLrdiakZug/viewform?vc=0&c=0&w=1" target="blank" className="feedback toggleFeedback">¡Danos tu feedback!</a>
      </div>
       </div>
   </nav>

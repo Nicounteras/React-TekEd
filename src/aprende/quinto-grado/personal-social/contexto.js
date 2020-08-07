@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import Nav from "../mate/nav"
+import Nav from "./nav"
 import Rail from "./rail"
 
 function contextoPeruanoQuinto() {

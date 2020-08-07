@@ -1,5 +1,6 @@
 {
   "name": "teked",
+  "homepage": "https://teked.fun/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
