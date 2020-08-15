@@ -2,11 +2,20 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import cactus from "./../../../images/ciencias5to/osoPolar.jpg"
+import osoPolar from "./../../../images/ciencias5to/cactus.jpg"
+import leoNieve from "./../../../images/ciencias5to/leopardoNieve.jpg"
+import leones from "./../../../images/ciencias5to/leones.jpg"
 
 function adaptacionesQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/ciencias/adaptaciones" className="goToOtherArticle cool-link">
+  Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
             <h2>Adaptaciones</h2>
@@ -27,8 +36,8 @@ function adaptacionesQuinto() {
                  Por ejemplo, los animales del polo norte tienen que desarrollar métodos para poder resistir al frío, mientras que las plantas del desierto tienen mecanismos para poder utilizar la menor cantidad de agua posible debido al clima seco. </p>
              <p>Es por esta razón que todos los organismos son diferentes; han evolucionado para desarrollar distintas características, adecuándose a las condiciones de sus hábitats. </p>
              <div class="image2Div">
-             <div className="image oso"></div>
-             <div className="image cactus"></div>
+             <img src={osoPolar} className="image" alt="Mosquito"/>
+              <img src={cactus} className="image" alt="Cangrejo"/>
              </div>
              <h5 class="blogS adapTitle">Adaptaciones Físicas</h5>
              Las adaptaciones físicas son los cambios en la estructura externa e interna de los organismos. Por lo tanto, pueden ser las características del cuerpo, como orejas largas, o las habilidades, como la capacidad de hibernar. 
@@ -36,14 +45,14 @@ function adaptacionesQuinto() {
              <div class="liDelLi">
             <li>🐾 Los leopardos de las nieves tienen patas grandes y una cola larga para mantener el balance y poder trepar en las montañas.</li>
            </div>
-           <div className="centralImage leopardos"></div>
+           <img src={leoNieve} className="centralImage margin20-0" alt="Adaptación física"/>
            <h5 class="blogS adapTitle">Adaptaciones Conductuales</h5>
            Las adaptaciones conductuales son los cambios relacionados con el comportamiento de los animales. Por lo tanto, se refiere a todas las distintas características de la conducta de los animales, como la manera en la que pueden huir o atacar al sentir peligro.
            <p className="adapP">Por ejemplo:</p>
          <div class="liDelLi">
          <li>🐾 Los leones se agrupan en manadas para cazar más efectivamente y protegerse entre ellos.</li>
          </div>
-         <div className="centralImage leones"></div>
+         <img src={leones} className="centralImage margin20-0" alt="Adaptación conductual"/>
        <div class="autor">
         <span class="by">Escrito por:</span> <span class="nameOf">Flavia Ballesteros</span> <span class="dateOf">(29/05/2020)</span>
       </div>

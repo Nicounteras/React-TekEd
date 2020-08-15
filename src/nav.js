@@ -15,6 +15,9 @@ function Nav() {
        <NavLink to="/ejercicios" className="navLink" activeClassName="activeNavLink">
        <li className="cool-link">Ejercicios</li>
        </NavLink>
+       <NavLink to="/desarrollo-web" className="navLink" activeClassName="activeNavLink">
+       <li className="cool-link">Desarrollo web</li>
+       </NavLink>
        {/* <NavLink to="/quizzes" className="navLink" activeClassName="activeNavLink">
          <li className="cool-link">Quizzes</li>
        </NavLink> */}

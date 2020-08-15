@@ -7,6 +7,11 @@ function G1QuintoGrado (){
     return(
         <>
         <Nav/>
+        <div className="buttonDivTo">
+        <Link to="/ejercicios/quinto-grado/ingles/grammar" className="goToOtherArticle cool-link">
+        Practicar
+</Link>
+</div>
         <Rail/>
         <div className="elMeroMero">
   <div className="blockN1">

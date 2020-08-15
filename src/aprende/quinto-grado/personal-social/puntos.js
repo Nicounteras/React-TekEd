@@ -7,6 +7,11 @@ function puntosCardinalesQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/personal-social/puntos-cardinales" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
     <h2>Puntos cardinales📍</h2>

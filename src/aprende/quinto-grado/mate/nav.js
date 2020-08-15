@@ -8,9 +8,9 @@ function Nav() {
     <nav id="inicio" className="initialNav fixed">
     <a href="/" className="Tekito"><h1>Tek<span>Ed</span></h1></a>
     <article id="menu" className="theMenuLinks">
-      <Link to="/ejercicios/quinto-grado/matematica">
+      {/* <Link to="/ejercicios/quinto-grado/matematica">
         <li className="cool-link">Ejercicios</li>
-      </Link>
+      </Link> */}
        {/* <Link to="/store">
        <li className="cool-link">Tienda</li>
        </Link> */}
@@ -21,11 +21,11 @@ function Nav() {
       <h5>Matemática</h5>
       <article className="togLinks">
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/algebra">Álgebra</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/numeros-romanos">Números romanos</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/restas">Restas</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/redondeo">Redondeo</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/aprende/quinto-grado/matematica/numeros-romanos">Números romanos</NavLink></li>
       </article>
       <div className="other-courses">
         <h5 className="padding20-0">Más áreas</h5>

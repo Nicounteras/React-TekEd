@@ -7,6 +7,11 @@ function divisionesQuintoGrado() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/matematica/divisiones" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
    <div className="elMeroMero">
    <div className="blockN1">

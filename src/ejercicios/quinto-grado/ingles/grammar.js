@@ -9,9 +9,11 @@ function GrammarQuintoEjercicios() {
   return (
    <>
 <Nav/>
+<div className="buttonDivTo">
 <Link to="/aprende/quinto-grado/ingles/grammar" className="goToOtherArticle cool-link">
   Leer el artículo
 </Link>
+</div>
 <Rail/>
   <div className="elMeroMero">  
   <div className="blockN1">

@@ -7,6 +7,11 @@ function contextoPeruanoQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/personal-social/contexto-peruano" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
             <h2>Contexto peruano 🇵🇪</h2>

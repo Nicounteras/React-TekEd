@@ -3,6 +3,7 @@ import "./App.css"
 import Aprende from "./aprende"
 import Nav from "./nav"
 import Store from "./shop"
+import Desarrollo from "./desarrollo"
 import Foot from "./foot"
 import mateQuintoIndex from "./aprende/quinto-grado/mate"
 import inglesQuintoIndex from "./aprende/quinto-grado/ingles"
@@ -63,12 +64,24 @@ import InvertebradosQuintoEj from "./ejercicios/quinto-grado/ciencias/invertebra
 import VertebradosQuintoEj from "./ejercicios/quinto-grado/ciencias/vertebrados"
 import cienciasQuintoIndexEjercicios from "./ejercicios/quinto-grado/ciencias" 
 import personalQuintoEj from "./ejercicios/quinto-grado/personal"
+import ContextoQuintoEj from "./ejercicios/quinto-grado/personal-social/context"
+import GeoPerQuintoEj from "./ejercicios/quinto-grado/personal-social/geografia"
+import EgiptoQuintoEj from "./ejercicios/quinto-grado/personal-social/egipto"
+import PuntosCardiQuintoEj from "./ejercicios/quinto-grado/personal-social/puntos"
+import Home from "./home"
+import IntroHTML from "./html/intro"
+import InstaHTML from "./html/instalacion"
+import CompoHTML from "./html/compo"
 
 function Routes() {
   return (
     <Router>
       <Switch>
       <Route path="/" exact component={Home}/>
+      <Route path="/desarrollo-web" exact component={Desarrollo}/>
+      <Route path="/desarrollo-web/curso-html/introduccion" exact component={IntroHTML}/>
+      <Route path="/desarrollo-web/curso-html/instalacion" exact component={InstaHTML}/>
+      <Route path="/desarrollo-web/curso-html/composicion" exact component={CompoHTML}/>
       <Route path="/aprende" exact component={Aprende}/>
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>
@@ -135,11 +148,17 @@ function Routes() {
       <Route path="/aprende/quinto-grado/personal-social/egipto" exact component={egiptoQuinto}/>    
       <Route path="/aprende/quinto-grado/personal-social/puntos-cardinales" exact component={puntosCardinalesQuinto}/>    
       <Route path="/aprende/quinto-grado/personal-social/geografia-peruana" exact component={geoPeruanaQuinto}/>      
+     {/* Ejericios */}
      <Route path="/ejercicios/quinto-grado/personal-social" exact component={personalQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/personal-social/puntos-cardinales" exact component={PuntosCardiQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/personal-social/egipto" exact component={EgiptoQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/personal-social/geografia-peruana" exact component={GeoPerQuintoEj}/>
+     <Route path="/ejercicios/quinto-grado/personal-social/contexto-peruano" exact component={ContextoQuintoEj}/>
       </Switch>
     </Router>
   )
-} 
+}
+{/* 
 const Home = () => (
     <>
      <Nav/>
@@ -151,15 +170,16 @@ const Home = () => (
      <div className="dospordos">
      <Link class="cool-link go-btn" to="/aprende">¡Empecemos!</Link>
      <Link className="cool-link ex-btn" to="/ejercicios">Resuelve ejercicios</Link>
-     {/* <Link className="cool-link start-btn" to="/quizzes">
+      <Link className="cool-link start-btn" to="/quizzes">
        Toma un quiz
-     </Link> */}
+     </Link> 
      </div>
    </div>
    <Foot/>
     </>
    
    )
+*/}
 
 export default Routes
 

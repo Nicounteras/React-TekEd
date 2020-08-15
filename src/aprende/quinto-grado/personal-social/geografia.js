@@ -7,6 +7,11 @@ function geoPeruanaQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/personal-social/geografia-peruana" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
     <h2>Geografía del Perú</h2>

@@ -9,9 +9,9 @@ function PastQuintoEjercicios() {
   return (
    <>
 <Nav/>
-<Link to="/aprende/quinto-grado/ingles/past-simple" className="goToOtherArticle cool-link">
+<div className="buttonDivTo"><Link to="/aprende/quinto-grado/ingles/past-simple" className="goToOtherArticle cool-link">
   Leer el artículo
-</Link>
+</Link></div>
 <Rail/>
   <div className="elMeroMero">  
   <div className="blockN1">

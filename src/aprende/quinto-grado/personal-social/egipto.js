@@ -7,6 +7,11 @@ function egiptoQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/personal-social/egipto" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
     <h2>Egipto 🇪🇬</h2>

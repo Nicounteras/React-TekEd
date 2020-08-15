@@ -2,11 +2,26 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import desert1 from "./../../../images/ciencias5to/desierto1.jpg"
+import desert2 from "./../../../images/ciencias5to/desierto2.jpg"
+import forrest1 from "./../../../images/ciencias5to/forrest1.jpg"
+import forrest2 from "./../../../images/ciencias5to/forrest2.jpg"
+import montaña1 from "./../../../images/ciencias5to/montaña1.jpg"
+import montaña2 from "./../../../images/ciencias5to/montaña2.jpg"
+import mar1 from "./../../../images/ciencias5to/mar1.jpg"
+import mar2 from "./../../../images/ciencias5to/mar2.jpg"
+import rio1 from "./../../../images/ciencias5to/rio1.jpg"
+import rio2 from "./../../../images/ciencias5to/rio2.jpg"
 
 function ecosistemasQuinto() {
   return (
     <>
     <Nav/>
+    <div className="buttonDivTo">
+    <Link to="/ejercicios/quinto-grado/ciencias/ecosistemas" className="goToOtherArticle cool-link">
+    Practicar
+</Link>
+</div>
     <Rail/>
     <div class="theScience">
             <h2>Ecosistemas🌱</h2>
@@ -40,8 +55,8 @@ function ecosistemasQuinto() {
             </li>
            </div>
            <div class="image2Div">
-           <div className="image desierto1"></div>
-             <div className="image desierto2"></div>
+           <img src={desert1} className="image" alt="El desierto es un ecosistema terrestre"/>
+           <img src={desert2} className="image" alt="El desierto es un ecosistema terrestre"/>
            </div>
            <div class="liPuntos">
             <li><span class="moradoTitle">Ecosistema forestal</span>: Hay muchas plantas de diferentes tipos en este territorio. Son considerados los ecosistemas con mayor diversidad biológica. Existen 2 tipos de bosques:</li>
@@ -51,8 +66,8 @@ function ecosistemasQuinto() {
            <li>Bosques templados y fríos o de coníferas: En este territorio predominan las plantas que no dan frutos. El clima es frío. </li>
          </div>
          <div class="image2Div">
-         <div className="image bosque1"></div>
-             <div className="image bosque2"></div>
+         <img src={forrest1} className="image" alt="El bosque es un ecosistema terrestre"/>
+           <img src={forrest2} className="image" alt="El bosque es un ecosistema terrestre"/>
          </div>
          <div class="liPuntos">
           <li><span class="moradoTitle">Ecosistema montañoso</span>: En este territorio hay una gran variedad de montañas ya sean pequeñas o grandes. En este tipo de ecosistema se puede encontrar una mayor concentración de aguas dulces.</li>
@@ -62,8 +77,8 @@ function ecosistemasQuinto() {
          <li>Fauna: Cabras, zorros, lobos, aves, etc.</li>
        </div>
        <div class="image2Div">
-       <div className="image montaña1"></div>
-             <div className="image montaña2"></div>
+       <img src={montaña1} className="image" alt="Una montaña es un ecosistema terrestre"/>
+           <img src={montaña2} className="image" alt="Una montaña es un ecosistema terrestre"/>
        </div>
        <h5 class="blogS alH5">Ecosistema acuático💧→ Los seres vivos viven y se desarrollan en el agua.</h5>
        <div class="liPuntos">
@@ -74,8 +89,8 @@ function ecosistemasQuinto() {
          <li>Fauna: Tiburones, pez globo, mantarrayas, ballenas, delfines, orcas, anguilas, cangrejos, tortugas, etc.</li>
        </div>
        <div class="image2Div">
-       <div className="image mar1"></div>
-             <div className="image mar2"></div>
+       <img src={mar1} className="image" alt="Ecosistema acuático"/>
+           <img src={mar2} className="image" alt="Ecosistema acuático"/>
        </div>
        <div class="liPuntos">
          <li><span class="moradoTitle">Ecosistema de agua dulce</span>: Sus aguas no son saladas. ¡De acá viene el agua que tomamos! Podemos encontrar diferentes tipos de rocas. Sus principales formas son ríos, lagos, lagunas, pantanos, estanques, arroyos, etc. </li>
@@ -85,8 +100,8 @@ function ecosistemasQuinto() {
          <li>Fauna: Nutrias, cocodrilos, ranas, tortugas, pirañas, etc.</li>
        </div>
        <div class="image2Div">
-       <div className="image rio1"></div>
-             <div className="image rio2"></div>
+       <img src={rio1} className="image" alt="El río es un ecosistema"/>
+           <img src={rio2} className="image" alt="El río es un ecosistema"/>
        </div>
        <div class="autor">
         <span class="by">Escrito por:</span> <span class="nameOf">Fernanda Rosales</span><span class="dateOf">(29/05/2020)</span>

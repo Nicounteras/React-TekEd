@@ -12,8 +12,8 @@ function Rail(){
             <div class="subVamos">
                 <li><NavLink exact to="/aprende/quinto-grado/personal-social/contexto-peruano" activeClassName="active">Cont. Peruano</NavLink></li>
                 <li><NavLink exact to="/aprende/quinto-grado/personal-social/egipto" activeClassName="active">Egipto</NavLink></li>
-                <li><NavLink exact to="/aprende/quinto-grado/personal-social/puntos-cardinales" activeClassName="active">Puntos cardinales</NavLink></li>
                 <li><NavLink exact to="/aprende/quinto-grado/personal-social/geografia-peruana" activeClassName="active">Geo. Peruana</NavLink></li>
+                <li><NavLink exact to="/aprende/quinto-grado/personal-social/puntos-cardinales" activeClassName="active">Puntos cardinales</NavLink></li>
             </div>
             <div class="otherCourses">
                <h4>Más cursos</h4>
