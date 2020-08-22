@@ -22,8 +22,8 @@ function Nav() {
       <article className="togLinks">
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/personal-social/contexto-peruano">Contexto peruano</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/personal-social/egipto">Egipto</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/personal-social/puntos-cardinales">Puntos cardinales</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/personal-social/geografia-peruana">Geo. Peruana</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/personal-social/puntos-cardinales">Puntos cardinales</NavLink></li>
       </article>
       <div className="other-courses">
         <h5 className="padding20-0">Más áreas</h5>

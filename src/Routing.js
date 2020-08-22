@@ -72,16 +72,26 @@ import Home from "./home"
 import IntroHTML from "./html/intro"
 import InstaHTML from "./html/instalacion"
 import CompoHTML from "./html/compo"
+import MetaHTML from "./html/meta"
+import InitialDev from "./dev"
+import MateInitial from "./matematica"
+import whyCode from './blog/dev/porqueProgramar'
+import cs from "./blog/dev/cs"
 
 function Routes() {
   return (
     <Router>
       <Switch>
       <Route path="/" exact component={Home}/>
-      <Route path="/desarrollo-web" exact component={Desarrollo}/>
-      <Route path="/desarrollo-web/curso-html/introduccion" exact component={IntroHTML}/>
-      <Route path="/desarrollo-web/curso-html/instalacion" exact component={InstaHTML}/>
-      <Route path="/desarrollo-web/curso-html/composicion" exact component={CompoHTML}/>
+      <Route path="/desarrollo-web" exact component={InitialDev}/>
+      <Route path="/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
+      <Route path="/matematica" exact component={MateInitial}/>
+      <Route path="/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
+      <Route path="/desarrollo-web/cursos" exact component={Desarrollo}/>
+      <Route path="/desarrollo-web/cursos/html/introduccion" exact component={IntroHTML}/>
+      <Route path="/desarrollo-web/cursos/html/instalacion" exact component={InstaHTML}/>
+      <Route path="/desarrollo-web/cursos/html/composicion" exact component={CompoHTML}/>
+      <Route path="/desarrollo-web/cursos/html/meta-tags" exact component={MetaHTML}/>
       <Route path="/aprende" exact component={Aprende}/>
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>

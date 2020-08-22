@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import demo from "./../../../images/personal-social5to/demo.jpg"
+import map from "./../../../images/personal-social5to/map.jpg"
+import mach from "./../../../images/personal-social5to/mach.jpg"
+import costa from "./../../../images/personal-social5to/costa.jpg"
+import sierra from "./../../../images/personal-social5to/sierra.jpg"
+import selva from "./../../../images/personal-social5to/selva.jpg"
+
 
 function contextoPeruanoQuinto() {
   return (
@@ -38,7 +45,7 @@ function contextoPeruanoQuinto() {
                 Un país democrático cree en el respeto y la igualdad.
               </li>
              </div>
-             <div className="centralImage margin20-0 voto"></div>
+             <img src={demo} className="centralImage" alt="Democracia"/>
              <h5 class="blogS pad6015">¿Qué significa que seamos democráticos?</h5>
              <div class="liPuntos">
                <li>
@@ -70,7 +77,7 @@ function contextoPeruanoQuinto() {
                <div class="liDelLi">
                  <li>Los países partícipes son Ecuador, Bolivia, Colombia y Perú.</li>
                </div>
-               <div className="centralImage margin20-0 globoMundo"></div>
+               <img src={map} className="centralImage margin20-0" alt="Globo"/>
                <h5 class="blogS pad6015">División política del Perú🖋</h5>
                <div class="liPuntos">
                  <li>El Perú está dividido en 24 departamentos.</li>
@@ -78,7 +85,7 @@ function contextoPeruanoQuinto() {
                  <li>La capital de Perú es Lima.</li>
                  <li>La provincia constitucional es el Callao.</li>
                </div>
-               <div className="centralImage margin20-0 machuPicchu"></div>
+               <img src={mach} className="centralImage margin20-0" alt="Machu Picchu"/>
                <h5 class="blogS pad6015">Los departamentos del Perú 🇵🇪</h5>
                <div class="liPuntos">
                  <li>Cada departamento tiene diferentes tradiciones y costumbres. </li>
@@ -92,9 +99,9 @@ function contextoPeruanoQuinto() {
                 </li>
                </div>
                <div class="image3Div">
-               <div className="image costa"></div>
-               <div className="image sierra"></div>
-               <div className="image selva"></div>
+               <img src={costa} className="image" alt="Costa"/>
+              <img src={sierra} className="image" alt="Sierra"/>
+              <img src={selva} className="image" alt="Selva"/>
                </div>
              </div>
              <div class="autor">

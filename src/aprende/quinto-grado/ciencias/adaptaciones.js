@@ -36,8 +36,8 @@ function adaptacionesQuinto() {
                  Por ejemplo, los animales del polo norte tienen que desarrollar métodos para poder resistir al frío, mientras que las plantas del desierto tienen mecanismos para poder utilizar la menor cantidad de agua posible debido al clima seco. </p>
              <p>Es por esta razón que todos los organismos son diferentes; han evolucionado para desarrollar distintas características, adecuándose a las condiciones de sus hábitats. </p>
              <div class="image2Div">
-             <img src={osoPolar} className="image" alt="Mosquito"/>
-              <img src={cactus} className="image" alt="Cangrejo"/>
+             <img src={osoPolar} className="image" alt="Oso polar"/>
+              <img src={cactus} className="image" alt="Cactus"/>
              </div>
              <h5 class="blogS adapTitle">Adaptaciones Físicas</h5>
              Las adaptaciones físicas son los cambios en la estructura externa e interna de los organismos. Por lo tanto, pueden ser las características del cuerpo, como orejas largas, o las habilidades, como la capacidad de hibernar. 

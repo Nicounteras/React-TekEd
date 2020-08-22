@@ -14,8 +14,8 @@ function personalQuintoEj() {
       <div className="losVTemas">
       <Link className="a backA" to="/ejercicios/quinto-grado/personal-social/contexto-peruano"><button>Cont. Peruano</button></Link>
       <Link className="d backC" to="/ejercicios/quinto-grado/personal-social/egipto"><button>Egipto</button></Link>
-      <Link className="e backD" to="/ejercicios/quinto-grado/personal-social/puntos-cardinales"><button>Puntos cardinales</button></Link>
       <Link className="f backE" to="/ejercicios/quinto-grado/personal-social/geografia-peruana"><button>Geo. Peruana</button></Link>
+      <Link className="e backD" to="/ejercicios/quinto-grado/personal-social/puntos-cardinales"><button>Puntos cardinales</button></Link>
       </div>
       <div className="losI">
         <div className="fraseBuenarda">

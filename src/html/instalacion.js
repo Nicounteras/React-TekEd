@@ -33,9 +33,9 @@ export default function InstaHTML () {
                 <p>Si llegaste hasta aquí sin tener ningún error, puedes continuar el tutorial con la  <Link to="/desarrollo-web/curso-html/composicion" className="htmlNewLink">Composición de HTML</Link>.</p>
                 <p>Si tienes alguna duda o algo no te salió como esperabas, escríbenos un correo a <span className="htmlNewLink">teked.fun@gmail.com</span>. ¡Te responderemos con gusto!</p>
                 <div id="twoButtonDev">
-                <Link to="/desarrollo-web/curso-html/introduccion" className="theDevLink devBTN">&lArr; Introducción</Link>
+                <Link to="/desarrollo-web/cursos/html/introduccion" className="theDevLink devBTN">&lArr; Introducción</Link>
                 <div className="flexing"/>
-                <Link to="/desarrollo-web/curso-html/composicion" className="theDevLink devBTN">Composición &rArr;</Link>
+                <Link to="/desarrollo-web/cursos/html/composicion" className="theDevLink devBTN">Composición &rArr;</Link>
                 </div>
             </div>
             </>

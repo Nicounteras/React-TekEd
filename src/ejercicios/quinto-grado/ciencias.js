@@ -12,11 +12,11 @@ function cienciasQuintoIndexEjercicios() {
     <h4>¡Elige algún tema y resuelve los ejercicios!</h4>
     <div className="temas">
       <div className="losVTemas">
-      <Link className="a backA" to="/ejercicios/quinto-grado/ciencias/ecosistemas"><button>Ecosistemas</button></Link>
-      <Link className="d backC" to="/ejercicios/quinto-grado/ciencias/cadena-alimenticia"><button>Cadena alimenticia</button></Link>
-      <Link className="e backD" to="/ejercicios/quinto-grado/ciencias/animales-vertebrados"><button>Vertebrados</button></Link>
-      <Link className="f backE" to="/ejercicios/quinto-grado/ciencias/animales-invertebrados"><button>Invertebrados</button></Link>
       <Link className="g backF" to="/ejercicios/quinto-grado/ciencias/adaptaciones"><button>Adaptaciones</button></Link>
+      <Link className="d backC" to="/ejercicios/quinto-grado/ciencias/cadena-alimenticia"><button>Cadena alimenticia</button></Link>
+      <Link className="a backA" to="/ejercicios/quinto-grado/ciencias/ecosistemas"><button>Ecosistemas</button></Link>
+      <Link className="f backE" to="/ejercicios/quinto-grado/ciencias/animales-invertebrados"><button>Invertebrados</button></Link>
+      <Link className="e backD" to="/ejercicios/quinto-grado/ciencias/animales-vertebrados"><button>Vertebrados</button></Link>
       </div>
       <div className="losI">
         <div className="fraseBuenarda">

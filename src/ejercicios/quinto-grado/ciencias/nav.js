@@ -20,11 +20,11 @@ function Nav() {
       <h3>Aprende en línea</h3>
       <h5>Ciencias</h5>
       <article className="togLinks">
+      <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/adaptaciones">Adaptaciones</NavLink></li>
+      <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/cadena-alimenticia">Cadena alimenticia</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/ecosistemas">Ecosistemas</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/cadena-alimenticia">Cadena alimenticia</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/animales-vertebrados">Vertebrados</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/animales-invertebrados">Invertebrados</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/adaptaciones">Adaptaciones</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ciencias/animales-vertebrados">Vertebrados</NavLink></li>
       </article>
       <div className="other-courses">
         <h5 className="padding20-0">Más áreas</h5>

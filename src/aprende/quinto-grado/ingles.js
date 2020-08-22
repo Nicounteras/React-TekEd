@@ -13,10 +13,10 @@ function inglesQuintoIndex() {
     <div className="temas">
       <div className="losVTemas">
         <Link className="a backA" to="/aprende/quinto-grado/ingles/grammar"><button>Grammar</button></Link>
+        <Link className="f backE" to="/aprende/quinto-grado/ingles/past-simple"><button>Past simple</button></Link>
       <Link className="d backC" to="/aprende/quinto-grado/ingles/present-simple"><button>Present simple</button></Link>
-      <Link className="e backD" to="/aprende/quinto-grado/ingles/vocabulary"><button>Vocabulary</button></Link>
-      <Link className="f backE" to="/aprende/quinto-grado/ingles/past-simple"><button>Past simple</button></Link>
       <Link className="g backF" to="/aprende/quinto-grado/ingles/time"><button>Time</button></Link>
+      <Link className="e backD" to="/aprende/quinto-grado/ingles/vocabulary"><button>Vocabulary</button></Link>
       </div>
       <div className="losI">
         <div className="fraseBuenarda">

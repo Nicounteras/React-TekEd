@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import Nav from "./nav"
 import Rail from "./rail"
+import egipto1 from "./../../../images/personal-social5to/pyra.jpg"
+import egipto2 from "./../../../images/personal-social5to/piramide.jpg"
+import egipto3 from "./../../../images/personal-social5to/nile.jpg"
 
 function egiptoQuinto() {
   return (
@@ -24,7 +27,7 @@ function egiptoQuinto() {
                     <li>El río Nilo es de gran importancia para Egipto, ya que actúa como fuente de riego, energía y transporte.</li>
                     <li>Egipto está gobernado por un gobierno republicano</li>
                   </div>
-                  <div className="centralImage margin20-0 pyra"></div>
+                  <img src={egipto1} className="centralImage margin20-0" alt="Piramide en egipto"/>
                   <h5 class="blogS">Ubicación</h5>
                  <div class="liPuntos">
                   <p>Egipto se encuentra en la esquina noreste del continente africano, y es la conexión entre el norte de África y el Medio Oriente. Limita con el mar Mediterráneo, con Palestina e Israel al noreste, el Golfo de Aqaba y el Mar Rojo al este, Sudán al sur y Libia al oeste.</p>
@@ -33,12 +36,12 @@ function egiptoQuinto() {
                  <div class="liPuntos">
                   <p>Egipto tiene un clima cálido y seco, y la mayor parte de su tierra consiste en tierras desérticas. Los desiertos del país pueden pasar de temperaturas extremadamente altas a bajas en el transcurso de un día. El verano en Egipto es generalmente extremadamente caluroso y seco, alcanzando hasta 49 ° C. A lo largo de la costa norte del país, sin embargo, el clima es fresco, ventoso y húmedo con lluvias ocasionales durante el invierno.</p>
                  </div>
-                 <div className="centralImage margin20-0 piramide"></div>
+                 <img src={egipto2} className="centralImage margin20-0" alt="Clima de egipto"/>
                  <h5 class="blogS">Importancia del río Nilo</h5>
         <p>El río Nilo fluye más de 6600 kilómetros y es el segundo río más largo del mundo. Durante miles de años, ha proporcionado a los egipcios una fuente de tierras fértiles y riego, en contraste con el territorio seco del país. Hasta ahora, el Nilo es una importante fuente de riego, energía y transporte.
 
             El río Nilo era de vital importancia para el desarrollo del antiguo Egipto. Su agua es rica en nutrientes al igual que su ribera debido a sus grandes depósitos de limo. Debido a esto, la mayoría de los alimentos de Egipto se cultivan en la región del delta del Nilo. Los antiguos egipcios desarrollaron métodos de riego para aprovechar las ventajas que ofrecía el río, cultivando recursos como trigo, algodón y frijoles para mantener a su población.</p>
-            <div className="centralImage margin20-0 rio"></div>
+            <img src={egipto3} className="centralImage margin20-0" alt="Río nilo"/>
             <h5 class="blogS">Sistema social y político</h5>
                    <p>El idioma oficial de Egipto es el árabe, y tiene el Islam y el cristianismo como sus principales religiones.</p>
                    <p>

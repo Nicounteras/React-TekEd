@@ -4,19 +4,7 @@
     outline: none;
     box-sizing: border-box;
 }
-.flipper{
-    background-color: rgba(160, 159, 159, 0.397);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    transition: 150ms;
-    cursor: pointer;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
-    position: relative;
-}
+
 .flipper.fliping{
     --rotate-y: 180deg;
 }
@@ -684,6 +672,7 @@ background-color: rgb(230,230,230);
     width: 50%;
     background-size: 100% 100%;
     border-radius: 5px;
+    margin-top: 20px;
     box-shadow: 0 0 2px rgb(50,50,50);
     margin-bottom: 10px;
     margin-left: 25%;
@@ -1104,7 +1093,6 @@ font-size: 30px;
     list-style: none;
     font-size: 17px;
     padding-top: 17px;
-    margin-left: 15px;
     font-family: 'Lato', sans-serif;
 }
 .cool-link{
@@ -1148,11 +1136,11 @@ font-size: 30px;
 
 .toggleNav{
     position: fixed;
-    top: 60px;
+    top: 55px;
     left: 0;
     z-index: 400;
     background-color: rgb(60,60,60);
-    height: calc(100vh - 60px);
+    height: auto;
     width: 100vw;
     padding: 10px 5%;
     color: rgb(250, 250, 250);
@@ -1980,14 +1968,27 @@ main{
         padding:50px 0 20px 0;
     }
 }
-.initialNew{
+.theColorChange{
     animation-name: colorChange;
-    animation-duration: 25s;
+    animation-duration: 10s;
     animation-delay: 1s;
+    background-color: rgb(50, 50, 120);
     animation-iteration-count: infinite;
 }
 @keyframes colorChange {
     0% {
+        background: rgb(50,50,120);    
+    }
+    25% {
+        background: rgb(14, 145, 73);    
+    }
+    50% {
+        background: rgb(47, 83, 116);    
+    }
+    75% {
+        background: rgb(80, 80, 120);    
+    }
+    /* 0% {
         background: rgb(29, 29, 29);    
     }
     15% {
@@ -2010,7 +2011,7 @@ background-color: rgb(180, 22, 180);
     }
     100%{
 background-color: rgb(34, 34, 34);
-    }
+    } */
 }
 .flexing{
     flex: 1;
@@ -2018,7 +2019,29 @@ background-color: rgb(34, 34, 34);
 .theMenuLinks{
     position: fixed;
     top: 0px;
+    height: 60px;
     right: 5vw;
+}
+.linkingNav{
+    height: 100%;
+    padding: 0 10px;
+    border-left: 1px solid rgba(235, 235, 235, 0.233);
+    border-right: 1px solid rgba(235, 235, 235, 0.233);
+    transition: .3s;
+    z-index: 10;
+    color: rgb(250,250,250);
+}
+.linkinNav.cool-link{
+    height: 100%;
+    padding: 0 10px;
+    margin-left:0;
+    border-left: 1px solid rgba(235, 235, 235, 0.233);
+    transition: .3s;
+    z-index: 10;
+    color: rgb(250,250,250);
+}
+.linkingNav:hover, .linkinNav:hover{
+    background-color: rgb(50, 62, 100);
 }
 .initialNav{
     position: sticky;
@@ -2382,11 +2405,13 @@ background-color: rgb(34, 34, 34);
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
   }
   .flipper{
-    background-color: rgba(160, 159, 159, 0.397);
+    background-color: rgba(255, 255, 255, 0.596);
     border-radius: 10px;
     display: flex;
+    border: 3px dashed rgb(11, 126, 179);
     flex-direction: column;
     justify-content: center;
+    height:auto;
     align-items: center;
     transform-style: preserve-3d;
     transition: 150ms;
@@ -2446,7 +2471,7 @@ background-color: rgb(34, 34, 34);
   }
   .seeThe{
       color: rgb(111, 21, 153);
-      background-color: rgb(250, 250, 250);
+      background-color: rgba(111, 21, 153, 0.1);
   }
   .seeThe:hover{
       color: rgb(250, 250, 250);
@@ -2454,7 +2479,7 @@ background-color: rgb(34, 34, 34);
   }
   .starting{
       color: rgb(11,125,179);
-      background-color: rgb(250, 250, 250);
+      background-color: rgba(11, 126, 179, 0.1);
   }
   .starting:hover{
       color: rgb(250, 250, 250);
@@ -2657,12 +2682,6 @@ footer span{
     margin-top: 5px;
     background-color: rgb(193,53,132);
 }
-.watchOut{
-    height: 630px;
-    padding: 80px 5vw 20px 5vw;
-    text-align: center;
-    width: 100vw;
-}
 .devInitial{
     text-align: center;
     width: 100vw;
@@ -2680,6 +2699,189 @@ footer span{
     font-weight: 500;
     font-size: 18px;
     font-family: "Fredoka one", cursive;
+}
+.startingDev{
+    display: grid;
+    margin: 30px 0;
+    padding:0 5vw;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.startingDev article{
+    display: flex;
+    padding: 30px 5%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.startingDev h2{
+    font-weight: 500;
+}
+.blueLink{
+    margin-top: 20px;
+    color: rgb(11,125,179);
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    transition: 1s;
+    font-size: 18px;
+    font-family: "Fredoka one", cursive;
+    border-radius: 2px;
+}
+.blueLink:hover{
+    color: rgb(235,235,235);
+    background-color: rgb(11,125,179);
+}
+.greenLink{
+    margin-top: 20px;
+    background-color: rgb(36, 165, 36);
+    color: rgb(236, 236, 236);
+    padding: 10px;
+    transition: 1s;
+    font-size: 18px;
+    font-family: "Fredoka one", cursive;
+    border-radius: 2px;
+}
+.greenLink:hover{
+    color: rgb(36, 165, 36);
+    background-color: rgb(209, 209, 209);
+}
+#titleForFind{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 30px 10vw 0 10vw;
+    font-size: 27px;
+}
+#titleForFind span{
+    text-decoration: underline rgb(11,125,179);
+    font-weight: 400;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.threeGoDev{
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+    padding:30px 7vw 80px 7vw;
+    display: grid;
+    height: auto;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.threeGoDev article{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 15px;
+}
+.threeGoDev h5{
+    font-weight: 500;
+    color:rgb(50, 50, 50);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.beforeGo{
+    margin-bottom: 7px;
+    padding: 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: row;
+    transition: 1s;
+    color: rgb(48, 47, 47);
+    background-color: rgb(202, 202, 202);
+}
+.beforeGo:hover{
+    color: rgb(230, 230, 230);
+}
+.beforeGo i{
+    margin-right: 12px;
+    padding: 13px;
+    color: rgb(230, 230, 230);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.laptopGo i{
+    background-color: rgb(9, 37, 65);
+}
+.laptopGo:hover{
+    background-color: rgb(9, 37, 65);
+}
+.booksGo i{
+    background-color: rgb(30, 156, 93);
+    font-size: 19px;
+    padding: 13px 14.5px;
+}
+.booksGo:hover{
+    background-color: rgb(30, 156, 93);
+}
+.javaSGo i{
+    color: #f0db4f;
+    font-size: 20px;
+    background-color: #323330;
+    padding:13px 14px;
+}
+.javaSGo:hover{
+    background-color: #323330;
+}
+.pyGo i{
+    background-color: #306998;
+    font-size: 20px;
+    padding: 13px 14px;
+}
+.pyGo:hover{
+    background-color: #306998;
+}
+.whyGo i{
+    background-color: rgb(230, 85, 18);
+}
+.whyGo:hover{
+    background-color: rgb(230,85,18);
+}
+.fbGo i{
+    background-color: rgb(115, 16, 134);
+    padding: 13px 15px;
+}
+.fbGo:hover{
+    background-color: rgb(115, 16, 134);
+}
+.whatGo i{
+    background-color: rgb(24, 196, 33);
+    padding: 13px 15px;
+}
+.whatGo:hover{
+    background-color: rgb(24, 196, 33);
+}
+#css{
+    font-size: 21px;
+    padding: 13px 15.5px;
+    background-color: #2965f1;
+}
+.HtmlGo i{
+    background-color: #ec451f;
+}
+.HtmlGo:hover{
+    background-color: #ec451f;
+}
+.cssGo:hover{
+    background-color: #2965f1;
+}
+.startingDev p{
+    margin-top: 20px;
+}
+.borderBlue{
+    border: 2px dashed;
+    background-color: rgba(11, 126, 179, 0.03);
+    border-color: rgb(11,125,179);
+}
+.borderGreen{
+    border: 2px dashed;
+    background-color: rgba(36, 165, 42, 0.03);
+    border-color: rgb(36, 165, 42);
 }
 .twoCourses{
     display: grid;
@@ -2793,17 +2995,24 @@ footer span{
 .cssArticle{
     box-shadow: 0 0 2px 1px rgba(11, 102, 187, 0.281);
 }
+.watchOut{
+    height: auto;
+    background-image: url(./images/doodles.png);
+    padding: 80px 8vw 40px 8vw;
+    text-align: center;
+    width: 100vw;
+}
 .watchOut h3{
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Fredoka one", cursive;
-    color:rgb(50,50,50);
+    color:rgb(50,50,120);
     font-weight: 500;
 }
 .watchOut article{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    grid-gap: 30px;
     font-family: "Fredoka one", cursive;
     color: rgb(40, 40, 40);
     margin-top: 30px;
@@ -3154,9 +3363,9 @@ right:15vw
         transform: translateX(-50%);
     }
     .threeButton.initialNavi{
-        margin-top: 40px;
         width: 200px;
         text-align: center;
+        padding: 20px 0;
     }
     .ex-btn, .start-btn{
         margin-left: 0;
@@ -3167,6 +3376,7 @@ right:15vw
         flex-direction: column;
     }
 }
+
 .card .front,
 .card .back, .flipper .front, .flipper .back {
   position: absolute;
@@ -3191,6 +3401,9 @@ right:15vw
     height: 2px;
     background-color: rgb(11,125,179);
     transition: width .3s;
+}
+.marginB10{
+    margin-bottom: 10px;
 }
 .cursoHTML{
     text-decoration:underline #ec451f;
@@ -3245,6 +3458,133 @@ right:15vw
     margin: 30px 10%;
     box-shadow: 0 0 6px 1px rgba(50, 50, 50, 0.295);
     border-radius: 10px;
+}
+.initialVuamos{
+    height: 550px;
+    display: grid;
+    background-image:url(./images/doodles.png);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    flex-direction: column;
+    padding: 50px 5%;
+    background-color: rgb(214, 214, 214);
+}
+.welcomeTo{
+    background-color: rgba(250, 250, 250, 0.719);
+    border-radius: 10px;
+    display: flex;
+    height: 100%;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+    justify-content: center;
+    color: rgb(32, 32, 32);
+    border: 4px dashed rgb(11,125,179);
+    align-items: center;
+}
+.welcomeTo h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.welcomeTo h5{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.learning-links{
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 40, 40);
+    font-family: "Fredoka one", cursive;
+}
+.learning-links h3{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;    
+    /* font-family: "Do Hyoen", cursive; */
+    margin: 0 0 14px 0;
+}
+.learninLink{
+    margin: 8px 12px;
+    align-items: center;
+    display: flex;
+    padding: 0 8px 0 0;
+    border-radius: 3px;
+    flex-direction: row;
+    font-size: 18px;
+    transition: 1s;
+    background-color: rgb(240,240,240);
+    color:rgb(50,50,50);
+}
+.learninLink i{
+    color: rgb(250, 250, 250);
+}
+.learninLink.mathLink i{
+    background-color: rgb(182, 32, 12);
+}
+.learninLink.mathLink:hover{
+    background-color: rgb(182, 32, 12);
+    color: rgb(250, 250, 250);
+}
+.learninLink.scienceLink i{
+    background-color: rgb(169, 12, 184);
+}
+.learninLink.scienceLink:hover{
+    background-color: rgb(169, 12, 184);
+    color: rgb(250, 250, 250);
+}
+.learninLink.devInitLink i{
+    background-color: rgb(13, 199, 59);
+}
+.learninLink.devInitLink:hover{
+    background-color: rgb(13, 199, 59);
+    color: rgb(250, 250, 250);
+}
+.learninLink.inglesLink i{
+    background-color: rgb(15, 96, 201);
+}
+.learninLink.inglesLink:hover{
+    background-color: rgb(15, 96, 201);
+    color: rgb(250, 250, 250);
+}
+.humanidadesLink i{
+    background-color: rgb(238, 132, 12);
+}
+.humanidadesLink:hover{
+    background-color: rgb(238, 132, 12);
+    color: rgb(250, 250, 250);
+}
+.learninLink i{
+    height: 100%;
+    padding: 10px 7px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-right: 10px;
+}
+#linkingTo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.welcomeTo h2 span{
+    color: rgb(48, 48, 48);
+    font-style: italic;
+    text-decoration: underline rgb(14, 110, 155);
+}
+.devImagC{
+    width: 80%;
+    height: 200px;
+    background-size: cover;
+    margin: 30px 10%;
+    box-shadow: 0 0 6px 1px rgba(50, 50, 50, 0.295);
+    border-radius: 10px;
+}
+@media screen and (max-width:400px){
+    .devImagC{
+        width: 100%;
+        margin: 30px 0;
+    }
 }
 /* .htmlCentral{
     background-image: url(./images/htmlC.jpg);
@@ -3372,9 +3712,9 @@ right:15vw
           padding-right: 10vw;
       }
       .watchOut article{
-          height: 1200px;
+          height: 720px;
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
       }
   }
   @media screen and (max-width:767px){
@@ -3383,3 +3723,163 @@ right:15vw
           padding-right: 5vw;
       }
   }
+  @media screen and (max-width:768px){
+    .initialVuamos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+.howItWorks{
+    background: url(./images/doodles.png);
+    color: rgb(30,30,30);
+}
+.layer{
+    padding: 30px 7%;
+    background-color: rgba(228, 226, 226, 0.61);
+    width: 100%;
+    height: 100%;
+}
+.howItWorks h3{
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.threeHowItWorks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    grid-gap: 20px;
+    padding-bottom: 30px;
+}
+.threeHowItWorks article{
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    box-shadow: 0 0 4px 1px rgba(160, 159, 159, 0.397);
+    padding: 30px 15px;
+    font-family: "Fredoka one", cursive;
+}
+.threeHowItWorks article h4{
+    font-weight: 500;
+    color: rgb(50, 50, 120);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.threeHowItWorks article p{
+    font-family: "Do Hyoen", cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.threeHowItWorks article a{
+    padding: 10px 12px;
+    color: rgb(231, 228, 228);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.chooseSomething{
+    background-image: url(./images/doodles.png);
+    padding: 80px 7% 40px 7%;
+}
+.chooseSomething h2{
+    font-family: "Fredoka one", cursive;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(50, 50, 120); 
+    font-size: 33px;
+}
+.blogInit{
+    background-image: url(./images/doodles.png);
+}
+.layer2{
+    padding: 40px 0;
+    background-color: rgba(50, 50, 120, 0.199);
+    font-family: "Do Hyeon", cursive;
+}
+.blogInit h2{
+    font-size: 36px;
+    padding-left: 11vw;
+    font-weight: 500;
+}
+.paddingExtra i{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.vamoGo i{
+    background-color: rgb(56, 168, 112);
+}
+.vamoGo:hover{
+    background-color: rgb(56, 168, 112);
+}
+.yeahGo i{
+    background-color: rgb(70,80,250);
+}
+.yeahGo:hover{
+    background-color: rgb(70,80,250);
+}
+.redGo i{
+    background-color: rgb(100, 50, 70);
+}
+.redGo:hover{
+    background-color: rgb(100, 50, 70);
+}
+@media screen and (max-width:768px){
+    .threeHowItWorks{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .threeGoDev{
+       display: flex;
+       flex-direction: column;
+    }
+    .beforeGo i{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+.doodle{
+    background-image: url(./images/doodles.png);
+}
+.blogLayout{
+    padding: 40px 10%;
+    color: rgb(30,30,30);
+    background-color: rgba(218, 220, 255, 0.85);
+}
+.blogLayout h1{
+    text-align: center;
+    font-family: "Fredoka one", cursive;
+    font-weight: 500;
+    color: rgb(30, 30, 50);
+}
+.blogLayout h5{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Do Hyoen", cursive;
+}
+.blueNewLink{
+    color: rgb(50, 50, 120);
+}
+.salaries{
+    margin: 20px 0;
+}
+@media screen and (max-width:650px){
+    .salaries{
+        width:100%;
+    }
+}
+.blogLayout p{
+    font-family: "Lato", sans-serif;
+}
+.blogLayout h4{
+    margin-top: 40px;
+    font-size: 27px;
+    font-family: "Do Hyoen", cursive;
+    margin-bottom: 10px;
+}
+.blogLayout li{
+    color: rgb(30, 30, 60);
+    margin: 12px 8px 12px 8px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}

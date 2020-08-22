@@ -21,11 +21,11 @@ function Nav() {
       <h5>Matemática</h5>
       <article className="togLinks">
       <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/algebra">Álgebra</NavLink></li>
+      <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/numeros-romanos">N°Romanos</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/restas">Restas</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/redondeo">Redondeo</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/matematica/numeros-romanos">N°Romanos</NavLink></li>
       </article>
       <div className="other-courses">
         <h5 className="padding20-0">Más ejercicios</h5>

@@ -11,11 +11,11 @@ function Rail(){
             <h5>Ejercicios</h5>
             <div class="subVamos">
             <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/algebra">Álgebra</NavLink></li>
+            <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/numeros-romanos">N°Romanos</NavLink></li>
                 <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/restas">Restas</NavLink></li>
                 <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/redondeo">Redondeo</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/multiplicaciones">Multiplicaciones</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/divisiones">Divisiones</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/ejercicios/quinto-grado/matematica/numeros-romanos">N°Romanos</NavLink></li>
             </div>
             <div class="otherCourses">
                <h4>Más ejercicios</h4>

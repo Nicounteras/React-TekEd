@@ -21,10 +21,10 @@ function Nav() {
       <h5>Inglés</h5>
       <article className="togLinks">
       <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/grammar">Grammar</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/restas">Restas</NavLink></li>
-                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/vocabulary">Vocabulary</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/past-simple">Past simple</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/present-simple">Present simple</NavLink></li>
                 <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/time">Time</NavLink></li>
+                <li><NavLink activeClassName="active" className="toggleLink" exact to="/ejercicios/quinto-grado/ingles/vocabulary">Vocabulary</NavLink></li>
       </article>
       <div className="other-courses">
         <h5 className="padding20-0">Más ejercicios</h5>
