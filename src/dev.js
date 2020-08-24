@@ -43,7 +43,7 @@ function InitialDev() {
        <article>
          <h5>Blog</h5>
          <Link className="beforeGo whyGo"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
-         <Link className="beforeGo fbGo"><i class="fas fa-rocket"></i>Desarrollo frontend vs backend</Link>
+         <Link className="beforeGo fbGo"><i class="fas fa-rocket"></i>¿Qué hace un programador?</Link>
          <Link className="beforeGo whatGo paddingExtra"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
        </article>
      </div>

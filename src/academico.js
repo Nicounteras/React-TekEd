@@ -4,18 +4,18 @@ import Nav from "./acadeNav"
 import Foot from "./foot"
 import { Link } from "react-router-dom"
 
-function MateInitial() {
+function Academico() {
     const [flip1, setFlip1] = useState(false)
     const [content, setContent] = useState(false)
     const [flip2, setFlip2] = useState(false)
     const [exercises, setExercises] = useState(false)
-  
+    const [flip3, setFlip3] = useState(false)
   return (
     <>
   <Nav/>
   <div className="devInitial">
     <div className="blogLayoutDev">
-    <h3>Mejora en matemática con <span className="teked">Tek<span>Ed</span></span></h3>
+    <h3>Mejora en el cole aprendiendo en <span className="teked">Tek<span>Ed</span></span></h3>
      <h5>¡Elige un método y comienza!</h5>
      <div className="watchOut WatchOut">
     <div className="blogLayoutDev2">
@@ -24,8 +24,8 @@ function MateInitial() {
       <div className={`choose ${content ? 'active' : ''}`}>
     <h3>¿En qué grado estás?</h3>
     <div className="twoGrid">
-      <Link to="/aprende/quinto-grado/matematica" className="btnInit red cool-link">5to de primaria</Link>
-      <Link to="/aprende/sexto-grado/matematica" className="btnInit orange cool-link">6to de primaria</Link>
+      <Link to="/aprende/quinto-grado" className="btnInit red cool-link">5to de primaria</Link>
+      <Link to="/aprende/sexto-grado" className="btnInit orange cool-link">6to de primaria</Link>
     </div>
     <i className="fas fa-times" onClick={() => setContent(!content)}></i>
   </div>
@@ -54,8 +54,8 @@ function MateInitial() {
       <div className={`choose ${exercises ? 'active' : ''}`}>
     <h3>¿En qué grado estás?</h3>
     <div className="twoGrid">
-      <Link to="/ejercicios/quinto-grado/matematica" className="btnInit red cool-link">5to de primaria</Link>
-      <Link to="/ejercicios/sexto-grado/matematica" className="btnInit orange cool-link">6to de primaria</Link>
+      <Link to="/ejercicios/quinto-grado" className="btnInit red cool-link">5to de primaria</Link>
+      <Link to="/ejercicios/sexto-grado" className="btnInit orange cool-link">6to de primaria</Link>
     </div>
     <i className="fas fa-times" onClick={() => setExercises(!exercises)}></i>
   </div>
@@ -64,7 +64,7 @@ function MateInitial() {
             <p>Encuentra ejercicios de algún tema con el que quieras practicar y pon a prueba tus conocimientos.</p>
             <div className="buttons">
             <button onClick={() => setFlip2(!flip2)} className="showButton seeThe">Ver temas</button>
-            <button onClick={() => setExercises(!exercises)} className="showButton starting">Empezar</button>
+            <button className="showButton starting" onClick={() => setExercises(!exercises)}>Empezar</button>
             </div>
         </div>
         <div className="back">
@@ -105,4 +105,4 @@ function MateInitial() {
   )
 } 
 
-export default MateInitial
+export default Academico

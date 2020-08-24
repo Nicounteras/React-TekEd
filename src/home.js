@@ -70,7 +70,7 @@ export default function Home (){
                 <li>Personal social</li>
                 <div className="buttons">
             <button onClick={() => setFlip1(!flip1)} className="showButton seeThe">Volver</button>
-            <Link className="showButton starting" to="/academico">Empezar</Link>
+            {/* <Link className="showButton starting" to="/academico">Empezar</Link> */}
             </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default function Home (){
                 <li>Css 3</li>
                 <div className="buttons">
             <button onClick={() => setFlip2(!flip2)} className="showButton seeThe">Volver</button>
-            <Link className="showButton starting" to="/desarrollo-web">Empezar</Link>
+            {/* <Link className="showButton starting" to="/desarrollo-web">Empezar</Link> */}
             </div>
         </div>
       </div>

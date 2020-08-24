@@ -23,6 +23,9 @@ function Foot() {
             <Link to="/contacto" className="cool-link footerSocial right goUp">
                 Contáctanos
             </Link>
+            <Link to="/blog" className="cool-link footerSocial right goUp">
+                Blog
+            </Link>
         </div>
     </footer>
     </>

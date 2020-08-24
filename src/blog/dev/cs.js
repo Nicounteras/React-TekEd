@@ -42,7 +42,9 @@ export default function cs (){
       <li>Aplicaciones &rArr; Estas aplicaciones de software están diseñadas para interactuar o crear algo en específico. Ejemplos de esto son los navegadores (Chrome, Firefox, Safari) o aplicaciones que puedes descargar en el App Store o Play Store.</li>
       <li>Plataformas web &rArr; Son los sitios web con los que interactuamos todos los días. Ejemplos de estos son YouTube y Facebook. En este mismo momento, estás en una plataforma web.</li>
       <h4>¿Porqué aprender a crear softwares?</h4>
-      <p>Podrías trabajar en el desarrollo de cualquiera de las cuatro ramas que te dimos arriba. La respuesta completa la puedes ver <Link to="/desarrollo-web/blog/porque-programar">dando click aquí.</Link></p>
+      <p>Podrías trabajar en el desarrollo de cualquiera de las cuatro ramas que te dimos arriba. La respuesta completa la puedes ver <Link to="/desarrollo-web/blog/porque-programar" className="blueNewLink">dando click aquí.</Link></p>
+       <h4>Conclusión</h4>
+       <p>La ciencia de la computación es muy amplia, probablemente más amplia de lo que imaginabamos. Estudiar el cómo funcionan los computadores puede mejorar mucho nuestro razonamiento y a desarrollar productos que cambien nuestras vidas. Te recomendamos enfocarte en una de estas tres áreas, debido a que son muy pero muy profundas. Si te gustaría aprender a crear plataformas web, te recomendamos empezar por HTML 5, ya que define toda la estructura de un sitio web. Puedes entrar a nuestro curso <Link to="desarrollo-web/cursos/html/introduccion" className="blueNewLink">dando click aquí.</Link></p>
        </div>
     </div>
    

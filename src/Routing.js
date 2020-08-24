@@ -77,6 +77,7 @@ import InitialDev from "./dev"
 import MateInitial from "./matematica"
 import whyCode from './blog/dev/porqueProgramar'
 import cs from "./blog/dev/cs"
+import Academico from "./academico"
 
 function Routes() {
   return (
@@ -85,6 +86,7 @@ function Routes() {
       <Route path="/" exact component={Home}/>
       <Route path="/desarrollo-web" exact component={InitialDev}/>
       <Route path="/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
+      <Route path="/academico" exact component={Academico}/>
       <Route path="/matematica" exact component={MateInitial}/>
       <Route path="/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
       <Route path="/desarrollo-web/cursos" exact component={Desarrollo}/>

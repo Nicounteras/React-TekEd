@@ -616,7 +616,7 @@ background-color: rgb(230,230,230);
     background-color: rgb(179, 31, 11);
 }
 .orange{
-    background-color: rgb(235, 129, 8);
+    background-color: rgb(230, 90, 20);
 }
 .yellow{
     background-color: rgb(216, 185, 12);
@@ -2682,11 +2682,12 @@ footer span{
     margin-top: 5px;
     background-color: rgb(193,53,132);
 }
+
 .devInitial{
     text-align: center;
     width: 100vw;
     height: auto;
-    padding: 20px 5vw;
+    background-image: url(./images/doodles.png);
     color: rgb(50,50,50);
 }
 .devInitial h3{
@@ -3882,4 +3883,146 @@ right:15vw
     margin: 12px 8px 12px 8px;
     font-family: "Lato", sans-serif;
     font-size: 16px;
+}
+.WatchOut{
+    padding: 0 0;
+    background-color: rgba(220, 220, 250, 0.5);
+}
+.blogLayoutDev{
+    padding: 40px 0 20px 0;
+    background-color: rgba(220, 220, 250, 0.5);
+}
+.text-for-engage{
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.CatchMarket{
+    background-image: url(./images/doodles.png);
+}
+.CatchMarket .layout3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.CatchMarket .layout3 article{
+    background-color: rgba(0, 25, 70, 0.85);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredoka one", cursive;
+    color: rgb(240,240,240);
+    padding: 80px 5%;
+}
+.goToBlog{
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    transition: 1s;
+}
+.goToBlue{
+    color: rgb(250, 250, 250);
+    background: rgba(0, 25, 75);
+}
+.goToBlue:hover{
+    color: rgba(0, 25, 70, .9);
+    background-color: rgba(250, 250, 250, 0.7);
+}
+.goToPurple{
+    color: rgb(250, 250, 250);
+    background: rgba(70, 30, 70);
+}
+.goToPurple:hover{
+    color: rgba(70, 30, 70);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.CatchMarket h2, .CatchMarket h5{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.CatchMarket h2{
+    font-size: 30px;
+}
+.CatchMarket h5{
+    font-size: 1em;
+}
+.CatchMarket .layout3 .backgroundPurple{
+    background-color: rgba(70, 10, 70, .85);
+}
+.choose i{
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+.choose{
+    text-align: center;
+    display: none;
+    width:90%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    rotate: none;
+    z-index: 2000;
+    background-color: rgba(31, 31, 31, 0.98);
+    height: auto;
+    font-family: "Lato", sans-serif;
+    color: rgb(250, 250, 250);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.btnInit::after{
+    background-color: rgb(200,200,220);
+    height: 2px;
+}
+@media screen and (max-width:768px){
+    .btnInit::after{
+        display: none;
+    }
+}
+.choose.active{
+    display: flex;
+    position: absolute;
+}
+.choose h3{
+   font-size: 25px;
+   color: rgb(230, 230, 230);
+}
+.twoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px 10px;
+}
+.btnInit{
+    color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 10px;
+    transition: 1s;
+}
+
+.btnInit.red:hover{
+    background-color: rgb(179, 40, 30);
+}
+.padding40-0{
+    padding: 40px 0 0 0;
+}
+.blogLayoutDev2{
+    padding:20px 5vw;
+    background-color: rgba(220, 220, 250, 0.5);
+}
+@media screen and (max-width:650px){
+    .CatchMarket .layout3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .CatchMarket .layout3 article{
+        padding: 60px 5vw;
+    }
 }
