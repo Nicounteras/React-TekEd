@@ -5,6 +5,7 @@ import Nav from "./nav"
 import Store from "./shop"
 import Desarrollo from "./desarrollo"
 import Foot from "./foot"
+import tienda from "./shop"
 import mateQuintoIndex from "./aprende/quinto-grado/mate"
 import inglesQuintoIndex from "./aprende/quinto-grado/ingles"
 import AcercaDe from "./acercaDe"
@@ -78,6 +79,11 @@ import MateInitial from "./matematica"
 import whyCode from './blog/dev/porqueProgramar'
 import cs from "./blog/dev/cs"
 import Academico from "./academico"
+import CienciasInitial from "./ciencias"
+import InglesInitial from "./ingles"
+import PersonalInitial from "./humanidades"
+
+
 
 function Routes() {
   return (
@@ -88,6 +94,9 @@ function Routes() {
       <Route path="/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
       <Route path="/academico" exact component={Academico}/>
       <Route path="/matematica" exact component={MateInitial}/>
+      <Route path="/ciencias" exact component={CienciasInitial}/>
+      <Route path="/ingles" exact component={InglesInitial}/>
+      <Route path="/humanidades" exact component={PersonalInitial}/>
       <Route path="/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
       <Route path="/desarrollo-web/cursos" exact component={Desarrollo}/>
       <Route path="/desarrollo-web/cursos/html/introduccion" exact component={IntroHTML}/>
@@ -98,7 +107,7 @@ function Routes() {
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>
       <Route path="/quizzes" exact component={Quizzes} />
-      <Route path="/store" exact component={Store}/> 
+      <Route path="/tienda" exact component={tienda}/> 
       <Route path="/nosotros" exact component={AcercaDe}/>
       <Route path="/como-funciona" exact component={ComoFunciona}/>
       <Route path="/contacto" exact component={Contacto}/>

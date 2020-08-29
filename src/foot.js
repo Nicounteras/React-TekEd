@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 function Foot() {
   return (
     <>
+    <div className="doodles">
     <footer>
         <div className="foot1">
             <span className="teked">Tek<span>Ed</span></span>
@@ -26,8 +27,12 @@ function Foot() {
             <Link to="/blog" className="cool-link footerSocial right goUp">
                 Blog
             </Link>
+            <Link to="/tienda" className="cool-link footerSocial right goUp">
+                Tienda
+            </Link>
         </div>
     </footer>
+    </div>
     </>
   )
 } 

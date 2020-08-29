@@ -96,9 +96,23 @@ export default function Home (){
       </div>
     </article>
   </div>
+  <div className="CatchMarket">
+    <div className="layout3">
+      <article>
+        <h2>¡Encuentra el mejor material para que aprendas desde la comodidad de tu casa!</h2>
+        <h5>Te recomendamos los mejores libros, laptops y útiles escolares de muy buena calidad que puedes comprar en línea.</h5>
+        <Link to="/tienda" className="goToBlog goToBlue">Quiero explorar</Link>
+      </article>
+      <article className="backgroundPurple">
+<h2>Visita nuestro blog</h2>
+<h5>Historias escritas por estudiantes, para estudiantes. ¡Encuentra algo que te apasiona o conoce nuevos métodos de adquirir conocimientos!</h5>
+     <Link to="/blog" className="goToBlog goToPurple">Ir al blog</Link>
+      </article>
+    </div>
+   </div>
   <div className="blogInit">
 <div className="layer2">
-<h2>Blog</h2>
+<h2><span className="underlineLightBlue">Lee acerca de lo que gustes</span></h2>
 <div className="threeGoDev">
        <article>
          <h5>Aprendizaje</h5>
@@ -108,7 +122,7 @@ export default function Home (){
        <article>
          <h5>Desarrollo web</h5>
          <Link className="beforeGo whyGo" to="/desarrollo-web/blog/porque-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
-         <Link className="beforeGo fbGo"><i class="fas fa-rocket"></i>Desarrollo frontend vs backend</Link>
+         <Link className="beforeGo fbGo paddingExtra"><i class="fas fa-rocket"></i>Tips para programadores principiantes</Link>
          <Link className="beforeGo whatGo paddingExtra" to="/desarrollo-web/blog/ciencias-de-la-computacion"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
          {/* <Link className="beforeGo cGo">Libros de C++</Link>
          <Link className="beforeGo javaGo">Libros de Java</Link> */}
@@ -119,6 +133,7 @@ export default function Home (){
          <Link className="beforeGo redGo"><i class="fas fa-laptop"></i>Qué es la bolsa de valores</Link>
        </article>
      </div>
+     <p className="text-for-engage">¿Quieres añadir algún tema de tu interés al blog? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
 </div>
   </div>
 

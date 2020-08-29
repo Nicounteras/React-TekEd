@@ -12,7 +12,7 @@ function Nav() {
       <NavLink to="/desarrollo-web/cursos">
         <li className="linkinNav cool-link">Aprende a programar</li>
       </NavLink>
-       <NavLink to="/desarrollo-web/equipo">
+       <NavLink to="/tienda/desarrollo-web">
        <li className="linkinNav cool-link">Libros y laptops</li>
        </NavLink>
        <NavLink to="/desarrollo-web/blog">
@@ -23,7 +23,7 @@ function Nav() {
     <div className={`toggleNav ${toggleNav ? 'navOn' : 'navOff'}`}>
     <div className="threeButton initialNavi">
      <Link class="go-btn" to="/desarrollo-web/cursos">Aprende a programar</Link>
-     <Link className="ex-btn" to="/desarrollo-web/equipo">Libros y laptops</Link>
+     <Link className="ex-btn" to="/tienda/desarrollo-web">Libros y laptops</Link>
      <Link className="start-btn" to="/desarrollo-web/blog">
        Blog
      </Link>

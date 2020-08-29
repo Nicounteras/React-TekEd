@@ -84,6 +84,15 @@ function MateInitial() {
     </div>
   </div>
   <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+<div className="layer left margin20-0 relative20Top">
+  <h3 id="whyLearning">Por qué aprender matemática</h3>
+  <iframe src="https://www.youtube.com/embed/Cwq4dRBWcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iFrameVideo"></iframe>
+    <p id="whyTitle">¿Nunca te has preguntado por qué se estudia matemática en la escuela?</p>
+    <p>La matemática es la ciencia que estudia la vida cuantitativamente. Además de permitirnos analizar los objetos que nos rodean en la vida cotidiana y llevarnos a dar un resultado exacto acerca de lo que queremos encontrar, las matemáticas sirven para desarrollar nuestro pensamiento analítico y razonamiento.</p>
+    <p>Piensa en un deportista. Del deporte que tú quieras. Este deportista quiere mejorar su rendimiento atlético, por lo que corre, realiza abdominales, sentadillas y muchos otros ejercicios por bastantes meses. Después de un buen tiempo, este deportista mejoró mucho su forma física.</p>
+    <p>¿Y qué tiene que ver esto con las matemáticas?</p>
+    <p>Las matemáticas hacen exactamente lo mismo con nuestro pensamiento crítico que el hacer ejercicio con nuestro cuerpo. Si practicamos la matemática con atención y buenos descansos, nuestra intuición y razonamiento mejorarán mucho. Además, nos dan formación teórica y práctica que nos prepara en caso querramos dedicarnos a la ingeniería o a las ciencias. Es por ello que se enseña matemática en las escuelas y universidades.</p>
+    </div>
     </div>
      </div>
      <div className="CatchMarket">
@@ -91,7 +100,7 @@ function MateInitial() {
       <article>
         <h2>¡Encuentra el mejor material para que aprendas desde la comodidad de tu casa!</h2>
         <h5>Te recomendamos los mejores libros, laptops y útiles escolares de muy buena calidad que puedes comprar en línea.</h5>
-        <Link to="/academico/equipo" className="goToBlog goToBlue">Quiero explorar</Link>
+        <Link to="/tienda" className="goToBlog goToBlue">Quiero explorar</Link>
       </article>
       <article className="backgroundPurple">
 <h2>Visita nuestro blog</h2>

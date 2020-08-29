@@ -91,7 +91,7 @@ function Academico() {
       <article>
         <h2>¡Encuentra el mejor material para que aprendas desde la comodidad de tu casa!</h2>
         <h5>Te recomendamos los mejores libros, laptops y útiles escolares de muy buena calidad que puedes comprar en línea.</h5>
-        <Link to="/academico/equipo" className="goToBlog goToBlue">Quiero explorar</Link>
+        <Link to="/tienda" className="goToBlog goToBlue">Quiero explorar</Link>
       </article>
       <article className="backgroundPurple">
 <h2>Visita nuestro blog</h2>

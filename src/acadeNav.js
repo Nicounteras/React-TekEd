@@ -9,7 +9,7 @@ function Nav() {
     <nav id="inicio" className="initialNav">
     <a href="/" className="Tekito"><h1>Tek<span>Ed</span></h1></a>
     <article id="menu" className="theMenuLinks">
-      <NavLink to="/academico/equipo">
+      <NavLink to="/tienda">
         <li className="linkinNav cool-link">Libros y material</li>
       </NavLink>
        <NavLink to="/blog">
@@ -26,8 +26,8 @@ function Nav() {
     <i className="fas fa-bars toggleMenuButton" onClick={() => setToggleNav(!toggleNav)}></i>
     <div className={`toggleNav ${toggleNav ? 'navOn' : 'navOff'}`}>
     <div className="threeButton initialNavi">
-     <Link class="go-btn" to="/matematica/equipo">Libros y material</Link>
-     <Link className="ex-btn" to="/blog/matematica">Blog</Link>
+     <Link class="go-btn" to="/tienda">Libros y material</Link>
+     <Link className="ex-btn" to="/blog">Blog</Link>
     {/*  <Link className="start-btn" to="/quizzes">
        Toma un quiz
      </Link>

@@ -20,7 +20,7 @@ function InitialDev() {
          <article className="borderGreen">
 <h2>¡Equípate con los mejores libros y laptops!</h2>
 <p>Te ayudamos a encontrar material valioso para mejorar tus conocimientos y tu rendimiento.</p>
-<Link to="/desarrollo-web/equipo" className="greenLink">¡Quiero explorar!</Link>
+<Link to="/tienda/desarrollo-web" className="greenLink">¡Quiero explorar!</Link>
          </article>
      </div>
   </div>
