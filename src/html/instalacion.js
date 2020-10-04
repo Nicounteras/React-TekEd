@@ -30,12 +30,12 @@ export default function InstaHTML () {
                 <img src={html5} className="devImageC" alt="Html 5"/>
                 <p>Para abrir el documento HTML en tu navegador de internet, solo tienes que ir a la carpeta donde está el archivo y darle doble click al <span className="htmlNewLink">index.html</span>. El resultado sería una página web en blanco que tenga como título "Document".</p>
                 <img src={init} className="devImageC" alt="Documento HTML en blanco"/>
-                <p>Si llegaste hasta aquí sin tener ningún error, puedes continuar el tutorial con la  <Link to="/desarrollo-web/curso-html/composicion" className="htmlNewLink">Composición de HTML</Link>.</p>
+                <p>Si llegaste hasta aquí sin tener ningún error, puedes continuar el tutorial con la  <Link to="/programacion/desarrollo-web/curso-html/composicion" className="htmlNewLink">Composición de HTML</Link>.</p>
                 <p>Si tienes alguna duda o algo no te salió como esperabas, escríbenos un correo a <span className="htmlNewLink">teked.fun@gmail.com</span>. ¡Te responderemos con gusto!</p>
                 <div id="twoButtonDev">
-                <Link to="/desarrollo-web/cursos/html/introduccion" className="theDevLink devBTN">&lArr; Introducción</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/introduccion" className="theDevLink devBTN">&lArr; Introducción</Link>
                 <div className="flexing"/>
-                <Link to="/desarrollo-web/cursos/html/composicion" className="theDevLink devBTN">Composición &rArr;</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/composicion" className="theDevLink devBTN">Composición &rArr;</Link>
                 </div>
             </div>
             </>

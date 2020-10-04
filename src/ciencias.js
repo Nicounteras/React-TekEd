@@ -83,7 +83,7 @@ function CienciasInitial() {
     </article>
     </div>
   </div>
-  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
   <div className="layer left margin20-0 relative20Top">
   <h3 id="whyLearning">Por qué aprender ciencias</h3>
    <p>El estudio de las ciencias nos ayuda a entender mejor el mundo en el que vivimos. Las ciencias de por sí son muy amplias y se dividen en muchas ramas, sin embargo, todas tienen como propósito llegar al entendimiento de los sistemas del mundo y hasta en algunos casos del universo en el que vivimos.</p>

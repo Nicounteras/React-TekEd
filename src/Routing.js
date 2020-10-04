@@ -82,7 +82,12 @@ import Academico from "./academico"
 import CienciasInitial from "./ciencias"
 import InglesInitial from "./ingles"
 import PersonalInitial from "./humanidades"
-
+import TechStore from "./tech"
+import BookStore from "./libros"
+import apple from "./laptops/apple"
+import economicoLaptops from "./laptops/economico"
+import HowStore from "./howStore"
+import CodingStore from "./coding"
 
 
 function Routes() {
@@ -90,19 +95,25 @@ function Routes() {
     <Router>
       <Switch>
       <Route path="/" exact component={Home}/>
-      <Route path="/desarrollo-web" exact component={InitialDev}/>
-      <Route path="/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
+      <Route path="/programacion/desarrollo-web" exact component={InitialDev}/>
+      <Route path="/tienda/libros" exact component= {BookStore}/>
+      <Route path="/tienda/laptops" exact component= {TechStore}/>
+      <Route path="/tienda/como-funciona" exact component= {HowStore}/>
+      <Route path="/programacion" exact component= {CodingStore}/>
+      <Route path="/tienda/laptops/apple" exact component= {apple}/>
+      <Route path="/tienda/laptops/precio-economico" exact component= {economicoLaptops}/>
+      <Route path="/programacion/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
       <Route path="/academico" exact component={Academico}/>
       <Route path="/matematica" exact component={MateInitial}/>
       <Route path="/ciencias" exact component={CienciasInitial}/>
       <Route path="/ingles" exact component={InglesInitial}/>
       <Route path="/humanidades" exact component={PersonalInitial}/>
-      <Route path="/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
-      <Route path="/desarrollo-web/cursos" exact component={Desarrollo}/>
-      <Route path="/desarrollo-web/cursos/html/introduccion" exact component={IntroHTML}/>
-      <Route path="/desarrollo-web/cursos/html/instalacion" exact component={InstaHTML}/>
-      <Route path="/desarrollo-web/cursos/html/composicion" exact component={CompoHTML}/>
-      <Route path="/desarrollo-web/cursos/html/meta-tags" exact component={MetaHTML}/>
+      <Route path="/programacion/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
+      <Route path="/programacion/desarrollo-web/cursos" exact component={Desarrollo}/>
+      <Route path="/programacion/desarrollo-web/cursos/html/introduccion" exact component={IntroHTML}/>
+      <Route path="/programacion/desarrollo-web/cursos/html/instalacion" exact component={InstaHTML}/>
+      <Route path="/programacion/desarrollo-web/cursos/html/composicion" exact component={CompoHTML}/>
+      <Route path="/programacion/desarrollo-web/cursos/html/meta-tags" exact component={MetaHTML}/>
       <Route path="/aprende" exact component={Aprende}/>
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>

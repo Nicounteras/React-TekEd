@@ -66,9 +66,9 @@ export default function MetaHTML () {
                <img src={descri} className="devImagC" alt="Etiqueta description en HTML"/>
                 <p>Primero que nada, da una bienvenida a los usuarios de Google basándose en lo que </p>
                 <div id="twoButtonDev">
-                <Link to="/desarrollo-web/cursos/html/instalacion" className="theDevLink devBTN">&lArr; Instalación</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/instalacion" className="theDevLink devBTN">&lArr; Instalación</Link>
                 <div className="flexing"/>
-                <Link to="/desarrollo-web/cursos/html/meta-tags" className="theDevLink devBTN">Meta Tags &rArr;</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/meta-tags" className="theDevLink devBTN">Meta Tags &rArr;</Link>
                 </div>
             </div>
             </>

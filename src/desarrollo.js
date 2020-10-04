@@ -19,14 +19,14 @@ function Desarrollo() {
               <img src={html} className="devImage" alt="Html 5"/>
               <h2>HTLM 5</h2>
               <p>HTML 5 es el lenguaje por el cual se crean las estructuras de las páginas web. No necesitas experiencia para empezar a aprenderlo.</p>
-              <Link to="/desarrollo-web/cursos/html/introduccion" className="theDevLink linkHTML">Ir al curso</Link>
+              <Link to="/programacion/desarrollo-web/cursos/html/introduccion" className="theDevLink linkHTML">Ir al curso</Link>
           </article>
           <article className="cssArticle">
               <span className="cssSpan">Requisitos: HTML básico</span>
               <img src={css} className="devImage" alt="CSS 3"/>
               <h2>CSS 3</h2>
               <p>CSS sirve para manipular el cómo los elementos de HTML están desplegados en la pantalla, alterando su color, tamaño, posicionamiento y muchos más.</p>
-              <Link to="/desarrollo-web/curso/css/introduccion" className="theDevLink linkCSS">Ir al curso</Link>
+              <Link to="/programacion/desarrollo-web/curso/css/introduccion" className="theDevLink linkCSS">Ir al curso</Link>
           </article>
       </div>
   </div>

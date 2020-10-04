@@ -35,7 +35,7 @@ export default function BookStore (){
       <h5>Te recomendamos óptimas laptops y PC de todo tipo y precio. Además, te dirigimos a la página de orígen para que puedas comprarlo de forma electrónica.</h5>
      <div className="row">
      {/* <Link to="/tienda/libros" className="cool-link readMore readMoreLightBlue">Leer más</Link> */}
-      <Link to="/tienda/tecnologia" className="searchFor darkBlue">Busco un computador</Link>
+      <Link to="/tienda/laptops" className="searchFor darkBlue">Busco un computador</Link>
      </div>
     </article>
     </div>
@@ -128,13 +128,13 @@ export default function BookStore (){
       </div>
       <h4>Encuentra la que se acomode a tu bolsillo</h4>
       <div className="flexChooseForPrice">
-        <Link to="/tienda/tecnologia/precio-economico">
+        <Link to="/tienda/laptops/precio-economico">
         <button className="price">Económica</button>
         </Link>
-        <Link to="/tienda/tecnologia/precio-medio">
+        <Link to="/tienda/laptops/precio-medio">
         <button className="price">Medio</button>
         </Link>
-        <Link to="/tienda/tecnologia/precio-caro">
+        <Link to="/tienda/laptops/precio-caro">
         <button className="price">Caro</button>
         </Link>
       </div>
@@ -142,7 +142,7 @@ export default function BookStore (){
     <div className="devStoreGo">
       <h2><i class="fas fa-code"></i> ¡Tenemos una sección especial para programadores! <i class="fas fa-code"></i></h2>
       <h6>Encuentra lo mejor para potenciar tus habilidades como programador, libros y laptops de toda orientación, calidad y precio.</h6>
-      <Link to="/tienda/programacion" className="goToDevInit cool-link">¡Vamos allá!</Link>
+      <Link to="/programacion" className="goToDevInit cool-link">¡Vamos allá!</Link>
     </div>
     </div>
   <Foot/>

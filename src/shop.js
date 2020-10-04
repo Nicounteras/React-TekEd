@@ -32,10 +32,10 @@ export default function tienda (){
     </article>
     <article className="backgroundRGBADarkBlue">
       <h2>Equípate con la mejor <br/> tecnología.</h2>
-      <h5>Te recomendamos óptimas laptops y PC de todo tipo y precio. Además, te dirigimos a la página de orígen para que puedas comprarlo de forma electrónica.</h5>
+      <h5>Te recomendamos óptimas laptops de todo tipo y precio. Además, te dirigimos a la página de orígen para que puedas comprarlo de forma electrónica.</h5>
      <div className="row">
      {/* <Link to="/tienda/libros" className="cool-link readMore readMoreLightBlue">Leer más</Link> */}
-      <Link to="/tienda/tecnologia" className="searchFor darkBlue">Busco un computador</Link>
+      <Link to="/tienda/laptops" className="searchFor darkBlue">Busco un computador</Link>
      </div>
     </article>
     </div>
@@ -49,37 +49,37 @@ export default function tienda (){
       <div className="flexingBooks">
       <Link to="/tienda/libros/literatura">
       <article>
-        <img src={lit} className="imageBooks"/>
+        <img src={lit} className="imageBooks" alt="Literatura"/>
         <h6>Literatura</h6>
       </article>
       </Link>
       <Link to="/tienda/libros/matematicas">
       <article>
-        <img src={math} className="imageBooks" />
+        <img src={math} className="imageBooks" alt="Matemática"/>
         <h6>Matemáticas</h6>
       </article>
       </Link>
       <Link to="/tienda/libros/ciencias">
       <article>
-        <img src={science} className="imageBooks"/>
+        <img src={science} className="imageBooks" alt="Ciencias"/>
         <h6>Ciencias</h6>
       </article>
       </Link>
       <Link to="/tienda/libros/historia">
       <article>
-        <img src={history} className="imageBooks"/>
+        <img src={history} className="imageBooks" alt="Historia"/>
         <h6>Historia</h6>
       </article>
       </Link>
       <Link to="/tienda/libros/goegrafia">
       <article>
-        <img src={geo} className="imageBooks"/>
+        <img src={geo} className="imageBooks" alt="Geografía"/>
         <h6>Geografía</h6>
       </article>
       </Link>
       <Link to="/tienda/libros/musica">
       <article>
-        <img src={music} className="imageBooks"/>
+        <img src={music} className="imageBooks" alt="Música"/>
         <h6>Música</h6>
       </article>
       </Link>
@@ -128,13 +128,13 @@ export default function tienda (){
       </div>
       <h4>Encuentra la que se acomode a tu bolsillo</h4>
       <div className="flexChooseForPrice">
-        <Link to="/tienda/tecnologia/precio-economico">
+        <Link to="/tienda/laptops/precio-economico">
         <button className="price">Económica</button>
         </Link>
-        <Link to="/tienda/tecnologia/precio-medio">
+        <Link to="/tienda/laptops/precio-medio">
         <button className="price">Medio</button>
         </Link>
-        <Link to="/tienda/tecnologia/precio-caro">
+        <Link to="/tienda/laptops/precio-caro">
         <button className="price">Caro</button>
         </Link>
       </div>
@@ -142,7 +142,7 @@ export default function tienda (){
     <div className="devStoreGo">
       <h2><i class="fas fa-code"></i> ¡Tenemos una sección especial para programadores! <i class="fas fa-code"></i></h2>
       <h6>Encuentra lo mejor para potenciar tus habilidades como programador, libros y laptops de toda orientación, calidad y precio.</h6>
-      <Link to="/tienda/programacion" className="goToDevInit cool-link">¡Vamos allá!</Link>
+      <Link to="/programacion" className="goToDevInit cool-link">¡Vamos allá!</Link>
     </div>
     </div>
   <Foot/>

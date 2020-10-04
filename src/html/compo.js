@@ -40,9 +40,9 @@ export default function CompoHTML () {
                 <img src={finalW} className="devImageC" alt="Crear una página web en HTML"/>
                 <p>Así quedará la página que vamos a construir en éste tutorial.</p>
                 <div id="twoButtonDev">
-                <Link to="/desarrollo-web/cursos/html/instalacion" className="theDevLink devBTN">&lArr; Instalación</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/instalacion" className="theDevLink devBTN">&lArr; Instalación</Link>
                 <div className="flexing"/>
-                <Link to="/desarrollo-web/cursos/html/meta-tags" className="theDevLink devBTN">Meta Tags &rArr;</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/meta-tags" className="theDevLink devBTN">Meta Tags &rArr;</Link>
                 </div>
             </div>
             </>

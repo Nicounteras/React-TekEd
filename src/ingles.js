@@ -83,7 +83,7 @@ function InglesInitial() {
     </article>
     </div>
   </div>
-  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
   <div className="layer left margin20-0 relative20Top">
   <h3 id="whyLearning">Por qué aprender inglés</h3>
   <p>El inglés es uno de los idiomas que más se habla en todo el mundo. Aprender inglés tiene dos principales beneficios: El primero, podrás comunicarte con personas un mayor número de personas alrededor del mundo. El segundo: Tu cerebro se entrenará y se adaptará para trabajar más eficientemente en distintos tipos de tareas.</p>

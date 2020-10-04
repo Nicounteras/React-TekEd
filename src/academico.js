@@ -83,7 +83,7 @@ function Academico() {
     </article>
     </div>
   </div>
-  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
     </div>
      </div>
      <div className="CatchMarket">

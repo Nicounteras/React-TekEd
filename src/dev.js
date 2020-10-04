@@ -15,12 +15,12 @@ function InitialDev() {
          <article className="borderBlue">
              <h2>Aprende las tecnologías que conforman la web con tutoriales dinámicos y prácticos.</h2>
              <p>Cursos de HTML y CSS para todas las edades. Aprende donde y cuando quieras.</p>
-             <Link to="/desarrollo-web/cursos" className="blueLink">¡Quiero aprender!</Link>
+             <Link to="/programacion/desarrollo-web/cursos" className="blueLink">¡Quiero aprender!</Link>
          </article>
          <article className="borderGreen">
 <h2>¡Equípate con los mejores libros y laptops!</h2>
 <p>Te ayudamos a encontrar material valioso para mejorar tus conocimientos y tu rendimiento.</p>
-<Link to="/tienda/desarrollo-web" className="greenLink">¡Quiero explorar!</Link>
+<Link to="/programación" className="greenLink">¡Quiero explorar!</Link>
          </article>
      </div>
   </div>
@@ -28,8 +28,8 @@ function InitialDev() {
   <div className="threeGoDev">
        <article>
          <h5>Aprende</h5>
-         <Link className="beforeGo HtmlGo" to="/desarrollo-web/cursos/html/introduccion"><i class="fas fa-code"></i>Curso de HTMl 5</Link>
-         <Link className="beforeGo cssGo" to="/desarrollo-web/cursos/css/introduccion"><i class="fab fa-css3-alt" id="css"></i>Curso de CSS 3</Link>
+         <Link className="beforeGo HtmlGo" to="/programacion/desarrollo-web/cursos/html/introduccion"><i class="fas fa-code"></i>Curso de HTMl 5</Link>
+         <Link className="beforeGo cssGo" to="/programacion/desarrollo-web/cursos/css/introduccion"><i class="fab fa-css3-alt" id="css"></i>Curso de CSS 3</Link>
        </article>
        <article>
          <h5>Explora</h5>
@@ -42,9 +42,9 @@ function InitialDev() {
        </article>
        <article>
          <h5>Blog</h5>
-         <Link className="beforeGo whyGo"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
-         <Link className="beforeGo fbGo"><i class="fas fa-rocket"></i>¿Qué hace un programador?</Link>
-         <Link className="beforeGo whatGo paddingExtra"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
+         <Link className="beforeGo whyGo" to="/programacion/desarrollo-web/blog/porque-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
+         <Link className="beforeGo fbGo" to="/programacion/desarrollo-web/blog/tips-para-aprender"><i class="fas fa-rocket"></i>Tips para aprender a programar</Link>
+         <Link className="beforeGo whatGo paddingExtra" to="/programacion/desarrollo-web/blog/ciencias-de-la-computacion"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
        </article>
      </div>
     <Foot/>

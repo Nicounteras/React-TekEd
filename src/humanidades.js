@@ -83,7 +83,7 @@ function PersonalInitial() {
     </article>
     </div>
   </div>
-  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
   <div className="layer left margin20-0 relative20Top">
   <h3 id="whyLearning">Por qué aprender humanidades</h3>
    <p>Las humanidades estudian la cultura humana. Estas son muy amplias y tienen diferentes enfoques de estudio, sin embargo, el estudio de todas tiene como propósito entender se comporta el ser humano en distintos contextos. Estudiar humanidades nos ayuda a comprender lo que hacemos, el dónde lo hacemos, cuándo lo hacemos, cómo lo hacemos y porqué lo hacemos.</p>

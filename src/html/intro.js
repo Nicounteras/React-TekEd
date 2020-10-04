@@ -25,7 +25,7 @@ export default function IntroHTML () {
                 <p>Sí, pero no. HTML es la estructura de toda página web. Es su esqueleto. CSS te servirá para modificar los tamaños de fuente, colores y muchas más propiedades de diseño que tienen los sitios web de hoy en día. Lenguajes de programación como JavaScript, Python, PHP o MySQL sirven para que los sitios web realizen distintas funcionalidades. Sin embargo, comenzar con HTML te puede llevar solidamente a CSS y luego a el lenguaje de programación que escojas. Pero no hay que preocuparnos por eso ahora, debido a que ahora nuestro enfoque es HTML.</p>
                 <h5>¿De qué tratará éste tutorial?</h5>
                 <p>Este tutorial cubrirá todos los conceptos básicos de HTML. Te recomendamos copiar lo que dice el tutorial en tu editor de código para que así adquieras conocimiento práctico. Sin más que decir, ¡vamos a instalar HTML!.</p>
-                <Link to="/desarrollo-web/cursos/html/instalacion" className="theDevLink linkHTML goLINK">Instalación de HTML 5</Link>
+                <Link to="/programacion/desarrollo-web/cursos/html/instalacion" className="theDevLink linkHTML goLINK">Instalación de HTML 5</Link>
             </div>
             </>
         )

@@ -21,7 +21,7 @@ export default function Home (){
         <div id="linkingTo">
         <Link to="/matematica" className="learninLink mathLink"><i class="fas fa-calculator"></i>Matemática</Link>
         <Link to="/ciencias" className="learninLink scienceLink"><i class="fas fa-atom"></i>Ciencias</Link>
-        <Link to="/desarrollo-web" className="learninLink devInitLink"><i class="fas fa-code"></i>Desarrollo web</Link>
+        <Link to="/programacion/desarrollo-web" className="learninLink devInitLink"><i class="fas fa-code"></i>Desarrollo web</Link>
         <Link to="/ingles" className="learninLink inglesLink"><i class="fas fa-globe-americas"></i>Inglés</Link>
         <Link to="/humanidades" className="learninLink humanidadesLink"><i class="fas fa-child"></i>Humanidades</Link>
         </div>
@@ -80,11 +80,11 @@ export default function Home (){
             <p>¡Aprende a codificar y diseñar una página web por tu propia cuenta!. Además, te proveemos con equipo y libros de programación para que mejores tu rendimiento.</p>
             <div className="buttons">
             <button onClick={() => setFlip2(!flip2)} className="showButton seeThe">Ver temas</button>
-            <Link className="showButton starting" to="/desarrollo-web">Empezar</Link>
+            <Link className="showButton starting" to="/programacion/desarrollo-web">Empezar</Link>
             </div>
         </div>
         <div className="back">
-            <h4>Aprende desarrollo web, sin<span> importar</span> tu <span>edad</span></h4>
+            <h4>Aprende desarrollo web, sin importar tu <span>edad</span></h4>
             <span class="CoursesAv">Cursos:</span>
                 <li>HTML 5</li>
                 <li>Css 3</li>
@@ -101,7 +101,7 @@ export default function Home (){
       <article>
         <h2>¡Encuentra el mejor material para que aprendas desde la comodidad de tu casa!</h2>
         <h5>Te recomendamos los mejores libros, laptops y útiles escolares de muy buena calidad que puedes comprar en línea.</h5>
-        <Link to="/tienda" className="goToBlog goToBlue">Quiero explorar</Link>
+        <Link to="/tienda" className="goToBlog goToBlue">Ir a la tienda</Link>
       </article>
       <article className="backgroundPurple">
 <h2>Visita nuestro blog</h2>
@@ -120,10 +120,10 @@ export default function Home (){
          <Link className="beforeGo yeahGo" to="/blog/tips-para-el-ib"><i class="fas fa-school"></i>Tips para el IB</Link>
        </article>
        <article>
-         <h5>Desarrollo web</h5>
-         <Link className="beforeGo whyGo" to="/desarrollo-web/blog/porque-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
-         <Link className="beforeGo fbGo paddingExtra"><i class="fas fa-rocket"></i>Tips para programadores principiantes</Link>
-         <Link className="beforeGo whatGo paddingExtra" to="/desarrollo-web/blog/ciencias-de-la-computacion"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
+         <h5>Programación</h5>
+         <Link className="beforeGo whyGo" to="/programacion/desarrollo-web/blog/porque-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
+         <Link className="beforeGo fbGo paddingExtra" to="/programacion/desarrollo-web/blog/tips-para-aprender"><i class="fas fa-rocket"></i>Tips para aprender a programar</Link>
+         <Link className="beforeGo whatGo paddingExtra" to="/programacion/desarrollo-web/blog/ciencias-de-la-computacion"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
          {/* <Link className="beforeGo cGo">Libros de C++</Link>
          <Link className="beforeGo javaGo">Libros de Java</Link> */}
        </article>
@@ -133,92 +133,9 @@ export default function Home (){
          <Link className="beforeGo redGo"><i class="fas fa-laptop"></i>Qué es la bolsa de valores</Link>
        </article>
      </div>
-     <p className="text-for-engage">¿Quieres añadir algún tema de tu interés al blog? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+     <p className="text-for-engage">¿Quieres añadir algún tema de tu interés al blog? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
 </div>
   </div>
-
-   {/*  <div className="initialNew">
-    <article className="articleInitial">
-        <h3>Una forma <span className="aWay">divertida</span> de <span className="aprenderEn">aprender</span> en <span className="enCasa">casa</span></h3>
-        <h5>Aprendizaje dinámico y personalizado para estudiantes de primaria completamente gratuito.</h5>
-    </article>
-    <div className="dospordos">
-    <a class="cool-link go-btn" href="#cursos">¡Empecemos!</a>
-    </div> 
-  </div> */}
-  {/* <div className="watchOut" id="cursos">
-    <h3>¡Lee, practica y aprende!</h3>
-    <article>
-      <div className={`flipper ${flip1 ? 'fliping' : ''}`}>
-        <div className="front">
-            <h4>Artículos académicos</h4>
-            <p>Lee acerca de cualquier tema con el que sientas dificultad y estúdialo hasta que lo domines.</p>
-            <div className="buttons">
-            <button onClick={() => setFlip1(!flip1)} className="showButton seeThe">Ver cursos</button>
-            <Link className="showButton starting" to="/aprende">Empezar</Link>
-            </div>
-        </div>
-        <div className="back">
-            <h4>Disponible en <span>5to</span> y <span>6to</span> de primaria</h4>
-            <span class="CoursesAv">Cursos:</span>
-                <li>Matemática</li>
-                <li>Español</li>
-                <li>Ciencias</li>
-                <li>Inglés</li>
-                <li>Personal social</li>
-                <div className="buttons">
-            <button onClick={() => setFlip1(!flip1)} className="showButton seeThe">Volver</button>
-            <Link className="showButton starting" to="/aprende">Empezar</Link>
-            </div>
-        </div>
-      </div>
-      <div className={`flipper ${flip2 ? 'fliping' : ''}`}>
-      <div className="front">
-            <h4>Ejercicios académicos</h4>
-            <p>Pon a prueba tus conocimientos en distintas áreas con divertidos ejercicios.</p>
-            <div className="buttons">
-            <button onClick={() => setFlip2(!flip2)} className="showButton seeThe">Ver cursos</button>
-            <Link className="showButton starting" to="/ejercicios">Empezar</Link>
-            </div>
-        </div>
-        <div className="back">
-            <h4>Disponible en <span>5to</span> y <span>6to</span> de primaria</h4>
-            <span class="CoursesAv">Cursos:</span>
-                <li>Matemática</li>
-                <li>Español</li>
-                <li>Ciencias</li>
-                <li>Inglés</li>
-                <li>Personal social</li>
-                <div className="buttons">
-            <button onClick={() => setFlip2(!flip2)} className="showButton seeThe">Volver</button>
-            <Link className="showButton starting" to="/ejercicios">Empezar</Link>
-            </div>
-        </div>
-      </div>
-      <div className={`flipper ${flip3 ? 'fliping' : ''}`}>
-      <div className="front">
-            <h4>Desarrollo web</h4>
-            <p>¡Aprende a codificar y diseñar una página web por tu propia cuenta!</p>
-            <div className="buttons">
-            <button onClick={() => setFlip3(!flip3)} className="showButton seeThe">Ver cursos</button>
-            <Link className="showButton starting" to="/desarrollo-web">Empezar</Link>
-            </div>
-        </div>
-        <div className="back">
-            <h4>Aprende desarrollo web, sin<span> importar</span> tu <span>edad</span></h4>
-            <span class="CoursesAv">Cursos:</span>
-                <li>HTML 5</li>
-                <li>Css 3</li>
-                <li>Jquery</li>
-                <li>Diseño de páginas web</li>
-                <div className="buttons">
-            <button onClick={() => setFlip3(!flip3)} className="showButton seeThe">Volver</button>
-            <Link className="showButton starting" to="/desarrollo-web">Empezar</Link>
-            </div>
-        </div>
-      </div>
-    </article>
-  </div> */}
   <Foot/>
    </>
  )

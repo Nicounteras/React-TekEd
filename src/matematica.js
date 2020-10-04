@@ -83,7 +83,7 @@ function MateInitial() {
     </article>
     </div>
   </div>
-  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos dando click aquí.</Link></p>
+  <p className="text-for-engage">¿Quieres añadir algún tema de tu interés a TekEd? <Link to="/contacto" className="blueNewLink">Contáctanos.</Link></p>
 <div className="layer left margin20-0 relative20Top">
   <h3 id="whyLearning">Por qué aprender matemática</h3>
   <iframe src="https://www.youtube.com/embed/Cwq4dRBWcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iFrameVideo"></iframe>

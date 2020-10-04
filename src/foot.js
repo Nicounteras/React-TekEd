@@ -21,11 +21,11 @@ function Foot() {
             <Link to="/nosotros" className="cool-link footerSocial right">
                 Nosotros
             </Link> */}
-            <Link to="/contacto" className="cool-link footerSocial right goUp">
-                Contáctanos
-            </Link>
             <Link to="/blog" className="cool-link footerSocial right goUp">
                 Blog
+            </Link>
+            <Link to="/contacto" className="cool-link footerSocial right goUp">
+                Contáctanos
             </Link>
             <Link to="/tienda" className="cool-link footerSocial right goUp">
                 Tienda
