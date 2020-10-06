@@ -8,7 +8,7 @@ function cienciasQuintoIndexEjercicios() {
     <>
    <Nav/>
   <div className="ejerciciosAresolver">
-    <h2>Inglés 5to grado</h2>
+    <h2>Ciencias 5to grado</h2>
     <h4>¡Elige algún tema y resuelve los ejercicios!</h4>
     <div className="temas">
       <div className="losVTemas">

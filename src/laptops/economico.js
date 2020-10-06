@@ -19,7 +19,7 @@ function EconomicLaptops() {
                    <article>
                        <a className="amazonF link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon</a>
                        <a className="linioF link-btn fredoka"><i class="fas fa-shopping-cart"></i>Comprar por Linio</a>
-                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon de 2da</a>
+                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar Amazon Renewed</a>
                    </article>
                    <button onClick={() => setLaptop1(!laptop1)} className="close-btn lato">Volver</button>
                </div>
@@ -27,7 +27,7 @@ function EconomicLaptops() {
                    <article>
                    <a className="amazonF link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon</a>
                        <a className="linioF link-btn fredoka"><i class="fas fa-shopping-cart"></i>Comprar por Linio</a>
-                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon de 2da</a>
+                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar Amazon Renewed</a>
                    </article>
                    <button onClick={() => setLaptop2(!laptop2)} className="close-btn lato">Volver</button>
                </div>
@@ -35,7 +35,7 @@ function EconomicLaptops() {
                    <article>
                    <a className="amazonF link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon</a>
                        <a className="linioF link-btn fredoka"><i class="fas fa-shopping-cart"></i>Comprar por Linio</a>
-                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon de 2da</a>
+                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar Amazon Renewed</a>
                    </article>
                    <button onClick={() => setLaptop3(!laptop3)} className="close-btn lato">Volver</button>
                </div>
@@ -43,7 +43,7 @@ function EconomicLaptops() {
                    <article>
                    <a className="amazonF link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon</a>
                        <a className="linioF link-btn fredoka"><i class="fas fa-shopping-cart"></i>Comprar por Linio</a>
-                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon de 2da</a>
+                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar Amazon Renewed</a>
                    </article>
                    <button onClick={() => setLaptop4(!laptop4)} className="close-btn lato">Volver</button>
                </div>
@@ -51,7 +51,7 @@ function EconomicLaptops() {
                    <article>
                    <a className="amazonF link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon</a>
                        <a className="linioF link-btn fredoka"><i class="fas fa-shopping-cart"></i>Comprar por Linio</a>
-                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar por Amazon de 2da</a>
+                       <a className="amazonB link-btn fredoka"><i class="fab fa-amazon"></i>Comprar Amazon Renewed</a>
                    </article>
                    <button onClick={() => setLaptop5(!laptop5)} className="close-btn lato">Volver</button>
                </div>

@@ -1,10 +1,7 @@
 import React from 'react'
 import "./App.css"
 import Aprende from "./aprende"
-import Nav from "./nav"
-import Store from "./shop"
 import Desarrollo from "./desarrollo"
-import Foot from "./foot"
 import tienda from "./shop"
 import mateQuintoIndex from "./aprende/quinto-grado/mate"
 import inglesQuintoIndex from "./aprende/quinto-grado/ingles"
@@ -19,9 +16,9 @@ import romanosQuintoGrado from "./aprende/quinto-grado/mate/romanos"
 import multiplicacionesQuintoGrado from "./aprende/quinto-grado/mate/multiplicaciones"
 import divisionesQuintoGrado from "./aprende/quinto-grado/mate/divisiones"
 import Ejercicios from "./ejercicios"
+import AprendeAlgoNuevo from "./aprende-algo-nuevo"
 import algebraQuintoGrado from "./aprende/quinto-grado/mate/algebra"
 import redondeoQuintoGrado from "./aprende/quinto-grado/mate/redondeo"
-import { Link } from "react-router-dom"
 import personalQuintoIndex from "./aprende/quinto-grado/personal"
 import G1QuintoGrado from "./aprende/quinto-grado/ingles/grammar-1"
 import presentSQuintoGrado from "./aprende/quinto-grado/ingles/present"
@@ -88,6 +85,7 @@ import apple from "./laptops/apple"
 import economicoLaptops from "./laptops/economico"
 import HowStore from "./howStore"
 import CodingStore from "./coding"
+import Blog from "./blog"
 
 
 function Routes() {
@@ -95,6 +93,8 @@ function Routes() {
     <Router>
       <Switch>
       <Route path="/" exact component={Home}/>
+      <Route path="/blog" exact component={Blog}/>
+      <Route path="/aprende-algo-nuevo" exact component={AprendeAlgoNuevo}/>
       <Route path="/programacion/desarrollo-web" exact component={InitialDev}/>
       <Route path="/tienda/libros" exact component= {BookStore}/>
       <Route path="/tienda/laptops" exact component= {TechStore}/>

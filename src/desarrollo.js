@@ -17,7 +17,7 @@ function Desarrollo() {
           <article className="htmlArticle">
               <span className="htmlSpan">Recomendado para principiantes</span>
               <img src={html} className="devImage" alt="Html 5"/>
-              <h2>HTLM 5</h2>
+              <h2>HTML 5</h2>
               <p>HTML 5 es el lenguaje por el cual se crean las estructuras de las páginas web. No necesitas experiencia para empezar a aprenderlo.</p>
               <Link to="/programacion/desarrollo-web/cursos/html/introduccion" className="theDevLink linkHTML">Ir al curso</Link>
           </article>

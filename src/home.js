@@ -68,6 +68,7 @@ export default function Home (){
                 <li>Ciencias</li>
                 <li>Inglés</li>
                 <li>Personal social</li>
+                <li>Humanidades</li>
                 <div className="buttons">
             <button onClick={() => setFlip1(!flip1)} className="showButton seeThe">Volver</button>
             {/* <Link className="showButton starting" to="/academico">Empezar</Link> */}
@@ -116,7 +117,7 @@ export default function Home (){
 <div className="threeGoDev">
        <article>
          <h5>Aprendizaje</h5>
-         <Link className="beforeGo vamoGo paddingExtra" to="/blog/como-aprender-en-cuarentena"><i class="fas fa-brain"></i><p>Cómo aprender durante la cuarentena</p></Link>
+         <Link className="beforeGo vamoGo paddingExtra" to="/blog/como-aprender-en-cuarentena"><i class="fas fa-brain"></i><p>Cómo aprender desde casa</p></Link>
          <Link className="beforeGo yeahGo" to="/blog/tips-para-el-ib"><i class="fas fa-school"></i>Tips para el IB</Link>
        </article>
        <article>
