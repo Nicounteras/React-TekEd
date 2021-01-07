@@ -71,10 +71,12 @@ import IntroHTML from "./html/intro"
 import InstaHTML from "./html/instalacion"
 import CompoHTML from "./html/compo"
 import MetaHTML from "./html/meta"
+import TextosHTML from "./html/textos"
 import InitialDev from "./dev"
 import MateInitial from "./matematica"
 import whyCode from './blog/dev/porqueProgramar'
 import cs from "./blog/dev/cs"
+import Tips from "./blog/dev/tips"
 import Academico from "./academico"
 import CienciasInitial from "./ciencias"
 import InglesInitial from "./ingles"
@@ -86,6 +88,11 @@ import economicoLaptops from "./laptops/economico"
 import HowStore from "./howStore"
 import CodingStore from "./coding"
 import Blog from "./blog"
+import SextoEjercicios from "./ejercicios/sexto-grado/index"
+import MateSextoEj from "./ejercicios/sexto-grado/mate"
+import CienciasSextoEjercicios from "./ejercicios/sexto-grado/ciencias"
+import HumanidadesSextoEj from "./ejercicios/sexto-grado/humanidades"
+import InglesQuintoIndexEjercicios from "./ejercicios/sexto-grado/ingles"
 
 
 function Routes() {
@@ -93,6 +100,10 @@ function Routes() {
     <Router>
       <Switch>
       <Route path="/" exact component={Home}/>
+      <Route path="/ejercicios/sexto-grado/humanidades" exact component={HumanidadesSextoEj}/>
+      <Route path="/ejercicios/sexto-grado/matematica" exact component={MateSextoEj}/>
+      <Route path="/ejercicios/sexto-grado/ingles" exact component={InglesQuintoIndexEjercicios}/>
+      <Route path="/ejercicios/sexto-grado/ciencias" exact component={CienciasSextoEjercicios}/>
       <Route path="/blog" exact component={Blog}/>
       <Route path="/aprende-algo-nuevo" exact component={AprendeAlgoNuevo}/>
       <Route path="/programacion/desarrollo-web" exact component={InitialDev}/>
@@ -102,21 +113,27 @@ function Routes() {
       <Route path="/programacion" exact component= {CodingStore}/>
       <Route path="/tienda/laptops/apple" exact component= {apple}/>
       <Route path="/tienda/laptops/precio-economico" exact component= {economicoLaptops}/>
-      <Route path="/programacion/desarrollo-web/blog/porque-programar" exact component={whyCode}/>
+      <Route path="/programacion/desarrollo-web/blog/por-que-programar" exact component={whyCode}/>
       <Route path="/academico" exact component={Academico}/>
       <Route path="/matematica" exact component={MateInitial}/>
       <Route path="/ciencias" exact component={CienciasInitial}/>
       <Route path="/ingles" exact component={InglesInitial}/>
       <Route path="/humanidades" exact component={PersonalInitial}/>
+      <Route path="/programacion/desarrollo-web/blog/tips-para-aprender" exact component={Tips}/>
       <Route path="/programacion/desarrollo-web/blog/ciencias-de-la-computacion" exact component={cs}/>
       <Route path="/programacion/desarrollo-web/cursos" exact component={Desarrollo}/>
+      
+      {/* Curso de HTML 5 */}
       <Route path="/programacion/desarrollo-web/cursos/html/introduccion" exact component={IntroHTML}/>
       <Route path="/programacion/desarrollo-web/cursos/html/instalacion" exact component={InstaHTML}/>
       <Route path="/programacion/desarrollo-web/cursos/html/composicion" exact component={CompoHTML}/>
       <Route path="/programacion/desarrollo-web/cursos/html/meta-tags" exact component={MetaHTML}/>
+      <Route path="/programacion/desarrollo-web/cursos/html/textos" exact component={TextosHTML}/>
+
       <Route path="/aprende" exact component={Aprende}/>
       <Route path="/ejercicios" exact component={Ejercicios}/>
       <Route path="/ejercicios/quinto-grado" exact component={QuintoEjercicios}/>
+      <Route path="/ejercicios/sexto-grado" exact component={SextoEjercicios}/>
       <Route path="/quizzes" exact component={Quizzes} />
       <Route path="/tienda" exact component={tienda}/> 
       <Route path="/nosotros" exact component={AcercaDe}/>

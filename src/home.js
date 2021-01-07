@@ -122,7 +122,7 @@ export default function Home (){
        </article>
        <article>
          <h5>Programación</h5>
-         <Link className="beforeGo whyGo" to="/programacion/desarrollo-web/blog/porque-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
+         <Link className="beforeGo whyGo" to="/programacion/desarrollo-web/blog/por-que-programar"><i class="fas fa-laptop"></i>Por qué aprender a programar</Link>
          <Link className="beforeGo fbGo paddingExtra" to="/programacion/desarrollo-web/blog/tips-para-aprender"><i class="fas fa-rocket"></i>Tips para aprender a programar</Link>
          <Link className="beforeGo whatGo paddingExtra" to="/programacion/desarrollo-web/blog/ciencias-de-la-computacion"><i class="fas fa-laptop-code"></i>Qué es la ciencia de la computación</Link>
          {/* <Link className="beforeGo cGo">Libros de C++</Link>

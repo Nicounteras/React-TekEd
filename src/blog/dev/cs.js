@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import Nav from "./../../devNav"
 import Foot from "./../../foot"
 import { Link } from "react-router-dom"
-import dev from "./../../images/deving.jpg"
 import devLap from "./../../images/john.jpg"
-import salary from "./../../images/salary.png"
-import entre from "./../../images/entrepreneur.jpg"
 
 export default function cs (){
  return(
@@ -20,7 +17,7 @@ export default function cs (){
         <p className="padding20-0">En este artículo, ¡vamos a aprender acerca de las áreas de estudio de las ciencias de la computación!</p>
         <h4>1. Computación teórica</h4>
         <p className="marginB10">Los estudios teóricos de la computación nos ayudan a entender cómo funcionan los sistemas computacionales. A ésta área la podemos dividir en las siguientes categorías:</p>
-        <li>Teoría de la computación &rArr; Se basa en la invención y el entendimiento de cómo los ordenadores simplifican nuestras vidas, resuelven problemas y pueden adaptarse a lo que el ser humano desea que haga.</li>
+        <li>Teoría de la computación &rArr; Se basa en el entendimiento de cómo los ordenadores simplifican nuestras vidas, resuelven problemas y pueden adaptarse a lo que el ser humano desea que haga.</li>
       <li>Algoritmos computacionales &rArr; Estos algoritmos nos permiten darle instrucciones específicas a los computadores acerca de qué es lo que queremos que haga por nosotros. Su estructura está muy vinculada con la matemática.</li>
       <li>Estructura de datos &rArr; La estructura de datos se basa en recopilar la información que nos da la computadora y ordenarla eficientemente para optimizar su uso.</li>
       <h4>¿Para qué sirve estudiar computación teórica?</h4>
@@ -42,7 +39,7 @@ export default function cs (){
       <li>Aplicaciones &rArr; Estas aplicaciones de software están diseñadas para interactuar o crear algo en específico. Ejemplos de esto son los navegadores (Chrome, Firefox, Safari) o aplicaciones que puedes descargar en el App Store o Play Store.</li>
       <li>Plataformas web &rArr; Son los sitios web con los que interactuamos todos los días. Ejemplos de estos son YouTube y Facebook. En este mismo momento, estás en una plataforma web.</li>
       <h4>¿Porqué aprender a crear softwares?</h4>
-      <p>Podrías trabajar en el desarrollo de cualquiera de las cuatro ramas que te dimos arriba. La respuesta completa la puedes ver <Link to="/programacion/desarrollo-web/blog/porque-programar" className="blueNewLink">dando click aquí.</Link></p>
+      <p>Podrías trabajar en el desarrollo de cualquiera de las cuatro ramas que te dimos arriba. La respuesta completa la puedes ver <Link to="/programacion/desarrollo-web/blog/por-que-programar" className="blueNewLink">dando click aquí.</Link></p>
        <h4>Conclusión</h4>
        <p>La ciencia de la computación es muy amplia, probablemente más amplia de lo que imaginabamos. Estudiar el cómo funcionan los computadores puede mejorar mucho nuestro razonamiento y a desarrollar productos que cambien nuestras vidas. Te recomendamos enfocarte en una de estas tres áreas, debido a que son muy pero muy profundas. Si te gustaría aprender a crear plataformas web, te recomendamos empezar por HTML 5, ya que define toda la estructura de un sitio web. Puedes entrar a nuestro curso <Link to="desarrollo-web/cursos/html/introduccion" className="blueNewLink">dando click aquí.</Link></p>
        </div>

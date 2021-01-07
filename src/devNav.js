@@ -18,7 +18,7 @@ function Nav() {
       <NavLink to="/programacion/libros">
         <li className="linkinNav cool-link">Libros</li>
       </NavLink>
-      <NavLink to="/programacion/blog">
+      <NavLink to="/blog">
         <li className="linkingNav cool-link">Blog</li>
       </NavLink>
     </article>

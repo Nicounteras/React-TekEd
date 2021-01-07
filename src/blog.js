@@ -19,7 +19,7 @@ function Blog(){
              <div className="padding40px-10vw-div background-black-purple align-items-center">
       <h2 className="font-33 lato margin0-0-20px-0">Aprendizaje</h2>
       <div className="griding-3-code">
-      <Link to="/programacion/desarrollo-web/blog/porque-programar">
+      <Link to="/programacion/desarrollo-web/blog/por-que-programar">
       <article>
          <img src={img1} height="150" width="150"></img>
          <h4 className="fredoka">Cómo aprender desde casa</h4>
@@ -42,7 +42,7 @@ function Blog(){
      <div className="padding40px-10vw-div background-black-blue align-items-center">
       <h2 className="font-33 lato margin0-0-20px-0">Programación</h2>
       <div className="griding-3-code">
-      <Link to="/programacion/desarrollo-web/blog/porque-programar">
+      <Link to="/programacion/desarrollo-web/blog/por-que-programar">
       <article>
          <img src={img1} height="150" width="150"></img>
          <h4 className="fredoka">Por qué aprender a programar</h4>

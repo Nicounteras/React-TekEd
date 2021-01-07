@@ -109,7 +109,7 @@ function AprendeAlgoNuevo(){
              Curso de CSS 3
              </Link>
              </button>
-             <p className="margin10px-0-0-0">¿Por qué aprender a programar? <Link target="blank" to="/programacion/desarrollo-web/blog/porque-programar" className="text-decoration-underline-blue color-white hover-grey-white transition1s">Haz click aquí</Link></p>
+             <p className="margin10px-0-0-0">¿Por qué aprender a programar? <Link target="blank" to="/programacion/desarrollo-web/blog/por-que-programar" className="text-decoration-underline-blue color-white hover-grey-white transition1s">Haz click aquí</Link></p>
              </article>
              <i className="fas fa-laptop-code white font-100px text-decoration-underline-blue text-center"></i>
          </div>

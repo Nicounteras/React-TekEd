@@ -46,7 +46,7 @@ export default function CodingInit (){
      <div className="blog-code">
      <h3 className="fredoka">Blog</h3>
      <div className="griding-3-code">
-      <Link to="/programacion/desarrollo-web/blog/porque-programar">
+      <Link to="/programacion/desarrollo-web/blog/por-que-programar">
       <article>
          <img src={img1} height="150" width="150"></img>
          <h4 className="fredoka">Por qué aprender a programar</h4>
